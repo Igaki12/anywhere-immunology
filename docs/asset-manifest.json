@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-immunology/static/css/main.6180b9dc.css",
-    "main.js": "/anywhere-immunology/static/js/main.e7b090b5.js",
+    "main.js": "/anywhere-immunology/static/js/main.8a9f3d9b.js",
     "static/media/titleImg.jpg": "/anywhere-immunology/static/media/titleImg.92d6260f5934242117c7.jpg",
     "static/media/TLRpattern.png": "/anywhere-immunology/static/media/TLRpattern.d1cee0d9858668dc82c4.png",
     "static/media/LPS.png": "/anywhere-immunology/static/media/LPS.2adfd71a43f900f98031.png",
@@ -9,10 +9,10 @@
     "static/media/TLR.png": "/anywhere-immunology/static/media/TLR.c238a684418545ddda96.png",
     "index.html": "/anywhere-immunology/index.html",
     "main.6180b9dc.css.map": "/anywhere-immunology/static/css/main.6180b9dc.css.map",
-    "main.e7b090b5.js.map": "/anywhere-immunology/static/js/main.e7b090b5.js.map"
+    "main.8a9f3d9b.js.map": "/anywhere-immunology/static/js/main.8a9f3d9b.js.map"
   },
   "entrypoints": [
     "static/css/main.6180b9dc.css",
-    "static/js/main.e7b090b5.js"
+    "static/js/main.8a9f3d9b.js"
   ]
 }
