@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import {
   Box,
   Heading,
@@ -10,28 +10,28 @@ import {
   Divider,
   Wrap,
   WrapItem,
-} from '@chakra-ui/react';
-import { Setting } from './components/Setting';
-import { QuestionsLog } from './components/QuestionsLog';
-import { ControlPanel } from './components/ControlPanel';
-import { useQuestionList } from './useQuestionList';
-import { useStorage } from './hooks/useStorage';
-import { useTechnicalTerm } from './useTechnicalTerm';
-import { useLog } from './hooks/useLog';
-import { useState } from 'react';
-import { SearchWord } from './components/SearchWord';
-import { History } from './components/History.js';
-import { Suggest } from './components/Suggest';
+} from '@chakra-ui/react'
+import { Setting } from './components/Setting'
+import { QuestionsLog } from './components/QuestionsLog'
+import { ControlPanel } from './components/ControlPanel'
+import { useQuestionList } from './useQuestionList'
+import { useStorage } from './hooks/useStorage'
+import { useTechnicalTerm } from './useTechnicalTerm'
+import { useLog } from './hooks/useLog'
+import { useState } from 'react'
+import { SearchWord } from './components/SearchWord'
+import { History } from './components/History.js'
+import { Suggest } from './components/Suggest'
 
 function App() {
-  const toast = useToast();
-  const [selected, setSelected] = useState(0);
-  const { showQuestionList, appName, jpName } = useQuestionList();
-  const questionList = showQuestionList();
-  const { showTechnicalTerm } = useTechnicalTerm();
-  const technicalTerm = showTechnicalTerm();
-  const { loadLog } = useStorage();
-  const [isAnswered, setIsAnswered] = useState(false);
+  const toast = useToast()
+  const [selected, setSelected] = useState(0)
+  const { showQuestionList, appName, jpName } = useQuestionList()
+  const questionList = showQuestionList()
+  const { showTechnicalTerm } = useTechnicalTerm()
+  const technicalTerm = showTechnicalTerm()
+  const { loadLog } = useStorage()
+  const [isAnswered, setIsAnswered] = useState(false)
   const {
     showLog,
     toggleRange,
@@ -43,35 +43,35 @@ function App() {
     startLoadedLesson,
     reviewLoadedLesson,
     startSelectedLesson,
-  } = useLog();
-  const log = showLog();
+  } = useLog()
+  const log = showLog()
   // const appName = 'anywhere-physiology1'
   return (
     <>
-      <Text
-        mt={'3'}
-        ml="3"
-        color="teal"
-        mb={0}
-        fontSize="4xl"
-        fontWeight="extrabold"
-      >
+      <Heading mt={'3'} ml="3" color="red.900" mb={0}>
         どこでも試験対策
-      </Text>
+      </Heading>
       <Flex>
         <Badge
           m={1}
           mr="0"
-          mt={'0'}
+          mt={'-0.5'}
           ml={3}
           borderRadius="full"
           px="2"
-          colorScheme="teal"
+          colorScheme="red"
           variant={'outline'}
         >
-          Ver.2.0
+          Ver.2.1
         </Badge>
-        <Badge m={1} mt="0" borderRadius="full" px="2" colorScheme="teal">
+        <Badge
+          variant={'outline'}
+          m={1}
+          mt="-0.5"
+          borderRadius="full"
+          px="2"
+          colorScheme="red"
+        >
           {jpName}
         </Badge>
       </Flex>
@@ -99,10 +99,10 @@ function App() {
           <Wrap justify={'center'} mt="80px">
             {loadLog(appName) &&
             loadLog(appName).logs &&
-            loadLog(appName).logs.filter(log => {
+            loadLog(appName).logs.filter((log) => {
               return (
                 log.startTime && (log.review !== [] || log.remaining !== [])
-              );
+              )
             }).length > 10 ? (
               <WrapItem w={'xs'}>
                 <Suggest
@@ -134,15 +134,22 @@ function App() {
               />
             </WrapItem>
           </Wrap>
-
-          <Divider
-            orientation="horizontal"
-            maxW={'lg'}
-            mt="50px"
-            mr="auto"
-            ml="auto"
-          />
-          <Text fontSize="xs" textColor={'blackAlpha.700'} textAlign="center">
+          <Text
+            fontSize="xs"
+            textColor={'blackAlpha.700'}
+            textAlign="center"
+            mt={2}
+            mb={0}
+          >
+            Pictures: Y.Kobayashi
+          </Text>
+          <Text
+            fontSize="xs"
+            textColor={'blackAlpha.700'}
+            textAlign="center"
+            mt={0}
+            mb={2}
+          >
             ©2022- IgaTatApps
           </Text>
         </Box>
@@ -168,9 +175,9 @@ function App() {
         <></>
       )}
     </>
-  );
+  )
 }
 //   )
 // }
 
-export default App;
+export default App

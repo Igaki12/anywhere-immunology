@@ -13,11 +13,11 @@ import {
   Tooltip,
   Skeleton,
   Center,
-} from '@chakra-ui/react';
-import { ArrowDownIcon, RepeatIcon, StarIcon } from '@chakra-ui/icons';
-import { ResultBar } from './ResultBar';
-import '../App.css';
-import { useState } from 'react';
+} from '@chakra-ui/react'
+import { ArrowDownIcon, RepeatIcon, StarIcon } from '@chakra-ui/icons'
+import { ResultBar } from './ResultBar'
+import '../App.css'
+import { useState } from 'react'
 
 export const QuestionsLog = ({
   // questionList,
@@ -41,30 +41,30 @@ export const QuestionsLog = ({
   appName,
 }) => {
   // const toast = useToast()
-  const [renderSign, setRenderSign] = useState(0);
+  const [renderSign, setRenderSign] = useState(0)
   const toastGoodJob = () => {
     if (log.remaining.length === 0) {
       toast({
-        position: 'top-right',
+        position: 'top',
         title: 'GOOD JOB',
         description: '全ての問題が終わりました！',
         status: 'success',
         duration: 9000,
         isClosable: true,
-      });
+      })
     }
-  };
-  const toastDictionary = sentence => {
+  }
+  const toastDictionary = (sentence) => {
     toast({
       title: `${technicalTerm
-        .find(terms => terms.term.indexOf(sentence) !== -1)
+        .find((terms) => terms.term.indexOf(sentence) !== -1)
         .term.join(' / ')}`,
       description: `${
-        technicalTerm.find(terms => {
-          return terms.term.indexOf(sentence) !== -1;
+        technicalTerm.find((terms) => {
+          return terms.term.indexOf(sentence) !== -1
         }).explanation
       }`,
-      status: 'info',
+      status: 'error',
       containerStyle: {
         maxWidth: 'sm',
       },
@@ -72,17 +72,17 @@ export const QuestionsLog = ({
       duration: 30000,
       isClosable: true,
       position: 'top-right',
-    });
-  };
-  const makeQuestion = id => {
+    })
+  }
+  const makeQuestion = (id) => {
     return questionList
       .find(
         (group, groupI) =>
-          group.groupTag === log.range[parseInt(id.slice(0, 3))]
+          group.groupTag === log.range[parseInt(id.slice(0, 3))],
       )
       .groupContents.reduce((prevContent, curContent, contentI) => {
-        if (contentI !== parseInt(id.slice(-3))) return prevContent;
-        let randomizedChoices = [];
+        if (contentI !== parseInt(id.slice(-3))) return prevContent
+        let randomizedChoices = []
         if (curContent.choices && curContent.choices.length > 0) {
           // for (let i = 0; i < curContent.choices.length; i++) {
           //   randomizedChoices.splice(
@@ -92,8 +92,8 @@ export const QuestionsLog = ({
           //   );
           // }
           //ランダムに選択肢を出題しない方式に変更
-          randomizedChoices = curContent.choices;
-          console.log('randomIndexes:', randomizedChoices);
+          randomizedChoices = curContent.choices
+          console.log('randomIndexes:', randomizedChoices)
         }
         return {
           id: id,
@@ -120,9 +120,9 @@ export const QuestionsLog = ({
             curContent.commentary && curContent.commentary !== ''
               ? curContent.commentary
               : '',
-        };
-      }, {});
-  };
+        }
+      }, {})
+  }
   return (
     <>
       <ul>
@@ -133,21 +133,21 @@ export const QuestionsLog = ({
           //   .filter(question => question.id)
           log.asked
             .reduce((prevId, curId, index) => {
-              if (prevId && prevId.length > 9) return prevId;
+              if (prevId && prevId.length > 9) return prevId
               // console.log(makeQuestion(curId));
 
-              return [makeQuestion(curId), ...prevId];
+              return [makeQuestion(curId), ...prevId]
             }, [])
             .map((question, index) => (
               <>
                 <Box
                   maxW="2xl"
-                  bgColor={'white'}
+                  bgColor={'whiteAlpha.800'}
                   borderWidth="1px"
                   borderColor={
                     log.review && log.review.indexOf(question.id) !== -1
-                      ? 'teal.800'
-                      : 'teal.100'
+                      ? 'red.800'
+                      : 'red.100'
                   }
                   borderRadius="lg"
                   overflow="hidden"
@@ -169,7 +169,7 @@ export const QuestionsLog = ({
                       <Badge
                         borderRadius="full"
                         px="2"
-                        colorScheme="teal"
+                        colorScheme="red"
                         key={index + 'questionBadge'}
                         variant={
                           log.review && log.review.indexOf(question.id) !== -1
@@ -194,7 +194,7 @@ export const QuestionsLog = ({
                               if (
                                 curLog &&
                                 curLog.review &&
-                                questionList.find(group => {
+                                questionList.find((group) => {
                                   return (
                                     group.groupTag ===
                                       log.range[
@@ -203,24 +203,24 @@ export const QuestionsLog = ({
                                     group.groupContents &&
                                     group.groupContents.length >
                                       parseInt(question.id.slice(-3))
-                                  );
+                                  )
                                 }) &&
                                 curLog.review.indexOf(question.id) !== -1
                               ) {
                                 // console.log('見直しリスト確認', question.id)
-                                return prevLog + 1;
+                                return prevLog + 1
                               }
-                              return prevLog;
+                              return prevLog
                             },
-                            0
-                          )
+                            0,
+                          ),
                         )
                           .fill('')
                           .map((value, index) => {
                             if (index > 4) {
-                              return <></>;
+                              return <></>
                             }
-                            return <StarIcon boxSize={'0.8em'} />;
+                            return <StarIcon boxSize={'0.8em'} />
                           })}{' '}
                         {question.detailInfo}
                       </Center>
@@ -240,7 +240,7 @@ export const QuestionsLog = ({
                               <Text>{choiceIndex + 1}.</Text>
                               <Text pl={2}>{choice}</Text>
                             </Flex>
-                          )
+                          ),
                         )
                       ) : (
                         <></>
@@ -264,7 +264,7 @@ export const QuestionsLog = ({
                 >
                   <Box w={'100%'} bgColor="white" m={0} p="0">
                     {question.answerImg !== [] &&
-                      question.answerImg.map(image => (
+                      question.answerImg.map((image) => (
                         <Image
                           src={image}
                           alt="写真読み込みエラー"
@@ -313,16 +313,16 @@ export const QuestionsLog = ({
                           variant="solid"
                           aria-label="review this question"
                           onClick={() => {
-                            toggleReview(question.id, appName);
-                            setRenderSign(renderSign + 1);
+                            toggleReview(question.id, appName)
+                            setRenderSign(renderSign + 1)
                             toast({
                               title: 'この質問は見直しリストから除かれます',
-                              position: 'top-right',
+                              position: 'top',
                               description: `他に${log.review.length}問が選択されています`,
-                              status: 'info',
+                              status: 'warning',
                               duration: 9000,
                               isClosable: true,
-                            });
+                            })
                           }}
                           icon={
                             <RepeatIcon
@@ -338,18 +338,18 @@ export const QuestionsLog = ({
                           variant="ghost"
                           aria-label="review this question"
                           onClick={() => {
-                            toggleReview(question.id, appName);
-                            setRenderSign(renderSign + 1);
+                            toggleReview(question.id, appName)
+                            setRenderSign(renderSign + 1)
                             toast({
                               title: 'この質問は見直しリストに追加されます',
-                              position: 'top-right',
+                              position: 'top',
                               description: `他に${
                                 log.review.length - 1
                               }問が選択されています`,
-                              status: 'success',
+                              status: 'warning',
                               duration: 9000,
                               isClosable: true,
-                            });
+                            })
                           }}
                           icon={<RepeatIcon boxSize={'1.5em'} color="black" />}
                         />
@@ -371,12 +371,12 @@ export const QuestionsLog = ({
           <>
             <Box
               maxW="2xl"
-              bgColor={'white'}
+              bgColor={'whiteAlpha.800'}
               borderWidth="1px"
               borderColor={
                 log.review && log.review.indexOf(question.id) !== -1
-                  ? 'teal.800'
-                  : 'teal.100'
+                  ? 'red.800'
+                  : 'red.100'
               }
               borderRadius="lg"
               overflow="hidden"
@@ -398,7 +398,7 @@ export const QuestionsLog = ({
                   <Badge
                     borderRadius="full"
                     px="2"
-                    colorScheme="teal"
+                    colorScheme="red"
                     variant={
                       log.review && log.review.indexOf(question.id) !== -1
                         ? 'solid'
@@ -420,28 +420,28 @@ export const QuestionsLog = ({
                         if (
                           curLog &&
                           curLog.review &&
-                          questionList.find(group => {
+                          questionList.find((group) => {
                             return (
                               group.groupTag ===
                                 log.range[parseInt(question.id.slice(0, 3))] &&
                               group.groupContents &&
                               group.groupContents.length >
                                 parseInt(question.id.slice(-3))
-                            );
+                            )
                           }) &&
                           curLog.review.indexOf(question.id) !== -1
                         ) {
-                          return prevLog + 1;
+                          return prevLog + 1
                         }
-                        return prevLog;
-                      }, 0)
+                        return prevLog
+                      }, 0),
                     )
                       .fill('')
                       .map((value, index) => {
                         if (index > 4) {
-                          return <></>;
+                          return <></>
                         }
-                        return <StarIcon boxSize={'0.8em'} />;
+                        return <StarIcon boxSize={'0.8em'} />
                       })}{' '}
                     {question.detailInfo}
                   </Center>
@@ -461,30 +461,30 @@ export const QuestionsLog = ({
                                 // console.log(
                                 // currentStr.split(new RegExp(`(${term})`, 'g')),
                                 // )
-                                let newStr = [];
+                                let newStr = []
                                 if (
                                   currentStr.match(new RegExp(`(${term})`, 'g'))
                                 ) {
                                   newStr = currentStr.split(
-                                    new RegExp(`(${term})`, 'g')
-                                  );
+                                    new RegExp(`(${term})`, 'g'),
+                                  )
                                 } else {
-                                  newStr = currentStr.split(/(_d.)/g);
+                                  newStr = currentStr.split(/(_d.)/g)
                                 }
-                                return [...previousStr, ...newStr];
+                                return [...previousStr, ...newStr]
                               },
-                              ''
-                            );
+                              '',
+                            )
                           },
-                          prev
-                        );
+                          prev,
+                        )
                       },
-                      [question.questionSentence]
+                      [question.questionSentence],
                     )
                     .map((sentence, index) => (
                       <>
-                        {technicalTerm.find(terms => {
-                          return terms.term.indexOf(sentence) !== -1;
+                        {technicalTerm.find((terms) => {
+                          return terms.term.indexOf(sentence) !== -1
                         }) ? (
                           <Button
                             colorScheme={'blue'}
@@ -531,7 +531,7 @@ export const QuestionsLog = ({
                 >
                   <Box w={'100%'} bgColor="white" m={0} p="0">
                     {question.answerImg !== [] &&
-                      question.answerImg.map(image => (
+                      question.answerImg.map((image) => (
                         <Image
                           src={image}
                           alt="写真読み込みエラー"
@@ -565,32 +565,32 @@ export const QuestionsLog = ({
                                       //     new RegExp(`(${term})`, 'g'),
                                       //   ),
                                       // )
-                                      let newStr = [];
+                                      let newStr = []
                                       if (
                                         currentStr.match(
-                                          new RegExp(`(${term})`, 'g')
+                                          new RegExp(`(${term})`, 'g'),
                                         )
                                       ) {
                                         newStr = currentStr.split(
-                                          new RegExp(`(${term})`, 'g')
-                                        );
+                                          new RegExp(`(${term})`, 'g'),
+                                        )
                                       } else {
-                                        newStr = currentStr.split(/(_d.)/g);
+                                        newStr = currentStr.split(/(_d.)/g)
                                       }
-                                      return [...previousStr, ...newStr];
+                                      return [...previousStr, ...newStr]
                                     },
-                                    ''
-                                  );
+                                    '',
+                                  )
                                 },
-                                prev
-                              );
+                                prev,
+                              )
                             },
-                            [question.answer]
+                            [question.answer],
                           )
                           .map((sentence, index) => (
                             <>
-                              {technicalTerm.find(terms => {
-                                return terms.term.indexOf(sentence) !== -1;
+                              {technicalTerm.find((terms) => {
+                                return terms.term.indexOf(sentence) !== -1
                               }) ? (
                                 <Button
                                   colorScheme={'blue'}
@@ -629,22 +629,22 @@ export const QuestionsLog = ({
                                     return [
                                       ...previousStr,
                                       ...currentStr.split(
-                                        new RegExp(`(${term})`, 'g')
+                                        new RegExp(`(${term})`, 'g'),
                                       ),
-                                    ];
+                                    ]
                                   },
-                                  ''
-                                );
+                                  '',
+                                )
                               },
-                              prev
-                            );
+                              prev,
+                            )
                           },
-                          [question.commentary]
+                          [question.commentary],
                         )
                         .map((sentence, index) => (
                           <>
-                            {technicalTerm.find(terms => {
-                              return terms.term.indexOf(sentence) !== -1;
+                            {technicalTerm.find((terms) => {
+                              return terms.term.indexOf(sentence) !== -1
                             }) ? (
                               <Button
                                 colorScheme={'blue'}
@@ -679,16 +679,16 @@ export const QuestionsLog = ({
                           variant="solid"
                           aria-label="review this question"
                           onClick={() => {
-                            toggleReview(question.id, appName);
-                            setRenderSign(renderSign + 1);
+                            toggleReview(question.id, appName)
+                            setRenderSign(renderSign + 1)
                             toast({
                               title: 'この質問は見直しリストから除かれます',
-                              position: 'top-right',
+                              position: 'top',
                               description: `他に${log.review.length}問が選択されています`,
-                              status: 'info',
+                              status: 'warning',
                               duration: 9000,
                               isClosable: true,
-                            });
+                            })
                           }}
                           icon={
                             <RepeatIcon
@@ -704,18 +704,18 @@ export const QuestionsLog = ({
                           variant="ghost"
                           aria-label="review this question"
                           onClick={() => {
-                            toggleReview(question.id, appName);
-                            setRenderSign(renderSign + 1);
+                            toggleReview(question.id, appName)
+                            setRenderSign(renderSign + 1)
                             toast({
                               title: 'この質問は見直しリストに追加されます',
-                              position: 'top-right',
+                              position: 'top',
                               description: `他に${
                                 log.review.length - 1
                               }問が選択されています`,
-                              status: 'success',
+                              status: 'warning',
                               duration: 9000,
                               isClosable: true,
-                            });
+                            })
                           }}
                           icon={<RepeatIcon boxSize={'1.5em'} color="black" />}
                         />
@@ -738,19 +738,19 @@ export const QuestionsLog = ({
           m={1}
           ml="3"
           rightIcon={<ArrowDownIcon />}
-          colorScheme="teal"
+          colorScheme="orange"
           variant={'outline'}
-          bgColor="white"
+          bgColor="whiteAlpha.800"
           onClick={() => {
-            nextQuestion(appName);
-            setIsAnswered(false);
+            nextQuestion(appName)
+            setIsAnswered(false)
             setTimeout(() => {
-              let element = document.documentElement;
+              let element = document.documentElement
               window.scrollTo({
                 top: element.scrollHeight - element.clientHeight,
                 behavior: 'smooth',
-              });
-            }, 500);
+              })
+            }, 100)
           }}
         >
           次の問題へ
@@ -773,8 +773,8 @@ export const QuestionsLog = ({
             // console.log('setting確認');
             // console.log(settingDetail);
             // checkAnswer();
-            setIsAnswered(true);
-            toastGoodJob();
+            setIsAnswered(true)
+            toastGoodJob()
             // console.log(log)
             // saveHistory(history[history.length - 1], settingDetail);
             // setTimeout(() => scrollToTheBottom(), 500)
@@ -784,5 +784,5 @@ export const QuestionsLog = ({
         </Button>
       )}
     </>
-  );
-};
+  )
+}

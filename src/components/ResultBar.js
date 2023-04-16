@@ -5,18 +5,18 @@ import {
   CircularProgressLabel,
   Flex,
   Text,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 
 export const ResultBar = ({ log, isAnswered }) => {
   let achievementRate = Math.floor(
     (100 * (log.asked.length + (isAnswered ? 1 : 0))) /
-      (log.asked.length + log.remaining.length + 1)
-  );
+      (log.asked.length + log.remaining.length + 1),
+  )
   return (
     <>
       <Flex ml={'4'} mt={3} mb="-2" alignItems={'center'}>
         <CircularProgress
-          color="teal"
+          color="red"
           trackColor="white"
           value={achievementRate}
         >
@@ -30,5 +30,5 @@ export const ResultBar = ({ log, isAnswered }) => {
         </Box>
       </Flex>
     </>
-  );
-};
+  )
+}

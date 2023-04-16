@@ -21,9 +21,9 @@ import {
   ModalOverlay,
   Badge,
   Highlight,
-} from '@chakra-ui/react';
-import { ArrowDownIcon, ChevronDownIcon, SearchIcon } from '@chakra-ui/icons';
-import { useEffect, useRef, useState } from 'react';
+} from '@chakra-ui/react'
+import { ArrowDownIcon, ChevronDownIcon, SearchIcon } from '@chakra-ui/icons'
+import { useEffect, useRef, useState } from 'react'
 
 export const SearchWord = ({
   toast,
@@ -32,11 +32,11 @@ export const SearchWord = ({
   startSelectedLesson,
   appName,
 }) => {
-  const [renderSign, setRenderSign] = useState();
-  const [inputValue, setInputValue] = useState('');
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  useEffect(() => console.log(), [inputValue]);
-  const initialRef = useRef(null);
+  const [renderSign, setRenderSign] = useState()
+  const [inputValue, setInputValue] = useState('')
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  useEffect(() => console.log(), [inputValue])
+  const initialRef = useRef(null)
   return (
     <>
       {technicalTerm && technicalTerm.length > 0 ? (
@@ -62,7 +62,7 @@ export const SearchWord = ({
             mb={2}
             pt="1"
           >
-            頻出キーワードを確認　
+            頻出キーワード
             <ChevronDownIcon boxSize="1.5em" />
           </Box>
           <Wrap justify={'center'} pt="2" pb="2">
@@ -81,52 +81,52 @@ export const SearchWord = ({
                           prevQuestion +
                           curTermBox.term.reduce((prevTerm, curTerm) => {
                             if (prevTerm > 0) {
-                              return 1;
+                              return 1
                             } else {
                               if (
                                 question.detailInfo &&
                                 question.detailInfo.indexOf(curTerm) > -1
                               )
-                                return 1;
+                                return 1
                               else if (
                                 question.questionSentence &&
                                 question.questionSentence.indexOf(curTerm) > -1
                               )
-                                return 1;
+                                return 1
                               else if (
                                 question.answer &&
                                 question.answer.indexOf(curTerm) > -1
                               )
-                                return 1;
+                                return 1
                               else if (
                                 question.commentary &&
                                 question.commentary.indexOf(curTerm) > -1
                               )
-                                return 1;
+                                return 1
                               else if (
                                 question.choices &&
                                 question.choices.every(
-                                  choice => choice.indexOf(curTerm) === -1
+                                  (choice) => choice.indexOf(curTerm) === -1,
                                 ) === false
                               )
-                                return 1;
+                                return 1
                               else {
-                                return 0;
+                                return 0
                               }
                             }
                           }, 0)
-                        );
+                        )
                       }, 0)
-                    );
+                    )
                   }, 0),
-                };
+                }
                 let newTagArray = [...prevTermBox, newTag].sort(
-                  (a, b) => b.count - a.count
-                );
+                  (a, b) => b.count - a.count,
+                )
                 if (newTagArray.length > 15) {
-                  return newTagArray.splice(0, 15);
+                  return newTagArray.splice(0, 15)
                 } else {
-                  return newTagArray;
+                  return newTagArray
                 }
               }, [])
               .map((tag, tagIndex) => {
@@ -137,17 +137,17 @@ export const SearchWord = ({
                       key={tagIndex + 'searchTag2'}
                       borderRadius="full"
                       variant="outline"
-                      colorScheme={'blue'}
+                      colorScheme={'black'}
                       onClick={() => {
                         toast({
                           title: `${tag.terms.join(' / ')}`,
                           description: `${tag.explanation}`,
-                          status: 'info',
+                          status: 'error',
                           variant: 'left-accent',
                           duration: 30000,
                           isClosable: true,
                           position: 'top-right',
-                        });
+                        })
                       }}
                     >
                       {tag.term}
@@ -156,7 +156,7 @@ export const SearchWord = ({
                       {')'}
                     </Button>
                   </WrapItem>
-                );
+                )
               })}
             {technicalTerm && technicalTerm.length > 15 ? (
               <WrapItem p={2}>...</WrapItem>
@@ -172,7 +172,7 @@ export const SearchWord = ({
             mr="5%"
             ml="5%"
             w="90%"
-            colorScheme="blue"
+            colorScheme="blackAlpha"
             onClick={onOpen}
           >
             <SearchIcon boxSize={'1.2em'} mr="1" ml="1" />
@@ -198,7 +198,7 @@ export const SearchWord = ({
                   <Input
                     ref={initialRef}
                     value={inputValue}
-                    onChange={event => setInputValue(event.target.value)}
+                    onChange={(event) => setInputValue(event.target.value)}
                     placeholder="keyword to search for..."
                     w="xs"
                     type={'text'}
@@ -214,11 +214,11 @@ export const SearchWord = ({
                         inputValue.indexOf('+') === -1 &&
                         inputValue.indexOf('*') === -1 &&
                         (curGroup.term.find(
-                          term =>
-                            term.match(new RegExp(inputValue, 'i')) !== null
+                          (term) =>
+                            term.match(new RegExp(inputValue, 'i')) !== null,
                         ) ||
                           curGroup.explanation.match(
-                            new RegExp(inputValue, 'i')
+                            new RegExp(inputValue, 'i'),
                           ) !== null)
                       ) {
                         // console.log(inputValue, prevGroup);
@@ -239,69 +239,69 @@ export const SearchWord = ({
                                         curGroup.term.reduce(
                                           (prevTerm, curTerm) => {
                                             if (prevTerm > 0) {
-                                              return 1;
+                                              return 1
                                             } else {
                                               if (
                                                 question.detailInfo &&
                                                 question.detailInfo.indexOf(
-                                                  curTerm
+                                                  curTerm,
                                                 ) > -1
                                               )
-                                                return 1;
+                                                return 1
                                               else if (
                                                 question.questionSentence &&
                                                 question.questionSentence.indexOf(
-                                                  curTerm
+                                                  curTerm,
                                                 ) > -1
                                               )
-                                                return 1;
+                                                return 1
                                               else if (
                                                 question.answer &&
                                                 question.answer.indexOf(
-                                                  curTerm
+                                                  curTerm,
                                                 ) > -1
                                               )
-                                                return 1;
+                                                return 1
                                               else if (
                                                 question.commentary &&
                                                 question.commentary.indexOf(
-                                                  curTerm
+                                                  curTerm,
                                                 ) > -1
                                               )
-                                                return 1;
+                                                return 1
                                               else if (
                                                 question.choices &&
                                                 question.choices.every(
-                                                  choice =>
+                                                  (choice) =>
                                                     choice.indexOf(curTerm) ===
-                                                    -1
+                                                    -1,
                                                 ) === false
                                               )
-                                                return 1;
+                                                return 1
                                               else {
-                                                return 0;
+                                                return 0
                                               }
                                             }
                                           },
-                                          0
+                                          0,
                                         )
-                                      );
+                                      )
                                     },
-                                    0
+                                    0,
                                   )
-                                );
+                                )
                               }, 0),
                             },
-                          ];
+                          ]
                         }
                       }
-                      return prevGroup;
+                      return prevGroup
                     }, [])
                     .sort((a, b) => b.count - a.count)
                     .map((termGroup, termIndex) => (
                       <Button
                         key={termIndex}
-                        colorScheme="blue"
+                        colorScheme="black"
                         variant="outline"
                         borderRadius="full"
                         m={'1'}
@@ -310,12 +310,12 @@ export const SearchWord = ({
                           toast({
                             title: `${termGroup.term.join(' / ')}`,
                             description: `${termGroup.explanation}`,
-                            status: 'info',
+                            status: 'error',
                             variant: 'left-accent',
                             duration: 30000,
                             isClosable: true,
                             position: 'top-right',
-                          });
+                          })
                         }}
                       >
                         {termGroup.term[0].length > 15
@@ -330,15 +330,16 @@ export const SearchWord = ({
                       inputValue.indexOf('+') === -1 &&
                       inputValue.indexOf('*') === -1 &&
                       (curTermBox.term.find(
-                        term => term.match(new RegExp(inputValue, 'i')) !== null
+                        (term) =>
+                          term.match(new RegExp(inputValue, 'i')) !== null,
                       ) ||
                         curTermBox.explanation.match(
-                          new RegExp(inputValue, 'i')
+                          new RegExp(inputValue, 'i'),
                         ) !== null)
                     ) {
-                      return [...prevTermBox, curTermBox.term[0]];
+                      return [...prevTermBox, curTermBox.term[0]]
                     }
-                    return prevTermBox;
+                    return prevTermBox
                   }, []).length > 10
                     ? '　...'
                     : ''}
@@ -347,61 +348,62 @@ export const SearchWord = ({
                     let resultList = group.groupContents.reduce(
                       (prevQuestion, curQuestion, questionIndex) => {
                         if (!inputValue) {
-                          return [];
+                          return []
                         }
                         if (
                           inputValue.indexOf('+') !== -1 ||
                           inputValue.indexOf('*') !== -1
                         ) {
-                          return [];
+                          return []
                         }
                         if (
                           curQuestion.detailInfo &&
                           curQuestion.detailInfo.match(
-                            new RegExp(inputValue, 'i')
+                            new RegExp(inputValue, 'i'),
                           ) !== null
                         ) {
-                          return [...prevQuestion, curQuestion];
+                          return [...prevQuestion, curQuestion]
                         } else if (
                           curQuestion.questionSentence &&
                           curQuestion.questionSentence.match(
-                            new RegExp(inputValue, 'i')
+                            new RegExp(inputValue, 'i'),
                           ) !== null
                         ) {
-                          return [...prevQuestion, curQuestion];
+                          return [...prevQuestion, curQuestion]
                         } else if (
                           curQuestion.answer &&
                           curQuestion.answer.match(
-                            new RegExp(inputValue, 'i')
+                            new RegExp(inputValue, 'i'),
                           ) !== null
                         ) {
-                          return [...prevQuestion, curQuestion];
+                          return [...prevQuestion, curQuestion]
                         } else if (
                           curQuestion.commentary &&
                           curQuestion.commentary.match(
-                            new RegExp(inputValue, 'i')
+                            new RegExp(inputValue, 'i'),
                           ) !== null
                         ) {
-                          return [...prevQuestion, curQuestion];
+                          return [...prevQuestion, curQuestion]
                         } else if (
                           curQuestion.choices &&
                           curQuestion.choices.find(
-                            choice =>
-                              choice.match(new RegExp(inputValue, 'i')) !== null
+                            (choice) =>
+                              choice.match(new RegExp(inputValue, 'i')) !==
+                              null,
                           )
                         ) {
-                          return [...prevQuestion, curQuestion];
+                          return [...prevQuestion, curQuestion]
                         }
-                        return prevQuestion;
+                        return prevQuestion
                       },
-                      []
-                    );
+                      [],
+                    )
                     return (
                       <>
                         <Flex m={1} mt="3">
                           <Badge
                             key={groupIndex}
-                            colorScheme="blue"
+                            colorScheme="red"
                             size="sm"
                             variant="solid"
                             borderRadius="full"
@@ -415,10 +417,10 @@ export const SearchWord = ({
                         </Flex>
                         {resultList.map((question, questionIndex) => {
                           if (questionIndex > 5) {
-                            return <></>;
+                            return <></>
                           }
                           if (questionIndex === 5) {
-                            return <Text>...</Text>;
+                            return <Text>...</Text>
                           }
                           return (
                             <Box bgColor="gray.100" fontSize="xs" mb="1" p={1}>
@@ -429,84 +431,84 @@ export const SearchWord = ({
                               {question.questionSentence}
                               {/* </Highlight> */}
                             </Box>
-                          );
+                          )
                         })}
                       </>
-                    );
+                    )
                   })}
                 </Box>
               </ModalBody>
 
               <ModalFooter mt="10" mb="200px">
                 <Button
-                  colorScheme="blue"
+                  colorScheme="orange"
                   mr={3}
                   onClick={() => {
-                    console.log('onClick0:', inputValue);
-                    if (!inputValue) return;
-                    let rangeIndex = -1;
+                    console.log('onClick0:', inputValue)
+                    if (!inputValue) return
+                    let rangeIndex = -1
                     let selectedList = questionList.reduce(
                       (prevGroup, group, groupIndex) => {
                         if (
                           group.groupContents.reduce(
                             (prevQuestion, curQuestion, questionIndex) => {
                               if (!inputValue) {
-                                return [];
+                                return []
                               }
                               // console.log('prevQUestion:', prevQuestion);
                               if (
                                 inputValue.indexOf('+') !== -1 ||
                                 inputValue.indexOf('*') !== -1
                               ) {
-                                return [];
+                                return []
                               }
                               if (
                                 curQuestion.detailInfo &&
                                 curQuestion.detailInfo.match(
-                                  new RegExp(inputValue, 'i')
+                                  new RegExp(inputValue, 'i'),
                                 ) !== null
                               ) {
-                                return [...prevQuestion, curQuestion];
+                                return [...prevQuestion, curQuestion]
                               } else if (
                                 curQuestion.questionSentence &&
                                 curQuestion.questionSentence.match(
-                                  new RegExp(inputValue, 'i')
+                                  new RegExp(inputValue, 'i'),
                                 ) !== null
                               ) {
-                                return [...prevQuestion, curQuestion];
+                                return [...prevQuestion, curQuestion]
                               } else if (
                                 curQuestion.answer &&
                                 curQuestion.answer.match(
-                                  new RegExp(inputValue, 'i')
+                                  new RegExp(inputValue, 'i'),
                                 ) !== null
                               ) {
-                                return [...prevQuestion, curQuestion];
+                                return [...prevQuestion, curQuestion]
                               } else if (
                                 curQuestion.commentary &&
                                 curQuestion.commentary.match(
-                                  new RegExp(inputValue, 'i')
+                                  new RegExp(inputValue, 'i'),
                                 ) !== null
                               ) {
-                                return [...prevQuestion, curQuestion];
+                                return [...prevQuestion, curQuestion]
                               } else if (
                                 curQuestion.choices &&
                                 curQuestion.choices.find(
-                                  choice =>
+                                  (choice) =>
                                     choice.match(
-                                      new RegExp(inputValue, 'i')
-                                    ) !== null
+                                      new RegExp(inputValue, 'i'),
+                                    ) !== null,
                                 )
                               ) {
-                                return [...prevQuestion, curQuestion];
+                                return [...prevQuestion, curQuestion]
                               }
-                              return prevQuestion;
+                              return prevQuestion
                             },
-                            []
+                            [],
                           ).length < 1
                         ) {
-                          return prevGroup;
+                          return prevGroup
                         }
-                        rangeIndex++;
+                        rangeIndex++
                         return [
                           ...prevGroup,
                           {
@@ -514,100 +516,100 @@ export const SearchWord = ({
                             groupContentIds: group.groupContents.reduce(
                               (prevQuestion, curQuestion, questionIndex) => {
                                 if (!inputValue) {
-                                  return [];
+                                  return []
                                 }
                                 if (
                                   inputValue.indexOf('+') !== -1 ||
                                   inputValue.indexOf('*') !== -1
                                 ) {
-                                  return [];
+                                  return []
                                 }
                                 if (
                                   curQuestion.detailInfo &&
                                   curQuestion.detailInfo.match(
-                                    new RegExp(inputValue, 'i')
+                                    new RegExp(inputValue, 'i'),
                                   ) !== null
                                 ) {
                                   return [
                                     ...prevQuestion,
                                     ('000' + rangeIndex).slice(-3) +
                                       ('000' + questionIndex).slice(-3),
-                                  ];
+                                  ]
                                 } else if (
                                   curQuestion.questionSentence &&
                                   curQuestion.questionSentence.match(
-                                    new RegExp(inputValue, 'i')
+                                    new RegExp(inputValue, 'i'),
                                   ) !== null
                                 ) {
                                   return [
                                     ...prevQuestion,
                                     ('000' + rangeIndex).slice(-3) +
                                       ('000' + questionIndex).slice(-3),
-                                  ];
+                                  ]
                                 } else if (
                                   curQuestion.answer &&
                                   curQuestion.answer.match(
-                                    new RegExp(inputValue, 'i')
+                                    new RegExp(inputValue, 'i'),
                                   ) !== null
                                 ) {
                                   return [
                                     ...prevQuestion,
                                     ('000' + rangeIndex).slice(-3) +
                                       ('000' + questionIndex).slice(-3),
-                                  ];
+                                  ]
                                 } else if (
                                   curQuestion.commentary &&
                                   curQuestion.commentary.match(
-                                    new RegExp(inputValue, 'i')
+                                    new RegExp(inputValue, 'i'),
                                   ) !== null
                                 ) {
                                   return [
                                     ...prevQuestion,
                                     ('000' + rangeIndex).slice(-3) +
                                       ('000' + questionIndex).slice(-3),
-                                  ];
+                                  ]
                                 } else if (
                                   curQuestion.choices &&
                                   curQuestion.choices.find(
-                                    choice =>
+                                    (choice) =>
                                       choice.match(
-                                        new RegExp(inputValue, 'i')
-                                      ) !== null
+                                        new RegExp(inputValue, 'i'),
+                                      ) !== null,
                                   )
                                 ) {
                                   return [
                                     ...prevQuestion,
                                     ('000' + rangeIndex).slice(-3) +
                                       ('000' + questionIndex).slice(-3),
-                                  ];
+                                  ]
                                 }
-                                return prevQuestion;
+                                return prevQuestion
                               },
-                              []
+                              [],
                             ),
                           },
-                        ];
+                        ]
                       },
-                      []
-                    );
-                    if (selectedList.length < 1) return;
+                      [],
+                    )
+                    if (selectedList.length < 1) return
                     startSelectedLesson(questionList, appName, {
                       startTime: '',
                       order: 'ascend',
-                      range: selectedList.map(group => {
-                        return group.groupTag;
+                      range: selectedList.map((group) => {
+                        return group.groupTag
                       }),
                       wordFilter: [inputValue],
                       asked: [],
                       asking: '',
                       remaining: selectedList.reduce(
                         (prevGroup, group, groupIndex) => {
-                          return [...prevGroup, ...group.groupContentIds];
+                          return [...prevGroup, ...group.groupContentIds]
                         },
-                        []
+                        [],
                       ),
                       review: [],
-                    });
+                    })
                   }}
                 >
                   <ArrowDownIcon fontSize="1.2em" mr="0.5" ml="-1" />
@@ -622,5 +624,5 @@ export const SearchWord = ({
         <></>
       )}
     </>
-  );
-};
+  )
+}

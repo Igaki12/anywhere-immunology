@@ -26,18 +26,18 @@ import {
   Flex,
   Spacer,
   Skeleton,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 import {
   CheckCircleIcon,
   InfoIcon,
   QuestionIcon,
   WarningIcon,
-} from '@chakra-ui/icons';
-import '../App.css';
-import { SearchWord } from './SearchWord';
-import { useState } from 'react';
+} from '@chakra-ui/icons'
+import '../App.css'
+import { SearchWord } from './SearchWord'
+import { useState } from 'react'
 // import jsCookie from 'js-cookie'
-import titleImg from '../img/titleImg.png';
+import titleImg from '../img/titleImg.jpg'
 export const Setting = ({
   toast,
   selected,
@@ -53,30 +53,30 @@ export const Setting = ({
   startNewLesson,
   startLoadedLesson,
 }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const [renderSign, setRenderSign] = useState(0);
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [renderSign, setRenderSign] = useState(0)
   const scrollToTop = () => {
     // let element = document.documentElement
     // let bottom = element.scrollHeight - element.clientHeight
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
-    });
-  };
+    })
+  }
   const howManyQuestions = () => {
     setSelected(
       questionList.reduce((prevGroup, curGroup, index) => {
         if (log.range && log.range.indexOf(curGroup.groupTag) !== -1) {
-          return prevGroup + curGroup.groupContents.length;
+          return prevGroup + curGroup.groupContents.length
         }
-        return prevGroup;
-      }, 0)
-    );
-  };
+        return prevGroup
+      }, 0),
+    )
+  }
   return (
     <>
       <Box
-        maxW="lg"
+        maxW="2xl"
         mr={'auto'}
         ml="auto"
         minH={'150px'}
@@ -112,7 +112,7 @@ export const Setting = ({
         <Flex ml={4} mr="4">
           {selected !== 0 ? (
             <Button
-              colorScheme="teal"
+              colorScheme="orange"
               variant="variant"
               borderWidth="2px"
               borderColor="white"
@@ -129,9 +129,9 @@ export const Setting = ({
               borderColor="whiteAlpha"
               variant="solid"
               onClick={() => {
-                startNewLesson(questionList, appName);
-                scrollToTop();
-                howManyQuestions();
+                startNewLesson(questionList, appName)
+                scrollToTop()
+                howManyQuestions()
                 // setTimeout(() => {
                 //   saveLog(appName, log);
                 // }, 500);
@@ -148,7 +148,7 @@ export const Setting = ({
           loadLog(appName).logs[0].remaining.length > 0 &&
           loadLog(appName).logs[0].startTime ? (
             <Button
-              bgGradient="linear(to bottom right, green.300, green.800)"
+              bgGradient="linear(to bottom right, pink.400, red.900)"
               color={'white'}
               variant="solid"
               // borderRadius={'full'}
@@ -159,14 +159,14 @@ export const Setting = ({
                 startLoadedLesson(
                   questionList,
                   appName,
-                  loadLog(appName).logs[0].startTime
-                );
+                  loadLog(appName).logs[0].startTime,
+                )
                 setTimeout(() => {
                   window.scrollTo({
                     bottom: 0,
                     behavior: 'smooth',
-                  });
-                }, 1000);
+                  })
+                }, 1000)
               }}
             >
               続きから(あと
@@ -176,7 +176,7 @@ export const Setting = ({
             </Button>
           ) : (
             <Button
-              bgGradient="linear(to bottom right, green.300, green.800)"
+              bgGradient="linear(to bottom right, pink.400, red.900)"
               color={'white'}
               variant="solid"
               isDisabled
@@ -189,34 +189,35 @@ export const Setting = ({
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent bgColor={'green.50'}>
+        <ModalContent bgColor={'red.50'}>
           <ModalHeader>TIPS</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <List spacing={3} p={0} bgColor="green.50" fontSize={'sm'}>
+            <List spacing={3} p={0} bgColor="ews.50" fontSize={'sm'}>
               <ListItem>
-                <ListIcon as={CheckCircleIcon} color="green.500" />
+                <ListIcon as={CheckCircleIcon} color="gray.500" />
                 スマートフォン・PC・タブレットでどこでも試験対策が可能！
               </ListItem>
               <ListItem>
-                <ListIcon as={CheckCircleIcon} color="green.500" />
+                <ListIcon as={CheckCircleIcon} color="gray.500" />
                 出題パターンや出題範囲・キーワードを自由に設定して、自分好みの問題集を作ろう
               </ListItem>
               <ListItem>
-                <ListIcon as={CheckCircleIcon} color="green.500" />
+                <ListIcon as={CheckCircleIcon} color="gray.500" />
                 途中でアプリを消してしまっても、続きから再開できるので安心
               </ListItem>
               <ListItem>
-                <ListIcon as={WarningIcon} color="green.500" />
+                <ListIcon as={WarningIcon} color="gray.500" />
                 問題は一部機械作成されているので誤字があり、解答解説は間違っている可能性があります。
               </ListItem>
               <ListItem>
-                <ListIcon as={QuestionIcon} color="green.500" />
+                <ListIcon as={QuestionIcon} color="gray.500" />
                 その他説明不足・バグ等あれば本人まで。
               </ListItem>
             </List>
             <Divider orientation="horizontal" mt={3} mb="1" />
             <Text>アップデート履歴</Text>
+            <Text fontSize={'sm'}>2023-04-13_Ver2.1-デザインを赤系に一新</Text>
             <Text fontSize={'md'} fontWeight="bold" mb="2" mt={2}>
               11-27_Ver2.0-包括的アップデート...コード部分を作り直し、WebStorageとの接続を強化、軽量化、見直しシステムの変更、検索システムの変更など
             </Text>
@@ -243,7 +244,7 @@ export const Setting = ({
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
+            <Button colorScheme="red" mr={3} onClick={onClose}>
               Close
             </Button>
           </ModalFooter>
@@ -272,20 +273,20 @@ export const Setting = ({
           <Stack spacing={5} direction="row" p={2}>
             <Radio
               size={'lg'}
-              colorScheme="red"
+              colorScheme="orange"
               value="random"
               onChange={() => {
-                changeOrder('random');
+                changeOrder('random')
               }}
             >
               ランダム出題
             </Radio>
             <Radio
               size={'lg'}
-              colorScheme="green"
+              colorScheme="orange"
               value="ascend"
               onChange={() => {
-                changeOrder('ascend');
+                changeOrder('ascend')
               }}
             >
               順番通り出題
@@ -311,13 +312,14 @@ export const Setting = ({
                 <Checkbox
                   isChecked={true}
                   bgColor={'gray.100'}
+                  colorScheme="orange"
                   size={'md'}
                   key={index}
                   p={2}
                   pl="4"
                   onChange={() => {
-                    toggleRange(group.groupTag);
-                    setRenderSign(renderSign + 1);
+                    toggleRange(group.groupTag)
+                    setRenderSign(renderSign + 1)
                   }}
                 >
                   {group.groupTag}(
@@ -331,33 +333,37 @@ export const Setting = ({
                   p={2}
                   pl="4"
                   onChange={() => {
-                    toggleRange(group.groupTag);
-                    setRenderSign(renderSign + 1);
+                    toggleRange(group.groupTag)
+                    setRenderSign(renderSign + 1)
                   }}
                 >
                   {group.groupTag}(
                   {group.groupContents ? group.groupContents.length : '0'}問)
                 </Checkbox>
-              );
+              )
             })}
 
             {questionList &&
             log.range &&
-            questionList.every(group => log.range.includes(group.groupTag)) ? (
+            questionList.every((group) =>
+              log.range.includes(group.groupTag),
+            ) ? (
               <Button
+                colorScheme="orange"
                 isActive={true}
                 onClick={() => {
-                  toggleAllRange();
-                  setRenderSign(renderSign + 1);
+                  toggleAllRange()
+                  setRenderSign(renderSign + 1)
                 }}
               >
                 すべて選択解除
               </Button>
             ) : (
               <Button
+                colorScheme="orange"
                 onClick={() => {
-                  toggleAllRange(questionList);
-                  setRenderSign(renderSign + 1);
+                  toggleAllRange(questionList)
+                  setRenderSign(renderSign + 1)
                 }}
               >
                 すべて選択
@@ -367,5 +373,5 @@ export const Setting = ({
         </CheckboxGroup>
       </Box>
     </>
-  );
-};
+  )
+}
