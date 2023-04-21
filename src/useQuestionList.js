@@ -51,7 +51,8 @@ export const useQuestionList = () => {
           choices: ['浮腫', '腫脹'],
           answerImg: [],
           answer: '腫脹',
-          commentary: '漢字間違いが多い',
+          commentary:
+            '漢字間違いが多い。5徴はほかに熱感heat・発赤redness・疼痛swelling・機能障害dysfunction',
         },
         {
           detailInfo: '4/14　小テスト',
