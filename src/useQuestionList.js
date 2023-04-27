@@ -13,6 +13,145 @@ export const useQuestionList = () => {
   const [questionList, setQuestionList] = useState([
     // ここに問題のリストを記述(選択式の場合は[0]に正解択をいれた配列をつくる)
     {
+      groupTag: '2021本試験',
+      groupContents: [
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '炎症の4徴候について、誤っているものを2つ選べ。',
+          choices: ['浮腫', '壊死', '発赤', '熱感', '疼痛', '腫脹'],
+          answerImg: [],
+          answer: '浮腫、壊死',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '原発性免疫不全症候群の特徴について、誤っているものを2つ選べ。',
+          choices: [
+            'Chediak-Higashi症候群 - 急性転化',
+            'Wiskott-Aidrich症候群 - 血小板減少',
+            'Digeorge症候群 - 低カルシウム血症',
+            'X連鎖無ガンマグロブリン血症 - ATM変異',
+            '慢性肉芽腫症 - ペルオキシダーゼ陽性巨大顆粒',
+            '毛細血管拡張性運動失調症 - 体幹失調',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'PRRが認識するPAMPsと病原体の組み合わせについて、誤っているものを2つ選べ。',
+          choices: [
+            'TLR2 - リポポリサッカライドLPS - 大腸菌',
+            'TLR5 - フラジェリン - 大腸菌',
+            'TLR9 - ペプチドグリカン - 大腸菌',
+            'RIG-I  - RNAウイルス - インフルエンザウイルス',
+            'Dectin-1 - βグルカン - カンジダ',
+            'Mincle - トレハロースジミコール酸TDM - 結核菌',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            'T細胞の胸腺分化について、誤っているものを2つ選べ。',
+          choices: [
+            'γδT細胞の遺伝子再構成はαβT細胞の遺伝子再構成に先行する',
+            '正の選択の後に負の選択が起こる',
+            '正の選択は胸腺皮質で、負の選択は胸腺髄質で行われる。',
+            '正の選択の際にMHCクラスⅡ分子に提示されたペプチドを認識した細胞はCD9陽性T細胞へと分化する。',
+            '正の選択はダブルポジディブ期に起こる',
+            'AIRE(Autoimmune regulator)は各全戸応現wお発現することで負の選択に関与している。',
+          ],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: 'について、誤っているものを2つ選べ。',
+          choices: ['', '', '', '', '', ''],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence:
+            '免疫組織化学染色について、誤っているものを2つ選べ。',
+          choices: ['', '', '', '', '', ''],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '移植免疫について、誤っているものを2つ選べ。',
+          choices: ['', '', '', '', '', ''],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '自己免疫疾患について、誤っているものを2つ選べ。',
+          choices: ['', '', '', '', '', ''],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '免疫寛容について、誤っているものを2つ選べ。',
+          choices: ['', '', '', '', '', ''],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: 'サイトカインについて、誤っているものを2つ選べ。',
+          choices: ['', '', '', '', '', ''],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+        {
+          detailInfo: '',
+          questionImg: [],
+          questionSentence: '遺伝子再構成について、誤っているものを2つ選べ。',
+          choices: ['', '', '', '', '', ''],
+          answerImg: [],
+          answer: '',
+          commentary: '',
+        },
+
+        // {
+        //   detailInfo: '',
+        //   questionImg: [],
+        //   questionSentence: 'について、誤っているものを2つ選べ。',
+        //   choices: ['', '', '', '', '', ''],
+        //   answerImg: [],
+        //   answer: '',
+        //   commentary: '',
+        // },
+      ],
+    },
+    {
       groupTag: '授業中',
       groupContents: [
         {
@@ -184,24 +323,27 @@ export const useQuestionList = () => {
           commentary:
             '好酸球へはIL-5で分化が誘導される。エリスロポエチンは腎臓で産生される。',
         },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: '4/21特別講義',
+          questionImg: [],
+          questionSentence:
+            '炎症の５主徴として誤っているものはどれか？（資料8枚目）',
+          answerImg: [],
+          choices: ['Redness', 'Swelling', 'Edema', 'Pain', 'Dysfunction'],
+          answer: 'Edema',
+          commentary: '浮腫Edemaではなく腫脹swelling',
+        },
+        {
+          detailInfo: '4/21特別講義',
+          questionImg: [],
+          questionSentence:
+            'がんの10年生存率として最も適切なのはどれか？（資料80枚目）            ',
+          answerImg: [],
+          choices: ['約10%', '約20%', '約40%', '約60%', '約80%'],
+          answer: '約60%',
+          commentary:
+            '5年生存率・10年生存率は前立腺がんなら90%以上、乳がんでも80%以上',
+        },
         // {
         //   detailInfo: '',
         //   questionImg: [],

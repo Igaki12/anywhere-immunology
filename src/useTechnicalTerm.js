@@ -166,22 +166,26 @@ export const useTechnicalTerm = () => {
       explanation:
         '抗体医薬品（高分子医薬品）は非常に高価で、アスピリンなどの低分子医薬品は範囲が広すぎて副作用が多い。これらの課題を解決するために第三の医薬品としてペプチド医薬品（中分子医薬品）が注目されている。',
     },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
+    {
+      term: ['悪性中皮腫', 'アスベスト', 'mesothelioma'],
+      explanation:
+        'アスベスト/石綿は建築用材として利用され、解体などの際に粉末が人体に吸い込まれると胸膜に蓄積して慢性的な炎症を引き起こし悪性中皮腫や肺がんを発症する。現在ではアスベストの使用は禁止されているが、実際にアスベストの曝露から発がんに至るまで数十年の期間が存在するため、今後さらに問題となるといわれている。',
+    },
+    {
+      term: ['メラノーマ', 'melanoma', '皮膚炎', 'dermatitis'],
+      explanation:
+        '紫外線はDNAの塩基配列を破壊し、これが修復されず蓄積すると慢性的な炎症を経てメラノーマを発症する。日本人を含む黄色人種では白人と比べて紫外線によるメラノーマは少ないといわれてきたが、近年は増加傾向にある。',
+    },
+    {
+      term: ['慢性炎症', 'chronic inflammation'],
+      explanation:
+        '慢性的な炎症下にある組織では線維化fibrosisが進行し、リンパ球やマクロファージの浸潤lymphocyte and macrophage infiltrationがみられる。慢性的に続くとがんなどの原因となる。',
+    },
+    {
+      term: ['急性炎症', 'acute inflammation'],
+      explanation:
+        '急性的な炎症を引き起こしている細胞では間質の浮腫stromal edema・好中球の浸潤neutrophil infiltrationが確認され、ところどころ出血（に伴う赤血球）も見られる。',
+    },
     // {
     //   term:[''],
     //   explanation:'',
