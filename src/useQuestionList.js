@@ -4,6 +4,8 @@ import TLR from './img/answer/TLR.png'
 import TLRpattern from './img/answer/TLRpattern.png'
 import RLR from './img/answer/RLR.png'
 import LPS from './img/answer/LPS.png'
+import invariantChain from './img/answer/invariantChain.png'
+import crossPresentation from './img/answer/crossPresentation.png'
 
 // import from './img/answer/.png'
 
@@ -344,33 +346,40 @@ export const useQuestionList = () => {
           commentary:
             '5年生存率・10年生存率は前立腺がんなら90%以上、乳がんでも80%以上',
         },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
+        {
+          detailInfo: '4/28　小テスト',
+          questionImg: [],
+          questionSentence:
+            '小胞体内でインバリアント鎖が結合しているのは次のどちらか？    ',
+          answerImg: [invariantChain],
+          choices: ['MHCクラスI分子', 'MHCクラスII分子'],
+          answer: 'MHCクラスII分子',
+          commentary: '',
+        },
+        {
+          detailInfo: '4/28　小テスト',
+          questionImg: [],
+          questionSentence:
+            'クロスプレゼンテーションによる抗原提示が行われるのはどちらか            ',
+          answerImg: [crossPresentation],
+          choices: [
+            '外来性抗原をCD8T細胞に提示する',
+            '内在性抗原をCD8T細胞に提示する',
+          ],
+          answer: '外来性抗原をCD8T細胞に提示する',
+          commentary:
+            'その他、パターン認識レセプターによる外来性抗原の取り込みも、断片化されればCD8陽性T細胞に抗原提示することができる',
+        },
+        {
+          detailInfo: '4/28　小テスト',
+          questionImg: [],
+          questionSentence: '脂質抗原を提示するのは次のどちらでしょうか',
+          answerImg: [],
+          choices: ['CD1d', 'MICA'],
+          answer: 'CD1d',
+          commentary:
+            'テスト本番でもMHC Class1c　ではなく、CD1dまたはMICAとして解答してほしい',
+        },
         // {
         //   detailInfo: '',
         //   questionImg: [],
