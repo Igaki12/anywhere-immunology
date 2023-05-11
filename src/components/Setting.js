@@ -217,6 +217,10 @@ export const Setting = ({
             </List>
             <Divider orientation="horizontal" mt={3} mb="1" />
             <Text>アップデート履歴</Text>
+            <Text fontSize={'sm'}>
+              05-07_Ver2.3-Xperiaの狭い横幅にもできるだけ対応
+            </Text>
+            <Text fontSize={'sm'}>04-28_Ver2.2-色合い,デザインを若干修正</Text>
             <Text fontSize={'sm'}>2023-04-13_Ver2.1-デザインを赤系に一新</Text>
             <Text fontSize={'md'} fontWeight="bold" mb="2" mt={2}>
               11-27_Ver2.0-包括的アップデート...コード部分を作り直し、WebStorageとの接続を強化、軽量化、見直しシステムの変更、検索システムの変更など
@@ -298,7 +302,7 @@ export const Setting = ({
           //  defaultValue={log.range}
         >
           <Stack
-            w={'sm'}
+            maxW={'sm'}
             spacing={[2, 2]}
             direction={['column']}
             bg="whiteAlpha.800"

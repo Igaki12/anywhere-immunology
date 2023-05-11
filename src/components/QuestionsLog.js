@@ -47,7 +47,7 @@ export const QuestionsLog = ({
       toast({
         position: 'top',
         title: 'GOOD JOB',
-        description: '全ての問題が終わりました！',
+        description: '全問題が終了',
         status: 'success',
         duration: 9000,
         isClosable: true,
@@ -157,12 +157,14 @@ export const QuestionsLog = ({
                 >
                   {question.questionImg !== [] &&
                     question.questionImg.map((image, imageNum) => (
-                      <Image
-                        src={image}
-                        alt="写真読み込みエラー"
-                        key={index + imageNum + 'QuestionImage'}
-                        fallback={<Skeleton height="100px" />}
-                      />
+                      <Center>
+                        <Image
+                          src={image}
+                          alt="写真読み込みエラー"
+                          key={index + imageNum + 'QuestionImage'}
+                          fallback={<Skeleton height="100px" />}
+                        />
+                      </Center>
                     ))}
                   <Box p="6">
                     <Box display="flex" alignItems="baseline">
@@ -265,11 +267,13 @@ export const QuestionsLog = ({
                   <Box w={'100%'} bgColor="white" m={0} p="0">
                     {question.answerImg !== [] &&
                       question.answerImg.map((image) => (
-                        <Image
-                          src={image}
-                          alt="写真読み込みエラー"
-                          fallback={<Skeleton height="100px" />}
-                        />
+                        <Center>
+                          <Image
+                            src={image}
+                            alt="写真読み込みエラー"
+                            fallback={<Skeleton height="100px" />}
+                          />
+                        </Center>
                       ))}
                   </Box>
 
@@ -380,18 +384,21 @@ export const QuestionsLog = ({
               }
               borderRadius="lg"
               overflow="hidden"
+              justifyContent={'center'}
               mb={1}
               mt="3"
               className="DownSlideIn"
             >
               {question.questionImg &&
                 question.questionImg.map((image, imageNum) => (
-                  <Image
-                    src={image}
-                    alt="画像読み込みエラー"
-                    key={imageNum + 'QuestionImage'}
-                    fallback={<Skeleton height="100px" />}
-                  />
+                  <Center>
+                    <Image
+                      src={image}
+                      alt="画像読み込みエラー"
+                      key={imageNum + 'QuestionImage'}
+                      fallback={<Skeleton height="100px" />}
+                    />
+                  </Center>
                 ))}
               <Box p="6">
                 <Box display="flex" alignItems="baseline">
@@ -532,11 +539,13 @@ export const QuestionsLog = ({
                   <Box w={'100%'} bgColor="white" m={0} p="0">
                     {question.answerImg !== [] &&
                       question.answerImg.map((image) => (
-                        <Image
-                          src={image}
-                          alt="写真読み込みエラー"
-                          fallback={<Skeleton height="100px" />}
-                        />
+                        <Center>
+                          <Image
+                            src={image}
+                            alt="写真読み込みエラー"
+                            fallback={<Skeleton height="100px" />}
+                          />
+                        </Center>
                       ))}
                   </Box>
                   <Box p="6" pb={0}>

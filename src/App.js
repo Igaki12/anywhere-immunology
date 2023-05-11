@@ -62,7 +62,7 @@ function App() {
           colorScheme="red"
           variant={'outline'}
         >
-          Ver.2.1
+          Ver.2.3
         </Badge>
         <Badge
           variant={'outline'}

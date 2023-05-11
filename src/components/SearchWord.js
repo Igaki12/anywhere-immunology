@@ -123,8 +123,8 @@ export const SearchWord = ({
                 let newTagArray = [...prevTermBox, newTag].sort(
                   (a, b) => b.count - a.count,
                 )
-                if (newTagArray.length > 15) {
-                  return newTagArray.splice(0, 15)
+                if (newTagArray.length > 30) {
+                  return newTagArray.splice(0, 30)
                 } else {
                   return newTagArray
                 }
