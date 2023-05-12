@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-immunology/static/css/main.6180b9dc.css",
-    "main.js": "/anywhere-immunology/static/js/main.c9386256.js",
+    "main.js": "/anywhere-immunology/static/js/main.3b3e7073.js",
     "static/media/titleImg.jpg": "/anywhere-immunology/static/media/titleImg.92d6260f5934242117c7.jpg",
     "static/media/invariantChain.png": "/anywhere-immunology/static/media/invariantChain.0773f779c7ab6f24df74.png",
     "static/media/crossPresentation.png": "/anywhere-immunology/static/media/crossPresentation.9a95cee681b4389a83a1.png",
@@ -11,10 +11,10 @@
     "static/media/TLR.png": "/anywhere-immunology/static/media/TLR.c238a684418545ddda96.png",
     "index.html": "/anywhere-immunology/index.html",
     "main.6180b9dc.css.map": "/anywhere-immunology/static/css/main.6180b9dc.css.map",
-    "main.c9386256.js.map": "/anywhere-immunology/static/js/main.c9386256.js.map"
+    "main.3b3e7073.js.map": "/anywhere-immunology/static/js/main.3b3e7073.js.map"
   },
   "entrypoints": [
     "static/css/main.6180b9dc.css",
-    "static/js/main.c9386256.js"
+    "static/js/main.3b3e7073.js"
   ]
 }

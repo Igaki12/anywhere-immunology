@@ -380,16 +380,44 @@ export const useQuestionList = () => {
           commentary:
             'テスト本番でもMHC Class1c　ではなく、CD1dまたはMICAとして解答してほしい',
         },
-        // {
-        //   detailInfo: '',
-        //   questionImg: [],
-        //   questionSentence:
-        //     '',
-        //   answerImg: [],
-        //   answer: '',
-        //   commentary: '',
-        // },
-        // {
+        {
+          detailInfo: '5/12 出席確認',
+          questionImg: [],
+          questionSentence:
+            '日本で初めてノーベル医学・生理学賞を受賞したのは誰か？',
+          answerImg: [],
+          answer: '利根川進',
+          commentary: '',
+        },
+        {
+          detailInfo: '5/12 出席確認',
+          questionImg: [],
+          questionSentence:
+            '抗体のクラスと機能の組み合わせとして誤っているものを選べ',
+          answerImg: [],
+          choices:["IgM：補体活性化","IgM：オプソニン化","IgA：粘膜面での中和","IgG：血清中での中和","IgG：抗体依存性細胞障害活性","IgE：アレルギー反応"],
+          answer: 'IgM：オプソニン化',
+          commentary: '誤っているというよりは最適ではないもの。オプソニン化はIgGの役割のほうが大きい。',
+        },
+        {
+          detailInfo: '5/12 出席確認',
+          questionImg: [],
+          questionSentence:
+            '【正誤問題】抗体の多様性はIgGの転写産物のスプライシングによって生み出される',
+          answerImg: [],
+          answer: '誤り',
+          commentary: '参考:VDJリコンビネーション、遺伝子再構成',
+        },
+        {
+          detailInfo: '5/12 出席確認',
+          questionImg: [],
+          questionSentence:
+            '【正誤問題】一つのB細胞は、2本の染色体に由来する２種類の抗体分子を発現する',
+          answerImg: [],
+          answer: '誤り',
+          commentary: '1つのB細胞に対して1種類の抗体の原則。',
+        },
+                // {
         //   detailInfo: '',
         //   questionImg: [],
         //   questionSentence:
