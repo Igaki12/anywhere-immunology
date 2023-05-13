@@ -1,19 +1,21 @@
 import { useState } from 'react'
-
-import TLR from './img/answer/TLR.png'
-import TLRpattern from './img/answer/TLRpattern.png'
-import RLR from './img/answer/RLR.png'
-import LPS from './img/answer/LPS.png'
-import invariantChain from './img/answer/invariantChain.png'
-import crossPresentation from './img/answer/crossPresentation.png'
+import Treg from './img/answer/Treg.png';
+import TLRpattern from './img/answer/TLRpattern.png';
+import TLR from './img/answer/TLR.png';
 import ThDifferentiation from './img/answer/ThDifferentiation.png';
 import Th17 from './img/answer/Th17.png';
+import TcellGammaDelta from './img/answer/TcellGammaDelta.png';
 import TcellEducation from './img/answer/TcellEducation.png';
 import TcellDifferentiation from './img/answer/TcellDifferentiation.png';
 import TcellActivationSignal from './img/answer/TcellActivationSignal.png';
 import superantigen from './img/answer/superantigen.png';
+import RLR from './img/answer/RLR.png';
 import PerforinGranzyme from './img/answer/PerforinGranzyme.png';
+import LPS from './img/answer/LPS.png';
+import invariantChain from './img/answer/invariantChain.png';
+import crossPresentation from './img/answer/crossPresentation.png';
 import centralMemoryT from './img/answer/centralMemoryT.png';
+
 
 
 // import from './img/answer/.png'
@@ -511,7 +513,7 @@ export const useQuestionList = () => {
                     detailInfo: '5/19',
                     questionImg: [],
                     questionSentence: '胸腺でのT細胞の分化過程について、なぜ正の選択と負の選択が必要なのか述べよ',
-                    answerImg: [],
+                    answerImg: [TcellEducation],
                     answer: '',
                     commentary: '',
                 },
@@ -519,17 +521,17 @@ export const useQuestionList = () => {
                     detailInfo: '5/19',
                     questionImg: [],
                     questionSentence: 'αβT細胞とγδT細胞との違いについて述べよ。',
-                    answerImg: [],
+                    answerImg: [TcellGammaDelta],
                     answer: '',
-                    commentary: '',
+                    commentary: 'T細胞抗原受容体にはαβ型（90%）とγδ型(10%)があり、γδT細胞はリンパ球ストレス（細胞障害）監視機構と呼ばれる生体防御反応担う中心的な細胞である。細菌感染やウイルス感染などの外からのストレスに加えて、がん化に伴う細胞の変化に対しても敏感に感知することが可能。',
                 },
                 {
                     detailInfo: '5/19',
                     questionImg: [],
                     questionSentence: 'Tregの抑制的制御のメカニズムを述べよ。',
-                    answerImg: [],
+                    answerImg: [Treg],
                     answer: '',
-                    commentary: '',
+                    commentary: '1.抗原提示細胞のCD80/CD86の発現を低く抑える。2.高親和性のIL-2受容体によってほかのT細胞からIL-2を奪って活性化を妨げる',
                 },
                 // {
                 //   detailInfo: '',

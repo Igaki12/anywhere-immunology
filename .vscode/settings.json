@@ -1,3 +1,5 @@
 {
-  "javascript.format.enable": true
+  "javascript.format.enable": true,
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+  "javascript.format.semicolons": "remove"
 }

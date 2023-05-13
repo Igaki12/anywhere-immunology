@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-immunology/static/css/main.6180b9dc.css",
-    "main.js": "/anywhere-immunology/static/js/main.74a13d3c.js",
+    "main.js": "/anywhere-immunology/static/js/main.a0566bac.js",
     "static/media/titleImg.jpg": "/anywhere-immunology/static/media/titleImg.92d6260f5934242117c7.jpg",
     "static/media/invariantChain.png": "/anywhere-immunology/static/media/invariantChain.0773f779c7ab6f24df74.png",
     "static/media/centralMemoryT.png": "/anywhere-immunology/static/media/centralMemoryT.7b7483d6a18a56f24263.png",
@@ -14,15 +14,17 @@
     "static/media/PerforinGranzyme.png": "/anywhere-immunology/static/media/PerforinGranzyme.cbc5d24a839a4f86ab20.png",
     "static/media/TLRpattern.png": "/anywhere-immunology/static/media/TLRpattern.d1cee0d9858668dc82c4.png",
     "static/media/ThDifferentiation.png": "/anywhere-immunology/static/media/ThDifferentiation.bc2d02e4883e6e3aadb2.png",
+    "static/media/TcellGammaDelta.png": "/anywhere-immunology/static/media/TcellGammaDelta.23505d3cc0fdab0ba0aa.png",
+    "static/media/Treg.png": "/anywhere-immunology/static/media/Treg.6d714a9f32a0f3b60204.png",
     "static/media/LPS.png": "/anywhere-immunology/static/media/LPS.2adfd71a43f900f98031.png",
     "static/media/RLR.png": "/anywhere-immunology/static/media/RLR.a8c6b6a1e9e2411a9d7d.png",
     "static/media/TLR.png": "/anywhere-immunology/static/media/TLR.c238a684418545ddda96.png",
     "index.html": "/anywhere-immunology/index.html",
     "main.6180b9dc.css.map": "/anywhere-immunology/static/css/main.6180b9dc.css.map",
-    "main.74a13d3c.js.map": "/anywhere-immunology/static/js/main.74a13d3c.js.map"
+    "main.a0566bac.js.map": "/anywhere-immunology/static/js/main.a0566bac.js.map"
   },
   "entrypoints": [
     "static/css/main.6180b9dc.css",
-    "static/js/main.74a13d3c.js"
+    "static/js/main.a0566bac.js"
   ]
 }
