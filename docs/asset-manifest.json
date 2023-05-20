@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/anywhere-immunology/static/css/main.6180b9dc.css",
+    "main.js": "/anywhere-immunology/static/js/main.3f9dbd98.js",
+    "static/media/titleImg.jpg": "/anywhere-immunology/static/media/titleImg.92d6260f5934242117c7.jpg",
+    "static/media/invariantChain.png": "/anywhere-immunology/static/media/invariantChain.0773f779c7ab6f24df74.png",
+    "static/media/centralMemoryT.png": "/anywhere-immunology/static/media/centralMemoryT.7b7483d6a18a56f24263.png",
+    "static/media/TcellEducation.png": "/anywhere-immunology/static/media/TcellEducation.601cfb81a1a6f9cdb1df.png",
+    "static/media/crossPresentation.png": "/anywhere-immunology/static/media/crossPresentation.9a95cee681b4389a83a1.png",
+    "static/media/Th17.png": "/anywhere-immunology/static/media/Th17.fa8f1b50d1f7353946e8.png",
+    "static/media/TcellDifferentiation.png": "/anywhere-immunology/static/media/TcellDifferentiation.e2dfc54eb6d2152d50c5.png",
+    "static/media/TcellActivationSignal.png": "/anywhere-immunology/static/media/TcellActivationSignal.ce1e0e4f9ba7d9cfd338.png",
+    "static/media/superantigen.png": "/anywhere-immunology/static/media/superantigen.bca03357c4a285fab785.png",
+    "static/media/PerforinGranzyme.png": "/anywhere-immunology/static/media/PerforinGranzyme.cbc5d24a839a4f86ab20.png",
+    "static/media/TCRSegments.png": "/anywhere-immunology/static/media/TCRSegments.1cc74bf24fd2e8625b0b.png",
+    "static/media/TLRpattern.png": "/anywhere-immunology/static/media/TLRpattern.d1cee0d9858668dc82c4.png",
+    "static/media/ThDifferentiation.png": "/anywhere-immunology/static/media/ThDifferentiation.bc2d02e4883e6e3aadb2.png",
+    "static/media/TcellGammaDelta.png": "/anywhere-immunology/static/media/TcellGammaDelta.23505d3cc0fdab0ba0aa.png",
+    "static/media/Treg.png": "/anywhere-immunology/static/media/Treg.6d714a9f32a0f3b60204.png",
+    "static/media/LPS.png": "/anywhere-immunology/static/media/LPS.2adfd71a43f900f98031.png",
+    "static/media/RLR.png": "/anywhere-immunology/static/media/RLR.a8c6b6a1e9e2411a9d7d.png",
+    "static/media/TLR.png": "/anywhere-immunology/static/media/TLR.c238a684418545ddda96.png",
+    "index.html": "/anywhere-immunology/index.html",
+    "main.6180b9dc.css.map": "/anywhere-immunology/static/css/main.6180b9dc.css.map",
+    "main.3f9dbd98.js.map": "/anywhere-immunology/static/js/main.3f9dbd98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6180b9dc.css",
+    "static/js/main.3f9dbd98.js"
+  ]
+}

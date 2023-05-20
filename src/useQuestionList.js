@@ -17,6 +17,8 @@ import LPS from './img/answer/LPS.png';
 import invariantChain from './img/answer/invariantChain.png';
 import crossPresentation from './img/answer/crossPresentation.png';
 import centralMemoryT from './img/answer/centralMemoryT.png';
+import TCRSegments from './img/answer/TCRSegments.png';  
+
 
 
 
@@ -910,7 +912,7 @@ export const useQuestionList = () => {
                     answerImg: [],
                     choices: ["正の選択", "負の選択"],
                     answer: '正の選択',
-                    commentary: '皮質上皮細胞cTECによって',
+                    commentary: '皮質上皮細胞cTECによって正の選択が行われた後、髄質表皮細胞mTECによって負の選択が行われる。',
                 },
                 {
                     detailInfo: '5/19小テスト(T細胞)',
@@ -919,7 +921,7 @@ export const useQuestionList = () => {
                     choices: ["αβ鎖", "γδ鎖"],
                     answerImg: [],
                     answer: 'αβ鎖',
-                    commentary: '',
+                    commentary: 'αβ鎖が90%。一般的にT細胞とよぶときはαβ型T細胞',
                 },
                 {
                     detailInfo: '5/19小テスト(T細胞)',
@@ -928,7 +930,7 @@ export const useQuestionList = () => {
                     choices: ["抗原が与えられても抗原抗体反応が起こらない状態", "抗原が与えられても抗原抗体反応が過剰に起こる状態"],
                     answerImg: [],
                     answer: '抗原が与えられても抗原抗体反応が起こらない状態',
-                    commentary: '',
+                    commentary: '副刺激がなければ、T細胞は活性化されない。',
                 },
                 {
                     detailInfo: '5/19小テスト(T細胞)',
@@ -937,7 +939,7 @@ export const useQuestionList = () => {
                     choices: ["チロシンキナーゼ", "ヒスチジンキナーゼ"],
                     answerImg: [],
                     answer: 'チロシンキナーゼ',
-                    commentary: '',
+                    commentary: 'T細胞の活性化は、チロシン部分のリン酸化から開始される。',
                 },
                 {
                     detailInfo: '5/19小テスト(T細胞)',
@@ -973,7 +975,7 @@ export const useQuestionList = () => {
                     choices: ["Foxp3", "T-bet"],
                     answerImg: [],
                     answer: 'Foxp3',
-                    commentary: '',
+                    commentary: '制御性T細胞：Tregは免疫を抑制する作用を持っていて、分化に必要なFoxp3遺伝子に変異があると自己免疫疾患IPEXを引き起こす',
                 },
                 //   {
                 //     detailInfo: '5/19小テスト(T細胞)',
@@ -1071,9 +1073,11 @@ export const useQuestionList = () => {
             ],
         },
     ])
+    const showQuestionList = () => {
+        return questionList
 }
 return {
     showQuestionList,
     appName,
     jpName,
-}
+}}
