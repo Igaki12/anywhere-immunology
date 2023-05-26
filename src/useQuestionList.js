@@ -17,7 +17,7 @@ import LPS from './img/answer/LPS.png';
 import invariantChain from './img/answer/invariantChain.png';
 import crossPresentation from './img/answer/crossPresentation.png';
 import centralMemoryT from './img/answer/centralMemoryT.png';
-import TCRSegments from './img/answer/TCRSegments.png';  
+import TCRSegments from './img/answer/TCRSegments.png';
 
 
 
@@ -977,22 +977,43 @@ export const useQuestionList = () => {
                     answer: 'Foxp3',
                     commentary: '制御性T細胞：Tregは免疫を抑制する作用を持っていて、分化に必要なFoxp3遺伝子に変異があると自己免疫疾患IPEXを引き起こす',
                 },
-                //   {
-                //     detailInfo: '5/19小テスト(T細胞)',
-                //     questionImg: [],
-                //     questionSentence:
-                //       '',
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                //   },
-                //   questionImg: [],
-                //   questionSentence:
-                //     '',
-                //   answerImg: [],
-                //   answer: '',
-                //   commentary: '',
-                // },                // {
+                {
+                    detailInfo: '5/26出席確認',
+                    questionImg: [],
+                    questionSentence: '補体反応で最も早く活性化されるのは？',
+                    choices: ["古典経路", "代替経路", "レクチン経路"],
+                    answerImg: [],
+                    answer: '代替経路',
+                    commentary: '基本的に常時体の中で活性化されている。',
+                },
+                {
+                    detailInfo: '5/26出席確認',
+                    questionImg: [],
+                    questionSentence: '古典経路のＣ５転換酵素は？',
+                    answerImg: [],
+                    choices: ["C3bBb3b", "C4b2a3b"],
+                    answer: 'C4b2a3b',
+                    commentary: '古典経路・レクチン経路で、C5転換酵素として作用する。C3,C4,C5は分解されるとaが遊離されるが、C2はC2bが遊離する。',
+                },
+                {
+                    detailInfo: '5/26出席確認',
+                    questionImg: [],
+                    questionSentence: '胎盤脱落膜に多いリンパ球はどれか',
+                    choices: ["NK細胞", "T細胞", "B細胞"],
+                    answerImg: [],
+                    answer: 'NK細胞',
+                    commentary: '',
+                },
+                {
+                    detailInfo: '5/26出席確認',
+                    questionImg: [],
+                    questionSentence: '胎盤トロホブラストに発現していないHLAクラスＩ分子はどれか ',
+                    choices: ["HLA-G", "HLA-A", "HLA-C"],
+                    answerImg: [],
+                    answer: 'HLA-A',
+                    commentary: '発現して「いない」。HLA-CやHLA-Gは胎盤トロホブラストで発現して、胎児の免疫学的拒絶の抑制作用に寄与している。',
+                },
+                // {
                 //   detailInfo: '',
                 //   questionImg: [],
                 //   questionSentence:
@@ -1075,9 +1096,10 @@ export const useQuestionList = () => {
     ])
     const showQuestionList = () => {
         return questionList
+    }
+    return {
+        showQuestionList,
+        appName,
+        jpName,
+    }
 }
-return {
-    showQuestionList,
-    appName,
-    jpName,
-}}
