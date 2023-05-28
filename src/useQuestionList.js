@@ -29,7 +29,20 @@ import CART from './img/answer/CART.png';
 import BCellImmature from './img/answer/BCellImmature.png';
 import antibodyGraph from './img/answer/antibodyGraph.png';
 import AIRE from './img/answer/AIRE.png';
-import receptorEditing from './img/answer/receptorEditing.png';  
+import receptorEditing from './img/answer/receptorEditing.png';
+import tuberculosis from './img/answer/tuberculosis.png';
+import TGFBeta from './img/answer/TGFBeta.png';
+import NKCell from './img/answer/NKCell.png';
+import MACInhibitor2 from './img/answer/MACInhibitor2.png';
+import MACInhibitor1 from './img/answer/MACInhibitor1.png';
+import IgE from './img/answer/IgE.png';
+import HLATrophoblast from './img/answer/HLATrophoblast.png';
+import diseaseFromHLA2 from './img/answer/diseaseFromHLA2.png';
+import diseaseFromHLA1 from './img/answer/diseaseFromHLA1.png';
+import antibodyProduce from './img/answer/antibodyProduce.png';
+import antibodyFragmentation from './img/answer/antibodyFragmentation.png';
+
+
 
 
 
@@ -44,7 +57,7 @@ export const useQuestionList = () => {
     const [questionList, setQuestionList] = useState([
         // ここに問題のリストを記述(選択式の場合は[0]に正解択をいれた配列をつくる)
         {
-            groupTag: '2021本試験一問一答',
+            groupTag: '2021本試験　選択問題',
             groupContents: [{
                     detailInfo: '',
                     questionImg: [],
@@ -154,7 +167,7 @@ export const useQuestionList = () => {
                     choices: ['IL-1β前駆体はプロテアソームによって切断され成熟する。', 'IL-2 は T細胞、NK細胞の分化を促進するが B細胞の活性化は抑制する。', 'IL-12 は IFN-γの産生を促し Th1 細胞の分化を促進する。', 'IL-15 は NK 細胞を分化、増殖させる。 ', 'IL-17 の過剰分泌は上皮細胞を増殖させ、尋常性乾癬を引き起こす。 ', 'IL-33 は内皮細胞の傷害によって産生され、自然リンパ球 ILC2 の分化を促進する。 '],
                     answer: '2と6が誤り',
                     answerImg: [IL1Beta, IL2, ThDifferentiation],
-                    commentary: 'IL-1βの成熟には（TLRなどの刺激→）前駆体の生成と、（NLRの活性化→）ICE:IL-1β converting enzymeによる前駆体の切断が必要。IL-2はB細胞の活性化にも働く',
+                    commentary: 'IL-1βの成熟には（TLRなどの刺激→）前駆体の生成と、（NLRの活性化→）ICE:IL-1β converting enzymeによる前駆体の切断が必要。IL-2はB細胞の活性化にも働く。尋常性乾癬はHLA多型との関連も認められている。',
                 },
                 {
                     detailInfo: '',
@@ -170,37 +183,37 @@ export const useQuestionList = () => {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '抗体について、誤っているものを2つ選べ。',
-                    choices: ['抗体は血清タンパク質を電気泳動したときのγグロブリン分画に存在する。 ', '膜型の IgM と IgD は単一の成熟 B 細胞で同時に発現する。 ', '抗体をペプシン分解すると 2 つの Fab と 1 つの Fc に分かれる。 ', '成熟した B 細胞は膜型抗体と分泌型抗体をつくる。 ', 'IgM は 5 量体であるので、抗原と結合する部位は 10 箇所ある。 ', '血清中の IgG が最も多いのは、IgG が自然抗体として産生されるからである。'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['抗体は血清タンパク質を電気泳動したときのγグロブリン分画に存在する。 ', '膜型の IgM と IgD は単一の成熟 B 細胞で同時に発現する。 ', '抗体をペプシン分解すると 2つのFabと 1つのFcに分かれる。 ', '成熟した B細胞は膜型抗体と分泌型抗体をつくる。 ', 'IgM は 5量体であるので、抗原と結合する部位は 10 箇所ある。 ', '血清中の IgG が最も多いのは、IgG が自然抗体として産生されるからである。'],
+                    answerImg: [antibodyFragmentation, antibodyProduce],
+                    answer: '3と6が誤り',
+                    commentary: '抗体はペプシンで分解されると1個のF(ab’)2とペプチド断片に分解される。パパインで分解されると2個のFabと1このFcに分解される。B細胞は感染していなくても常時IgM（膜型＆分泌型）とIgDを産生していて（自然抗体）、クラススイッチを行うことでIgGを分泌するようになる。→IgGは自然抗体ではない。',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '粘膜免疫について、誤っているものを2つ選べ。',
-                    choices: ['M 細胞は抗原を貪食し、パイエル板を介して T 細胞に抗原を提示する。 ', 'リンパ球はレチノイン酸によって粘膜固有層にホーミングされる。', '樹状細胞の産生する TGF-βにより制御性 T 細胞と Th17 細胞が生じる', ' 粘膜で抗原の免疫寛容を誘導すれば、全身性の免疫寛容をもたらす。 ', '経口免疫の方が、経皮免疫より免疫寛容を誘導しやすい。 ', '免疫寛容を獲得した人の血清を別の人に注射した場合、免疫寛容が誘導される。 '],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['M細胞は抗原を貪食し、パイエル板を介して T細胞に抗原を提示する。 ', 'リンパ球はレチノイン酸によって粘膜固有層にホーミングされる。', '樹状細胞の産生する TGF-βにより制御性T細胞と Th17細胞が生じる', ' 粘膜で抗原の免疫寛容を誘導すれば、全身性の免疫寛容をもたらす。 ', '経口免疫の方が、経皮免疫より免疫寛容を誘導しやすい。 ', '免疫寛容を獲得した人の血清を別の人に注射した場合、免疫寛容が誘導される。 '],
+                    answerImg: [TGFBeta],
+                    answer: '3と6が誤り',
+                    commentary: 'Th17細胞はIL-6やTGF-β、TregはTGF-βによって分化誘導されるが、TGF-βは主に活性化マクロファージやTregによって産生される。',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '膜侵襲複合体(MAC)の形成を直接抑制する分子を2つ選べ。',
                     choices: ['B因子', 'CD59', 'CD46', 'H因子', 'I因子', 'Sタンパク質'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answerImg: [MACInhibitor1, MACInhibitor2],
+                    answer: 'CD59、Sタンパク質',
+                    commentary: 'MAC（膜侵襲複合体）は補体活性化経路の最終段階に生成される。I因子やH因子は補体C3の消費をコントロールする補体制御因子で、B因子は第二経路の中間産物C3b→C3bBに必須。CD46は正常細胞の補体制御分子として補体活性化を抑制する。その他、C3a-INT、TAFI、ClusterinがMACの形成を直接阻害する。',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: 'HLAに関連した疾患で、オッズ比が1000以上のものをを2つ選べ。',
                     choices: ['Ⅰ型糖尿病', '潰瘍性大腸炎', 'ナルコレプシー', '関節リウマチ', '強直性脊椎炎', 'Behçet病'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answerImg: [diseaseFromHLA1, diseaseFromHLA2],
+                    commentary: 'HLAは自己と非自己を区別する抗原で、HLAが異なると提示できるペプチドが異なるため、特定の疾患は特定のHLA多型で顕著に見られる（→オッズ比が高い）ことがある。特に日本人では強直性脊椎炎・ナルコレプシー・インスリン自己免疫症候群でオッズ比が1000を超えており、HLAと疾患感受性・疾患抵抗性が強く関連している。その他、Ⅰ型糖尿病・関節リウマチ・尋常性乾癬・Behcet病もHLA多型との関連が認められる（オッズ比は比較的高くない）',
+                    answer: 'ナルコレプシー・強直性脊椎炎',
                 },
                 // {
                 //     detailInfo: '',
@@ -215,19 +228,19 @@ export const useQuestionList = () => {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '生殖免疫について、誤っているものを2つ選べ。',
-                    choices: ['HLA-E は NK レセプターCD94/NKG2C で NK 細胞を活性化させ、サイトカイン放出を促進する。 ', 'NK 細胞は一つの細胞上に KAR と KIR を持つ。 ', '胎盤トロホブラストには CD55 があり、父由来 HLA に対する遮断抗体として働く。 ', '妊娠初期には M1 マクロファージは M2 マクロファージより多い ', '胎盤脱落膜上には制御性 T 細胞が増加し、胎児の父系抗原特異的な反応を制御している。 ', '脱落膜 NK 細胞のほとんどは CD56 弱陽性 NK 細胞である。 '],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['HLA-Eは NKレセプターCD94/NKG2C で NK細胞を活性化させ、サイトカイン放出を促進する。 ', 'NK細胞は一つの細胞上に KARと KIRを持つ。 ', '胎盤トロホブラストには CD55 があり、父由来 HLAに対する遮断抗体として働く。 ', '妊娠初期には M1マクロファージは M2マクロファージより多い ', '胎盤脱落膜上には制御性T細胞が増加し、胎児の父系抗原特異的な反応を制御している。 ', '脱落膜 NK細胞のほとんどは CD56弱陽性NK細胞である。 '],
+                    answerImg: [HLATrophoblast, NKCell],
+                    answer: '4と6が誤り',
+                    commentary: '胎盤血液関門での免疫寛容にはHLAやNK細胞、制御性T細胞などが関与している。胎盤トロホブラストでは多型性に乏しいHLA-E/F/Gが発現していて、脱落膜白血球の70%を占めるNK細胞からの攻撃を避けている。また脱落膜NK細胞の80%はCD56 bright NK細胞であり、細胞障害というよりはサイトカイン産生を主におこなっている。脱落膜白血球のうち20%を占めるマクロファージのうち、M1マクロファージとM2マクロファージは同程度存在する。NK細胞はKARとKIA両方持ち、これらの組み合わせでがん細胞を認識している。',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '感染症について、誤っているものを2つ選べ。',
-                    choices: ['肺炎球菌やインフルエンザ菌など、莢膜を持つ細菌の貪食にはオプソニンが重要である。', '結核診断には結核特異的な抗体の抗体価を測定するのが有効である。 ', ' 結核性胸膜炎において、胸水中の ADA 活性上昇が認められる。 ', '寄生虫 (蠕虫) 感染では好酸球増加と IgE 上昇が起こる。 ', ' HIV 感染症で、CD４陽性 T 細胞数が 200/mm3 を下回ると日和見感染症、腫瘍などの AIDS 指標疾患を発症しやすくなる。 ', 'SARS-CoV-2 は気道の上皮細胞に感染し、他の上皮細胞には感染しない。 '],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['肺炎球菌やインフルエンザ菌など、莢膜を持つ細菌の貪食にはオプソニンが重要である。', '結核診断には結核特異的な抗体の抗体価を測定するのが有効である。 ', ' 結核性胸膜炎において、胸水中の ADA活性上昇が認められる。 ', '寄生虫 (蠕虫) 感染では好酸球増加と IgE上昇が起こる。 ', ' HIV 感染症で、CD4陽性T細胞数が 200/mm³を下回ると日和見感染症、腫瘍などの AIDS 指標疾患を発症しやすくなる。 ', 'SARS-CoV-2 は気道の上皮細胞に感染し、他の上皮細胞には感染しない。 '],
+                    answerImg: [antibodyProduce, tuberculosis, IgE],
+                    answer: '2と4が誤り',
+                    commentary: '結核診断には抗体価ではなくIFN-γ濃度を調べる→ツベルクリン検査。新型コロナは腸管にも感染する。',
                 },
                 // {
                 //   detailInfo: '',
@@ -367,7 +380,7 @@ export const useQuestionList = () => {
                 // },
             ],
         }, {
-            groupTag: "2022本試験一問一答",
+            groupTag: "2022本試験　選択問題",
             groupContents: [{
                     detailInfo: '',
                     questionImg: [],

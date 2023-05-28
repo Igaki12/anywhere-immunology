@@ -458,6 +458,26 @@ export const useTechnicalTerm = () => {
       term: ['原発性習慣性流産', "habitual abortion"],
       explanation: '他に原因が無く流産を反復する場合、妊娠免疫機構がうまく機能しないため、免疫学的拒絶反応が起こると考えられている。両親のHLA Class2の一致率が高いほど、遮断抗体が産生されないため、妊娠初期に習慣性流産が生じやすい。',
     },
+    {
+      term:['KAR',"Killer Activation Receptor"],
+      explanation:'Killer Activation Receptors (KARs) are receptors expressed on the plasmatic membrane of Natural Killer cells (NK cells). KARs work together with inhibitory receptors (abbreviated as KIRs in the text),',
+    },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
+    // {
+    //   term:[''],
+    //   explanation:'',
+    // },
     // {
     //   term:[''],
     //   explanation:'',
