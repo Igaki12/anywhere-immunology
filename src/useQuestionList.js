@@ -18,6 +18,20 @@ import invariantChain from './img/answer/invariantChain.png';
 import crossPresentation from './img/answer/crossPresentation.png';
 import centralMemoryT from './img/answer/centralMemoryT.png';
 import TCRSegments from './img/answer/TCRSegments.png';
+import TI1antigen from './img/answer/TI1antigen.png';
+import RSS from './img/answer/RSS.png';
+import RAG from './img/answer/RAG.png';
+import Nivolumab from './img/answer/Nivolumab.png';
+import IL2 from './img/answer/IL2.png';
+import IL1Beta from './img/answer/IL1Beta.png';
+import epitope from './img/answer/epitope.png';
+import CART from './img/answer/CART.png';
+import BCellImmature from './img/answer/BCellImmature.png';
+import antibodyGraph from './img/answer/antibodyGraph.png';
+import AIRE from './img/answer/AIRE.png';
+import receptorEditing from './img/answer/receptorEditing.png';  
+
+
 
 
 
@@ -53,7 +67,7 @@ export const useQuestionList = () => {
                         '毛細血管拡張性運動失調症 - 体幹失調',
                     ],
                     answerImg: [],
-                    answer: '',
+                    answer: 'X連鎖無ガンマグロブリン血症　慢性肉芽腫症',
                     commentary: '',
                 },
                 {
@@ -68,9 +82,9 @@ export const useQuestionList = () => {
                         'Dectin-1 - βグルカン - カンジダ',
                         'Mincle - トレハロースジミコール酸TDM - 結核菌',
                     ],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answerImg: [TLR],
+                    answer: 'TLR2　TLR9',
+                    commentary: 'TLR2はグラム陽性菌、TLR9は細菌DNAを主に認識する。大腸菌はグラム陰性（鞭毛あり）',
                 },
                 {
                     detailInfo: '',
@@ -80,13 +94,13 @@ export const useQuestionList = () => {
                         'γδT細胞の遺伝子再構成はαβT細胞の遺伝子再構成に先行する',
                         '正の選択の後に負の選択が起こる',
                         '正の選択は胸腺皮質で、負の選択は胸腺髄質で行われる。',
-                        '正の選択の際にMHCクラスⅡ分子に提示されたペプチドを認識した細胞はCD9陽性T細胞へと分化する。',
+                        '正の選択の際にMHCクラスⅡ分子に提示されたペプチドを認識した細胞はCD8陽性T細胞へと分化する。',
                         '正の選択はダブルポジディブ期に起こる',
-                        'AIRE(Autoimmune regulator)は各全戸応現wお発現することで負の選択に関与している。',
+                        'AIRE(Autoimmune regulator)は隔絶抗原を発現することで負の選択に関与している。',
                     ],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answerImg: [AIRE],
+                    answer: '正の選択の際にMHCクラスⅡ分子に提示されたペプチドを認識した細胞はCD8陽性T細胞へと分化する。　AIRE(Autoimmune regulator)は隔絶抗原を発現することで負の選択に関与している。',
+                    commentary: 'MHC class2 → CD8+T細胞、AIREはゲノムにコードされた自己抗原を無差別発現する',
                 },
                 {
                     detailInfo: '',
@@ -94,25 +108,16 @@ export const useQuestionList = () => {
                     questionSentence: '免疫組織化学染色について、誤っているものを2つ選べ。',
                     choices: [' 酵素抗体染色は光学顕微鏡で観察できる。', '酵素抗体染色は永久標本が作れる。 ', '直接法は間接法より感度が高い。 ', '脱パラフィンにはキシレンが頻用される。 ', '内因性ペルオキシダーゼは赤血球や顆粒球に存在する。 ', '内因性ペルオキシダーゼの不活化にはエタノールを用いる。'],
                     answerImg: [],
-                    answer: '',
+                    answer: '直接法は間接法より感度が高い。　内因性ペルオキシダーゼの不活化にはエタノールを用いる。',
                     commentary: '',
                 },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: '免疫組織化学染色について、誤っているものを2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '移植免疫について、誤っているものを2つ選べ。',
                     choices: ['HLA 一致の兄弟間では拒絶反応は起こらない。  ', ' 超急性拒絶は主に既存抗原が補体依存性に内皮傷害を生じることで起こる。 ', '急性拒絶は主に T 細胞によるものである。 ', '慢性拒絶の病理学的特徴は血管肥厚による閉塞と線維化である。 ', '急性 GVHD の主な対象臓器は皮膚、肝臓、消化器である。 ', '急性 GVHD はレシピエントの T 細胞が移植片に対して拒絶反応を示すことで起きる。 '],
                     answerImg: [],
-                    answer: '',
+                    answer: '慢性拒絶の病理学的特徴は血管肥厚による閉塞と線維化である。 　急性 GVHD はレシピエントの T 細胞が移植片に対して拒絶反応を示すことで起きる。 ',
                     commentary: '',
                 },
                 {
@@ -120,34 +125,45 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: '自己免疫疾患について、誤っているものを2つ選べ。',
                     choices: ['自己免疫疾患は微生物感染によって引き起こされうる。 ', 'Basedow 病は、甲状腺ホルモンに自己抗体が作られることによるⅤ型アレルギーである。 ', 'Ⅰ型糖尿病は、膵β細胞に対する CD8 陽性 T 細胞が強く関与している。  ', '強直性脊椎炎は HLA-B27 の多型によるもので、女性に多い。 ', '多発性筋炎/皮膚筋炎では自己抗体である抗 Jo-1 抗体の上昇を認める。 ', '関節リウマチの診断で、リウマチ因子(Rheumatoid Factor)は抗 CCP 抗体よりも特異性が低い。 '],
-                    answer: '',
+                    answer: 'Basedow 病は、甲状腺ホルモンに自己抗体が作られることによるⅤ型アレルギーである。　強直性脊椎炎は HLA-B27 の多型によるもので、女性に多い。 ',
                     commentary: '',
+                    answerImg: [],
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '免疫寛容について、誤っているものを2つ選べ。',
-                    choices: ['中枢性寛容と末梢性寛容は相互補完的に働くため、一方の破綻だけでは自己免疫疾患を発症しない。 ', '通常、食物抗原に対しては経口寛容が成立しているため、免疫応答は起こらない。 ', '制御性 T 細胞 (Treg) は CTLA-4 を高発現しており、CD28 と CD80/CD86 の結合を競合的に阻害することで T 細胞の活性化を抑制する。 ', 'Treg は IL - 2 Rα鎖(CD25) を発現しているため、 ナイーブ T 細胞より IL - 2 に対する反応性が高い。 ', 'Treg は IL-10、TGF-βなど抑制性サイトカインを産生し、T 細胞の活性化を抑制する。', 'IPEX 症候群は、Treg の分化に必須の転写因子 T-bet の遺伝子異常により発症する。'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['中枢性寛容と末梢性寛容は相互補完的に働くため、一方の破綻だけでは自己免疫疾患を発症しない。 ', '通常、食物抗原に対しては経口寛容が成立しているため、免疫応答は起こらない。 ', '制御性 T 細胞 (Treg) は CTLA-4 を高発現しており、CD28 と CD80/CD86 の結合を競合的に阻害することで T 細胞の活性化を抑制する。 ', 'Treg は IL-2 Rα鎖(CD25) を発現しているため、 ナイーブT細胞より IL-2 に対する反応性が高い。 ', 'Treg は IL-10、TGF-βなど抑制性サイトカインを産生し、T細胞の活性化を抑制する。', 'IPEX 症候群は、Treg の分化に必須の転写因子 T-bet の遺伝子異常により発症する。'],
+                    answerImg: [Treg],
+                    answer: '中枢性寛容と末梢性寛容は相互補完的に働くため、一方の破綻だけでは自己免疫疾患を発症しない。  IPEX 症候群は、Treg の分化に必須の転写因子 T-bet の遺伝子異常により発症する。',
+                    commentary: '中枢・末梢どちらの免疫寛容が破綻しても自己免疫疾患の原因となるIPEX症候群に関わる、Treg の分化に必須の遺伝子はFoxp3',
+                },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: '腫瘍免疫について、誤っているものを2つ選べ。',
+                    choices: ['がん細胞ではMHCに変異が蓄積しており、免疫系によって自己と認識されない', '免疫チェックポイント阻害薬は正の選択と負の選択の調整を行う', '腫瘍細胞はPD-L1を発現し免疫監視からの逃避機構を獲得している', 'CAR-T療法の標的は固形腫瘍である'],
+                    answerImg: [Nivolumab, CART],
+                    answer: '2と4が誤り',
+                    commentary: 'ミスマッチ修復機構の欠損などが原因で変異を繰り返したがん細胞はもはや自己の細胞とは認識されなくなっており、リンパ球が浸潤していることが多いが、多くのがん細胞はPD-L1(免疫チェックポイント機構)を発現することでT細胞による排除から逃れている。このPD-L1はT細胞上のPD-1に対するリガンドであり正の選択や負の選択（T細胞のセレクション）とは無関係である。CAR-T療法は患者のT細胞にCAR遺伝子を導入し患者に戻すがん治療法であるが、固形がんにはハードルが高い。主な対象は白血病などの血球系がん→薬品名：キムリア。',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: 'サイトカインについて、誤っているものを2つ選べ。',
-                    choices: ['IL-1β前駆体はプロテアソームによって切断され成熟する。', 'IL-2 は T 細胞、NK 細胞の分化を促進するが B 細胞の活性化は抑制する。', 'IL-12 は IFN-γの産生を促し Th1 細胞の分化を促進する。', 'IL-15 は NK 細胞を分化、増殖させる。 ', 'IL-17 の過剰分泌は上皮細胞を増殖させ、尋常性乾癬を引き起こす。 ', 'IL-33 は内皮細胞の傷害によって産生され、自然リンパ球 ILC2 の分化を促進する。 '],
-                    answer: '',
-                    commentary: '',
+                    choices: ['IL-1β前駆体はプロテアソームによって切断され成熟する。', 'IL-2 は T細胞、NK細胞の分化を促進するが B細胞の活性化は抑制する。', 'IL-12 は IFN-γの産生を促し Th1 細胞の分化を促進する。', 'IL-15 は NK 細胞を分化、増殖させる。 ', 'IL-17 の過剰分泌は上皮細胞を増殖させ、尋常性乾癬を引き起こす。 ', 'IL-33 は内皮細胞の傷害によって産生され、自然リンパ球 ILC2 の分化を促進する。 '],
+                    answer: '2と6が誤り',
+                    answerImg: [IL1Beta, IL2, ThDifferentiation],
+                    commentary: 'IL-1βの成熟には（TLRなどの刺激→）前駆体の生成と、（NLRの活性化→）ICE:IL-1β converting enzymeによる前駆体の切断が必要。IL-2はB細胞の活性化にも働く',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '遺伝子再構成について、誤っているものを2つ選べ。',
-                    choices: ['12 塩基と 23 塩基の配列が近接した RSS を RAG-1,2 が認識して切断する。 ', 'TdT はプロ細胞期に発現するため、L 鎖よりも H 鎖の方が接合部多様性が高い。', 'L 鎖ではκ鎖とλ鎖の遺伝子再構成が同時に起こる。 ', ' 遺伝子再構成は骨髄において行われ、多様性を獲得する。 ', '接合部多様性は主に CDR3 の領域に存在する。 ', 'レセプター編集とは、CRISPR/Cas9 により L 鎖遺伝子が再構成されることである。 '],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['12 塩基と 23 塩基の配列が近接した RSS を RAG-1,2 が認識して切断する。 ', 'TdT はプロ細胞期に発現するため、L 鎖よりも H 鎖の方が接合部多様性が高い。', 'L 鎖ではκ鎖とλ鎖の遺伝子再構成が同時に起こる。 ', ' 遺伝子再構成は骨髄において行われ、多様性を獲得する。 ', '接合部多様性は主に CDR3 の領域に存在する。 ', 'レセプター編集とは、CRISPR/Cas9 により L鎖遺伝子が再構成されることである。 '],
+                    answerImg: [RSS, RAG, BCellImmature, receptorEditing],
+                    answer: '3と6が誤り',
+                    commentary: 'RSS(Recombination Signal Sequence/組み換え認識配列)はVセグメント・Dセグメント・Jセグメントの間にある数十bpの配列で、遺伝子再構成の際の切り出し部分のターゲットとなっている。切り出しにはRAG-1,2(Recombination Activating Gene/VDJ組み換え酵素)によって引き起こされ、切られたDNA末端はArtemisやTdT(Terminal Deoxynucleotidyl Transferase/末端ヌクレオチド付加酵素)によって変異に富む修復を受ける。B細胞の遺伝子再構成は骨髄で行われる。遺伝子再構成はH鎖遺伝子→L鎖遺伝子(κ→λ)の順に行われるが、遺伝子再構成がうまくいかなかった場合はL鎖遺伝子で新たな遺伝子再構成が行われる→レセプター編集:Receptor Editing',
                 },
 
                 {
@@ -365,28 +381,28 @@ export const useQuestionList = () => {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '免疫グロブリン(IgG)の抗原認識部位を構成するものは？',
-                    choices: ['H 鎖の 3 つの超可変ループ', 'L 鎖の 3 つの超可変ループ', '6 つの超可変ループ：H 鎖と L 鎖のそれぞれ 3 つの超可変ループが一つずつ', '6 つの超可変ループ：H 鎖の 3 つの超可変ループが二つ', '12 個の超可変ループ：H 鎖と L 鎖それぞれ 3 つの超可変ループが二つずつ'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['H鎖の3つの超可変ループ', 'L 鎖の3つの超可変ループ', '6つの超可変ループ：H鎖とL鎖のそれぞれ3つの超可変ループが一つずつ', '6つの超可変ループ：H鎖の3つの超可変ループが二つ', '12個の超可変ループ：H鎖とL鎖それぞれ3つの超可変ループが二つずつ'],
+                    answerImg: [epitope],
+                    answer: '6つの超可変ループ：H鎖とL鎖のそれぞれ3つの超可変ループが一つずつ',
+                    commentary: 'Igドメインは2層のβシートによる球状の構造をしていて、抗体それぞれで配列が異なっている → 超可変領域:hypervariable regionとよばれる。超可変領域はH鎖とL鎖ともに3つ存在する。',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
-                    questionSentence: 'T 細胞非依存性抗原によって産生される免疫グロブリンのタイプは？ ',
+                    questionSentence: 'T細胞非依存性抗原によって産生される免疫グロブリンのタイプは？ ',
                     choices: ['IgE', 'IgD', 'IgM', 'IgA', 'IgG'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answerImg: [TI1antigen],
+                    answer: 'IgM',
+                    commentary: 'タンパク抗原に対する抗体産生応答には、抗原特異的なTh細胞による補助が必要であるが、TLRのリガンドとなる部分を持つような抗原：TI-1抗原（LPS・DNA・RNA）や細菌細胞壁の多糖のようなきわめて反復性の高い構造：TI-2抗原（細菌莢膜・多糖類）などはT細胞非依存性抗原で、B細胞を直接活性化させ、主にIgMを産生する。（一部IgGを産生する場合もある）',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '新型コロナワクチンの追加接種の 3 週間後にどのサブクラスが増加しているか。',
                     choices: ['IgA', 'IgD', 'IgE', 'IgG', 'IgM'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answerImg: [antibodyGraph],
+                    answer: 'IgG',
+                    commentary: '即時にIgMが産生されるが、時間とともにIgGが増えていく',
                 },
                 {
                     detailInfo: '',
