@@ -1,6 +1,13 @@
 import {
     useState
 } from 'react'
+import TCR from './img/answer/TCR.png';
+import MHCClass2 from './img/answer/MHCClass2.png';
+import IPEX from './img/answer/IPEX.png';
+import CD28 from './img/answer/CD28.png';
+import asthmaMechanism from './img/answer/asthmaMechanism.png';
+import asthma from './img/answer/asthma.png';
+
 import Treg from './img/answer/Treg.png';
 import TLRpattern from './img/answer/TLRpattern.png';
 import TLR from './img/answer/TLR.png';
@@ -385,10 +392,10 @@ export const useQuestionList = () => {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '気管支喘息の特徴はどれか',
-                    choices: ['気管支平滑筋の増生', ' 粘液の分泌低下', '気管支粘膜の？？', 'IL-5 による好中球増多', 'IL-12 による自然リンパ球増多'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['気管支平滑筋の増生', ' 粘液の分泌低下', 'IL-5 による好中球増多', 'IL-12 による自然リンパ球増多'],
+                    answerImg: [asthma, asthmaMechanism],
+                    answer: '気管支平滑筋の増生',
+                    commentary: '粘膜は貯留が見られるほど分泌亢進され、アレルギーなのでIL-5による好酸球増多もみられる。獲得免疫であるTh2がIL-4により増多している（IL-12はTh1で、細胞内細菌/結核やウイルスに対応する）。',
                 },
                 {
                     detailInfo: '',
@@ -421,10 +428,10 @@ export const useQuestionList = () => {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '新しく産生された MHC クラスⅡに内在性ペプチドが結合することを防ぐものを選べ。',
-                    choices: ['インバリアント鎖', 'CLIP', 'HLA-DM', '', '', ''],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    choices: ['インバリアント鎖', 'CLIP', 'HLA-DM'],
+                    answerImg: [MHCClass2],
+                    answer: 'インバリアント鎖',
+                    commentary: 'インバリアント鎖（Ii:Invariant chain）は小胞体内において、小胞体内にあるペプチドがHLA ClassⅡ分子に結合することを防いでいる。Iiはエンドソームで開裂され、CLIP部分だけがクラスⅡ分子上に残り、不適格なペプチドの結合を防いでいる。HLA-DMはCLIPをクラスⅡ分子から外し、抗原ペプチドと入れ替える。',
                 },
                 {
                     detailInfo: '',
@@ -440,9 +447,9 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: '次のうち、T細胞が発現していないものを選べ',
                     choices: ['CD3', 'CD4', 'CD8', 'CD28', 'CD86'],
-                    answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answerImg: [TCR, CD28, IPEX],
+                    answer: 'CD3',
+                    commentary: 'CD3はT細胞の受容体複合体の一部として、CD28はT細胞活性化の補助因子レセプターとしてはたらく。CD80とCD86は抗原提示細胞においてT細胞の補助レセプターであるCD28・CTLA-4のリガンドとして機能し、Tregの制御機構に利用される。',
                 },
                 {
                     detailInfo: '',
