@@ -80,7 +80,7 @@ export const useQuestionList = () => {
     const [questionList, setQuestionList] = useState([
         // ここに問題のリストを記述(選択式の場合は[0]に正解択をいれた配列をつくる)
         {
-            groupTag: "2019TBL選択問題",
+            groupTag: "2019TBL 選択問題",
             groupContents: [{
                     detailInfo: '',
                     questionImg: [],
@@ -97,7 +97,7 @@ export const useQuestionList = () => {
                     choices: ['HLAクラスI分子はほぼ全ての有核細胞に発現している', ' 1細胞に発現するHLAクラスI分子は1種類だけである', '脂質は抗原提示されない', 'Major histocompatibility complex class 1 chain-related geneA (MICA)は抗原を提示しない', 'HLAには非同義置換が多い', 'インバリアント鎖はHLAクラスⅡ分子と会合し､内在性抗原ペプチドの結合を防ぐ'],
                     answerImg: [MHCVariation, CD1, MICA, MHCClass2],
                     answer: '2,3が誤り',
-                    commentary: 'HLAはクラスⅠだけでA~Gあり、その中から複数がそれぞれの臓器（例えば胎盤ではEFGの3種類）で発現して、自己と非自己を区別している。例えばCD1dはガラクトシルセラミドなどの脂質をT細胞に抗原提示する。　その他、MICAはペプチド結合溝がへしゃげていてがん細胞や損傷している細胞に発現しNK細胞などに認識されるMHCクラスⅠ関連鎖遺伝子抗原で、インバリアント鎖(Ii)はHLAクラスⅡ分子がエンドソームで開裂されるまでHLAクラスⅡ分子と会合している。',
+                    commentary: 'HLAはクラスⅠだけでA~Gあり、その中から複数がそれぞれの臓器（例えば胎盤ではEFGの3種類）で発現して、自己と非自己を区別している。例えばCD1dはガラクトシルセラミドなどの脂質をT細胞に抗原提示する。　その他、例えば核の無い赤血球にはHLAは発現しておらず、MICAはペプチド結合溝がへしゃげていてがん細胞や損傷している細胞に発現しNK細胞などに認識されるMHCクラスⅠ関連鎖遺伝子抗原で、HLAはアミノ酸配列が同じであっても、異なる対立遺伝子であることがある（非同義置換/ミスセンス変異）し、遺伝子が違っているインバリアント鎖(Ii)はHLAクラスⅡ分子がエンドソームで開裂されるまでHLAクラスⅡ分子と会合している。',
                 },
                 // {
                 //     detailInfo: '',
@@ -174,7 +174,7 @@ export const useQuestionList = () => {
             ]
         },
         {
-            groupTag: '2021本試験　選択問題',
+            groupTag: '2021本試験 選択問題',
             groupContents: [{
                     detailInfo: '',
                     questionImg: [],
@@ -497,7 +497,7 @@ export const useQuestionList = () => {
                 // },
             ],
         }, {
-            groupTag: "2022本試験　選択問題",
+            groupTag: "2022本試験 選択問題",
             groupContents: [{
                     detailInfo: '',
                     questionImg: [],
