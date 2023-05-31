@@ -6,11 +6,11 @@ export const useTechnicalTerm = () => {
   const [technicalTerm, setTechnicalTerm] = useState([
     // term[0]が代表名として大きく表示される。
     {
-      term: ['HLA', 'Human Leukocyte Antigen'],
+      term: ['HLA', 'Human Leukocyte Antigen',"ヒト白血球抗原"],
       explanation: '免疫系で自己と非自己を見分けるための因子。人の全ての有核細胞に存在しているClass1と、抗原提示細胞（樹状細胞・マクロファージ・活性化B細胞など）で発現しているClass2に分類される。対立遺伝子の組み合わせによってハプロタイプが決定されていて、兄弟間でHLAが一致する確率は約4分の1存在するが、HLAの組み合わせ自体は数万種類以上あり、赤の他人で一致する可能性はかなり低い。HLAの遺伝学的特性が、個人の疾病感受性・ひいては生存までをも左右する。',
     },
     {
-      term: ['パターン認識レセプター', 'Pattern Recognition Receptor'],
+      term: ["PRR",'パターン認識レセプター', 'Pattern Recognition Receptor'],
       explanation: '細菌や人には存在していない特別なセンサー群で、各臓器のマクロファージで病原体を認識する。TLRs,CLRなど',
     },
     {
@@ -106,10 +106,10 @@ export const useTechnicalTerm = () => {
       ],
       explanation: '細胞内にある細菌認識機構で、全てNODモジュールを有している。NOD1/NOD2はペプチドグリカンをそれぞれ特異的に認識している。TLRのような細胞外領域ではなく、細胞質内で主に細胞内寄生細菌を認識する。',
     },
-    {
-      term: ['inflammation', '炎症'],
-      explanation: '炎症は熱感heat、発赤redness、腫脹swelling、疼痛pain（と機能障害dysfunction）の計4~5つの主徴がある。身体のどの部分で起こってもこの反応は起こる。',
-    },
+    // {
+    //   term: ['inflammation', '炎症'],
+    //   explanation: '炎症は熱感heat、発赤redness、腫脹swelling、疼痛pain（と機能障害dysfunction）の計4~5つの主徴がある。身体のどの部分で起こってもこの反応は起こる。',
+    // },
     {
       term: ['arteriosclerosis', '動脈硬化'],
       explanation: '動脈の内膜に悪玉コレステロールが蓄積してマクロファージに取り込まれ、泡沫細胞Foam cellや血小板が血管を狭窄してしまう症状。ほとんど見えないはずの内膜に炎症反応が起こり肥厚してしまう。炎症は基本内膜のみで中膜は逆に薄くなることが多い。',
@@ -182,10 +182,10 @@ export const useTechnicalTerm = () => {
       ],
       explanation: '自己と非自己の区別に関わる物質（抗原）。MHCが異なる移植片は生体に拒絶される。',
     },
-    {
-      term: ['HLA', 'Human Leukocyte Antigen', 'ヒト白血球抗原'],
-      explanation: 'ヒトのMHC。マウスの場合はH-2、豚の場合はSLA。テストでは基本ヒトについての問題なので、HLAで表されることが多い。ヒトのMHC遺伝子は第6染色体短腕に存在し、約400kbにわたる遺伝子群を構成する（関連遺伝子がセットでコードされている）。HLA遺伝子は多遺伝子性polygeny。翻訳する遺伝子の組み合わせによって多数のHLA-DR分子に対応する発現をする。また対立遺伝子数が多いため、多型性Polymorphismである。',
-    },
+    // {
+    //   term: ['HLA', 'Human Leukocyte Antigen', 'ヒト白血球抗原'],
+    //   explanation: 'ヒトのMHC。マウスの場合はH-2、豚の場合はSLA。テストでは基本ヒトについての問題なので、HLAで表されることが多い。ヒトのMHC遺伝子は第6染色体短腕に存在し、約400kbにわたる遺伝子群を構成する（関連遺伝子がセットでコードされている）。HLA遺伝子は多遺伝子性polygeny。翻訳する遺伝子の組み合わせによって多数のHLA-DR分子に対応する発現をする。また対立遺伝子数が多いため、多型性Polymorphismである。',
+    // },
     {
       term: ['iPS細胞ストックプロジェクト', 'HLAホモドナー'],
       explanation: '日本列島人のHLA遺伝子配列は偏っているので、わずか7人からの由来のiPS細胞で40%に対するストックを作製することができる。細かいHLA抗原は無視してストックを作製する。',
