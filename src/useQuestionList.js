@@ -65,6 +65,9 @@ import MICA from './img/answer/MICA.png';
 import CD1 from './img/answer/CD1.png';
 import PRR from './img/answer/PRR.png';
 import preBCR from './img/answer/preBCR.png';
+import complementPathway from './img/answer/complementPathway.png';
+import C1INH from './img/answer/C1INH.png';
+import anaphylaxis from './img/answer/anaphylaxis.png';
 
 
 
@@ -146,33 +149,33 @@ export const useQuestionList = () => {
                     answer: '1と4が誤り',
                     commentary: '障害細胞は通常CD8+T細胞に認識され排除されるが、腫瘍は免疫チェックポイントなどによってこれを逃れている。CD28はT細胞の活性化に必須の共刺激因子であるため、CD28は腫瘍免疫を促進する因子である。一方で腫瘍細胞の発現するPD-L1はT細胞のPD-1と結合し腫瘍免疫を抑制してしまう。また、活性化(M2)マクロファージやTregから産生されるTGF-βもT細胞やマクロファージによる免疫反応を抑制してしまう。CTLA-4もCD8+T細胞やTregに発現して免疫反応を抑制する。',
                 },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: 'を2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: 'を2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: 'を2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: '補体について誤っているものを2つ選べ。',
+                    choices: ['細菌に共有結合する', 'ヒト細胞に共有結合する', '活性化経路により補体作用が異なる', '肝臓で産生される易熱性タンパク質である', '補体が過剰に活性化されると補体抑制因子が産生される', 'C1-INHは補体因子以外の血漿中のセリンプロテアーゼにも作用する'],
+                    answerImg: [anaphylaxis, complementPathway, C1INH],
+                    answer: '2と3が誤り',
+                    commentary: '補体(complement)とは主に肝臓で産生され血中に存在する易熱性タンパク質で、オプソニン作用・炎症作用の活性化・溶菌作用を行う。基本的に病原体に共有結合し活性を表すが、C3aとC5a(アナフィラトキシン)は病原体から遊離して肥満細胞と非共有結合し炎症作用の活性化を行う。病原体に結合したC3をC3→C3aとC3bに分解する酵素をC3転換酵素(C4b2a/C3bBb)という。補体活性化には第二経路・レクチン経路・古典経路の３つの経路があるが、経路の起点が異なる一方作用に関わる部分は共通していて、いずれも最終的にMACを形成して溶菌を行う。こういった補体活性は正常宿主細胞においてはC1-INH・CD59・DAF・I因子・Sタンパク質などの補体制御分子によって不活化されており、自己細胞が傷害されないようになっている。',
+                },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: '原発性免疫不全症候群とその特徴の組み合わせで誤っているものを2つ選べ。',
+                    choices: ['Chediak-Higashi症候群 - リソソーム障害', 'DiGeroge症候群 - 低カルシウム血症', 'Wiskott-Aldrich症候群 - 血小板減少', 'X連鎖無ガンマグロブリン血症 - IL2RG遺伝子異常', '慢性肉芽腫症 - 活性酸素産生能欠損', '高IgE症候群 - 高頻度悪性腫瘍発生'],
+                    answerImg: [preBCR],
+                    answer: '',
+                    commentary: '',
+                },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: '免疫組織化学染色(a-c)とフローサイトメトリー(d-f)について誤っているものを2つ選べ。',
+                    choices: ['蛍光抗体法と酵素抗体法での染色結果は､いずれも光学顕微鏡で観察できる', '内因性ぺルオキシダーゼを多く含むものに赤血球と穎粒球がある', '間接法は直接法よりも検出感度が高い', '抗原の発現量と蛍光強度は相関しない', '転写因子などの細胞内タンパクの発現を検出することができる', '前方散乱光と側方散乱光からリンパ球と単球を区別することができる'],
+                    answerImg: [],
+                    answer: '',
+                    commentary: '',
+                },
             ]
         },
         {
