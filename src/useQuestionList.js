@@ -7,7 +7,7 @@ import IPEX from './img/answer/IPEX.png';
 import CD28 from './img/answer/CD28.png';
 import asthmaMechanism from './img/answer/asthmaMechanism.png';
 import asthma from './img/answer/asthma.png';
-
+import CTLA4 from './img/answer/CTLA4.png';
 import Treg from './img/answer/Treg.png';
 import TLRpattern from './img/answer/TLRpattern.png';
 import TLR from './img/answer/TLR.png';
@@ -128,24 +128,24 @@ export const useQuestionList = () => {
                     answer: '1と4が誤り',
                     commentary: 'B細胞はプロB細胞→プレB細胞→未熟B細胞→成熟B細胞の順に成熟し、まずH鎖、次いでL鎖(κ鎖→λ鎖)の順に遺伝子再構成が行われる。また、H鎖の再構成が終わりμH鎖が生成された段階で、μH鎖は代替L鎖・Igα・Igβと複合体：プレB細胞レセプター(pre-BCR)を形成し、プレB細胞となるため、H鎖遺伝子再構成はプロB細胞、L鎖遺伝子再構成はプレB細胞の段階で行われることとなる。　遺伝子再構成はV・D・Jセグメントそれぞれの間に存在するRSSを標的として、RAG1/2が切断した後Artemisによるヘアピン構造の分解、TdTによる変異に富んだ修復を行うことによって成立し、遺伝子再構成が成功した場合はpre-BCRから生存・細胞増殖シグナルが伝達される。ブルトン型チロシンキナーゼBTKはこの下流に存在し、この遺伝子が突然変異するとX連鎖無ガンマグロブリン血症(XLA)を発症する。',
                 },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: 'を2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: 'を2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: 'アレルギー疾患と主要関連因子(抗体ならびにアレルギーの型)の組合せで誤っているものを2つ選べ。',
+                    choices: ['尋麻疹 --- IgE(I型アレルギー）', '重症筋無力症 --- IgG(Ⅱ型アレルギー）', '全身性エリテマトーデス --- IgG(Ⅲ型アレルギー）', 'アレルギー性接触皮層炎 --- IgG(Ⅳ型アレルギー）', 'Basedow病(Graves病) --- IgG(V型アレルギー）', 'アナフィラキシ－--- IgM(Ⅱ型アレルギー）'],
+                    answerImg: [],
+                    answer: '',
+                    commentary: '',
+                },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: '腫瘍免疫を抑制する因子と細胞の組合せについて誤っているものを2つ選べ。',
+                    choices: ['CTLA-4 --- 樹状細胞', 'TGF-β --- M2マクロファージ', 'PD-L1 --- 腫瘍細胞', 'CD28 --- T細胞', 'PD-1 --- T細胞', 'TGF-β --- 制御性T細胞'],
+                    answerImg: [CTLA4, TGFBeta, Nivolumab, CD28],
+                    answer: '1と4が誤り',
+                    commentary: '障害細胞は通常CD8+T細胞に認識され排除されるが、腫瘍は免疫チェックポイントなどによってこれを逃れている。CD28はT細胞の活性化に必須の共刺激因子であるため、CD28は腫瘍免疫を促進する因子である。一方で腫瘍細胞の発現するPD-L1はT細胞のPD-1と結合し腫瘍免疫を抑制してしまう。また、活性化(M2)マクロファージやTregから産生されるTGF-βもT細胞やマクロファージによる免疫反応を抑制してしまう。CTLA-4もCD8+T細胞やTregに発現して免疫反応を抑制する。',
+                },
                 // {
                 //     detailInfo: '',
                 //     questionImg: [],
