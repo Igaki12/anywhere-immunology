@@ -63,6 +63,8 @@ import allergyIgE from './img/answer/allergyIgE.png';
 import ABO from './img/answer/ABO.png';
 import MICA from './img/answer/MICA.png';
 import CD1 from './img/answer/CD1.png';
+import PRR from './img/answer/PRR.png';
+import preBCR from './img/answer/preBCR.png';
 
 
 
@@ -96,36 +98,36 @@ export const useQuestionList = () => {
                     questionSentence: '抗原提示分子について誤っているものを2つ選べ。',
                     choices: ['HLAクラスI分子はほぼ全ての有核細胞に発現している', ' 1細胞に発現するHLAクラスI分子は1種類だけである', '脂質は抗原提示されない', 'Major histocompatibility complex class 1 chain-related geneA (MICA)は抗原を提示しない', 'HLAには非同義置換が多い', 'インバリアント鎖はHLAクラスⅡ分子と会合し､内在性抗原ペプチドの結合を防ぐ'],
                     answerImg: [MHCVariation, CD1, MICA, MHCClass2],
-                    answer: '2,3が誤り',
+                    answer: '2と3が誤り',
                     commentary: 'HLAはクラスⅠだけでA~Gあり、その中から複数がそれぞれの臓器（例えば胎盤ではEFGの3種類）で発現して、自己と非自己を区別している。例えばCD1dはガラクトシルセラミドなどの脂質をT細胞に抗原提示する。　その他、例えば核の無い赤血球にはHLAは発現しておらず、MICAはペプチド結合溝がへしゃげていてがん細胞や損傷している細胞に発現しNK細胞などに認識されるMHCクラスⅠ関連鎖遺伝子抗原で、HLAはアミノ酸配列が同じであっても、異なる対立遺伝子であることがある（非同義置換/ミスセンス変異）し、遺伝子が違っているインバリアント鎖(Ii)はHLAクラスⅡ分子がエンドソームで開裂されるまでHLAクラスⅡ分子と会合している。',
                 },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: 'を2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: 'を2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
-                // {
-                //     detailInfo: '',
-                //     questionImg: [],
-                //     questionSentence: 'を2つ選べ。',
-                //     choices: ['', '', '', '', '', ''],
-                //     answerImg: [],
-                //     answer: '',
-                //     commentary: '',
-                // },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: 'PRR(pattern recognition receptor)とリガンドの組合せで誤っているものを2つ選べ。',
+                    choices: ['TLR2 - Streptococcus pneumoniae(肺炎球菌)', 'TLR3 - Psudomonas aeruginosa(緑膿菌)', 'TLR5 - Escherichia coli(大腸菌)', 'TLR9 - Escherichia coli(大腸菌)', 'RIG-1 - Haemophilus influenzae(インフルエンザ菌)', 'NOD2 - Mycobacterium tuberculosis(結核菌)'],
+                    answerImg: [PRR, TLR, TLRpattern],
+                    answer: '2と5が誤り',
+                    commentary: '肺炎球菌はグラム陽性の双球菌、緑膿菌や大腸菌や結核菌はグラム陰性桿菌、インフルエンザ菌はグラム陰性短桿菌。　→TLR3は二本鎖RNAを識別するので誤り。RLRは主にインフルエンザなどのRNAウイルスを識別するので、インフルエンザ菌は誤り。その他、大腸菌は鞭毛を持っているのでTLR5で識別される。NLRは細胞内寄生細菌を識別し、結核菌は細胞内寄生細菌であるので正しい（結核菌を識別するPRRとしてMickleも有名）。感染や障害から我々の身体を防御するには、まず病原体やダメージを認識することが必要で、これらPRR（パターン認識レセプター）は炎症反応の引き金として非常に重要な役割を担っているといえる。',
+                },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: '胸腺におけるT細胞分化について誤っているものを2つ選べ。',
+                    choices: ['・正の選択はCD4-CD8-T細胞で起こる', '正の選択とは自己抗原と適度に反応するT細胞を残すことである', '負の選択は胸腺皮質､正の選択は胸腺髄質でおこる', '核内タンパクAIRE(autoimmuneregulator)は種々の自己抗原を産生し､負の選択に寄与する', '胸腺プロテアソームはHLAクラス-I/Ⅱ分子に低親和性のペプチドを作ることで正の選択に寄与する', '正の選択の際にHLAクラスⅡ分子に提示されたペプチドを認識した細胞はCD4T細胞へと分化する'],
+                    answerImg: [TcellDifferentiation, AIRE, MHCClass1],
+                    answer: '1と3が誤り',
+                    commentary: 'T細胞はDNT細胞→DPT細胞→SPT細胞の順で成熟し、DP(CD4+CD8+)の段階で皮質で正の選択、SP(Single Positive)の段階で髄質でAIREなどによって負の選択が行われる。ユビキチン-プロテアソーム系で断片化されたペプチドが、CD8+T細胞にはHLAクラスⅠ分子、CD4+T細胞にはHLAクラスⅡ分子によって抗原提示される。T細胞の遺伝子再構成はこれら正の選択/負の選択より前の段階で、VDJセグメントを持つβ鎖から順番に行われる。',
+                },
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: 'B細胞の骨髄での分化成熟に関わる分子として誤っているものを2つ選べ。',
+                    choices: ['Activation-induced cytidine deaminase(AID)', 'Artemis', 'Bruton’s tyrosine kinase(BTK)', 'CD40', 'Recombination-activating gene-1/2(RAG)', 'Terminal deoxynucleotidyl transferase(TdT)'],
+                    answerImg: [RAG, preBCR],
+                    answer: '1と4が誤り',
+                    commentary: 'B細胞はプロB細胞→プレB細胞→未熟B細胞→成熟B細胞の順に成熟し、まずH鎖、次いでL鎖(κ鎖→λ鎖)の順に遺伝子再構成が行われる。また、H鎖の再構成が終わりμH鎖が生成された段階で、μH鎖は代替L鎖・Igα・Igβと複合体：プレB細胞レセプター(pre-BCR)を形成し、プレB細胞となるため、H鎖遺伝子再構成はプロB細胞、L鎖遺伝子再構成はプレB細胞の段階で行われることとなる。　遺伝子再構成はV・D・Jセグメントそれぞれの間に存在するRSSを標的として、RAG1/2が切断した後Artemisによるヘアピン構造の分解、TdTによる変異に富んだ修復を行うことによって成立し、遺伝子再構成が成功した場合はpre-BCRから生存・細胞増殖シグナルが伝達される。ブルトン型チロシンキナーゼBTKはこの下流に存在し、この遺伝子が突然変異するとX連鎖無ガンマグロブリン血症(XLA)を発症する。',
+                },
                 // {
                 //     detailInfo: '',
                 //     questionImg: [],

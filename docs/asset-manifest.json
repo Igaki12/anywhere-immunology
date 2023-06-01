@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-immunology/static/css/main.6180b9dc.css",
-    "main.js": "/anywhere-immunology/static/js/main.92b92f68.js",
+    "main.js": "/anywhere-immunology/static/js/main.434b413d.js",
     "static/media/titleImg.jpg": "/anywhere-immunology/static/media/titleImg.92d6260f5934242117c7.jpg",
     "static/media/homing.png": "/anywhere-immunology/static/media/homing.49d33792b9faeda93b59.png",
     "static/media/asthma.png": "/anywhere-immunology/static/media/asthma.ffffe2812fb1f622d625.png",
@@ -25,6 +25,7 @@
     "static/media/CART.png": "/anywhere-immunology/static/media/CART.aec551676ebef023b2b2.png",
     "static/media/RAG.png": "/anywhere-immunology/static/media/RAG.b9ad6323d4beacfa2988.png",
     "static/media/MHCClass1.png": "/anywhere-immunology/static/media/MHCClass1.29b1a6028c9fb75facf5.png",
+    "static/media/preBCR.png": "/anywhere-immunology/static/media/preBCR.5d11f5f347472622cc9a.png",
     "static/media/centralMemoryT.png": "/anywhere-immunology/static/media/centralMemoryT.7b7483d6a18a56f24263.png",
     "static/media/Nivolumab.png": "/anywhere-immunology/static/media/Nivolumab.d1b0b98ac2ca4f968e07.png",
     "static/media/TcellEducation.png": "/anywhere-immunology/static/media/TcellEducation.601cfb81a1a6f9cdb1df.png",
@@ -60,16 +61,17 @@
     "static/media/LPS.png": "/anywhere-immunology/static/media/LPS.2adfd71a43f900f98031.png",
     "static/media/IL2.png": "/anywhere-immunology/static/media/IL2.2861dee56aa960a389a3.png",
     "static/media/TCR.png": "/anywhere-immunology/static/media/TCR.6d06de2748a9ea717ac6.png",
+    "static/media/PRR.png": "/anywhere-immunology/static/media/PRR.53cf4d9aa8e5d65e79bc.png",
     "static/media/RLR.png": "/anywhere-immunology/static/media/RLR.a8c6b6a1e9e2411a9d7d.png",
     "static/media/TLR.png": "/anywhere-immunology/static/media/TLR.c238a684418545ddda96.png",
     "static/media/antibodyGraph.png": "/anywhere-immunology/static/media/antibodyGraph.4384de34f8eece059448.png",
     "static/media/allergyIgE.png": "/anywhere-immunology/static/media/allergyIgE.f6b15dcdda11315d64b5.png",
     "index.html": "/anywhere-immunology/index.html",
     "main.6180b9dc.css.map": "/anywhere-immunology/static/css/main.6180b9dc.css.map",
-    "main.92b92f68.js.map": "/anywhere-immunology/static/js/main.92b92f68.js.map"
+    "main.434b413d.js.map": "/anywhere-immunology/static/js/main.434b413d.js.map"
   },
   "entrypoints": [
     "static/css/main.6180b9dc.css",
-    "static/js/main.92b92f68.js"
+    "static/js/main.434b413d.js"
   ]
 }
