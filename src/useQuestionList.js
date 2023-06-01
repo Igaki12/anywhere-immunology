@@ -111,7 +111,7 @@ export const useQuestionList = () => {
                     choices: ['TLR2 - Streptococcus pneumoniae(肺炎球菌)', 'TLR3 - Psudomonas aeruginosa(緑膿菌)', 'TLR5 - Escherichia coli(大腸菌)', 'TLR9 - Escherichia coli(大腸菌)', 'RIG-1 - Haemophilus influenzae(インフルエンザ菌)', 'NOD2 - Mycobacterium tuberculosis(結核菌)'],
                     answerImg: [PRR, TLR, TLRpattern],
                     answer: '2と5が誤り',
-                    commentary: '肺炎球菌はグラム陽性の双球菌、緑膿菌や大腸菌や結核菌はグラム陰性桿菌、インフルエンザ菌はグラム陰性短桿菌。　→TLR3は二本鎖RNAを識別するので誤り。RLRは主にインフルエンザなどのRNAウイルスを識別するので、インフルエンザ菌は誤り。その他、大腸菌は鞭毛を持っているのでTLR5で識別される。NLRは細胞内寄生細菌を識別し、結核菌は細胞内寄生細菌であるので正しい（結核菌を識別するPRRとしてMickleも有名）。感染や障害から我々の身体を防御するには、まず病原体やダメージを認識することが必要で、これらPRR（パターン認識レセプター）は炎症反応の引き金として非常に重要な役割を担っているといえる。',
+                    commentary: '肺炎球菌はグラム陽性の双球菌、緑膿菌や大腸菌や結核菌はグラム陰性桿菌、インフルエンザ菌はグラム陰性短桿菌。　→TLR3は二本鎖RNAを識別するので誤り。RLRは主にインフルエンザなどのRNAウイルスを識別するので、インフルエンザ菌は誤り。その他、大腸菌は鞭毛を持っているのでTLR5で識別される。NLRは細胞内寄生細菌を識別し、結核菌は細胞内寄生細菌であるので正しい（結核菌を識別するPRRとしてTLRやMincleなどのCLRも存在する）。感染や障害から我々の身体を防御するには、まず病原体やダメージを認識することが必要で、これらPRR（パターン認識レセプター）は炎症反応の引き金として非常に重要な役割を担っているといえる。',
                 },
                 {
                     detailInfo: '',
