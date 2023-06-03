@@ -203,7 +203,7 @@ export const useQuestionList = () => {
                     ],
                     answerImg: [preBCR],
                     answer: '4と5が誤り',
-                    commentary: '',
+                    commentary: 'プレB細胞では、遺伝子再構成が終わったばかりのH鎖と代替L鎖が発現して、pre-BCRを形成するが、この時BTK遺伝子が欠乏するとB細胞の成熟に障害が起こり、X連鎖無ガンマグロブリン血症を発症する。',
                 },
                 {
                     detailInfo: '',
@@ -250,10 +250,10 @@ export const useQuestionList = () => {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '移植免疫について、誤っているものを2つ選べ。',
-                    choices: ['HLA 一致の兄弟間では拒絶反応は起こらない。  ', ' 超急性拒絶は主に既存抗原が補体依存性に内皮傷害を生じることで起こる。 ', '急性拒絶は主に T 細胞によるものである。 ', '慢性拒絶の病理学的特徴は血管肥厚による閉塞と線維化である。 ', '急性 GVHD の主な対象臓器は皮膚、肝臓、消化器である。 ', '急性 GVHD はレシピエントの T 細胞が移植片に対して拒絶反応を示すことで起きる。 '],
+                    choices: ['HLA 一致の兄弟間では拒絶反応は起こらない。', ' 超急性拒絶は主に既存抗原が補体依存性に内皮傷害を生じることで起こる。 ', '急性拒絶は主にT細胞によるものである。 ', '慢性拒絶の病理学的特徴は血管肥厚による閉塞と線維化である。 ', '急性 GVHD の主な対象臓器は皮膚、肝臓、消化器である。 ', '急性 GVHD はレシピエントの T細胞が移植片に対して拒絶反応を示すことで起きる'],
                     answerImg: [],
-                    answer: '4と6が誤り ',
-                    commentary: '',
+                    answer: '1と6が誤り ',
+                    commentary: '臓器移植の際には拒絶反応が出る場合がある。超急性拒絶は24時間以内の拒絶反応で、急性拒絶は7日〜100日程度後、慢性拒絶は100日以降に起こる移植後拒絶反応である。超急性拒絶では補体の活性化などによる血管内皮への障害・炎症による血栓が生じる。急性拒絶では移植組織の樹状細胞が移植片をT細胞に直接抗原提示してしまうことによって起こる。一方で慢性拒絶では移植組織のMHC分子を異物として抗原提示する、間接抗原提示が原因で起こると言われている。慢性拒絶では炎症により血管の平滑筋細胞が増大し血管壁が閉塞する特徴がある。繊維化も見られる。→4は正しい。臓器移植前にHLAの一致は必ず確認するが、術後こういった拒絶反応は現在でも珍しくないのはHLA以外の要素（例えばminor HLAなど）が原因で非自己と認識されてしまうからだと言われている。白血病などの際に行われる造血幹細胞の移植では、移植片にも（ドナー由来の）T細胞が含まれるためさらに予後が悪く、移植片に含まれるドナーT細胞が宿主の正常細胞に発現する組織適合抗原を異物と認識して、GVHDという拒絶反応を引き起こすが、このうち急性GVHDは主に皮膚・肝臓・消化管の上皮細胞を標的として、慢性GVHDは多臓器を標的として起こるという特徴がある。',
                 },
                 {
                     detailInfo: '',
@@ -661,7 +661,7 @@ export const useQuestionList = () => {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: 'NK細胞の抑制性受容体について正しいものを１つ',
-                    choices: ['NK 細胞の抑制性受容体は細胞内尾部に ITAM をもつ。', 'NK 細胞の抑制性受容体のいくつかは HLA-C に結合する', 'NK 細胞の抑制性受容体のいくつかはインテグリンファミリーである。', 'NK 細胞の抑制性受容体のいくつかは TLR ファミリーである。', 'NK 細胞の抑制性受容体のいくつかは、活性化受容体と同時に発現する。'],
+                    choices: ['NK 細胞の抑制性受容体は細胞内尾部に ITAMをもつ。', 'NK 細胞の抑制性受容体のいくつかは HLA-Cに結合する', 'NK細胞の抑制性受容体のいくつかはインテグリンファミリーである。', 'NK細胞の抑制性受容体のいくつかは TLRファミリーである。', 'NK細胞の抑制性受容体のいくつかは、活性化受容体と同時に発現する。'],
                     answerImg: [],
                     answer: '',
                     commentary: '',
@@ -678,8 +678,8 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '',
                     questionImg: [],
-                    questionSentence: '粘膜免疫について誤ってるものを 2 つ選べ',
-                    choices: ['M 細胞は抗原をパイエル板に取り込み樹状細胞に受け渡す', 'リンパ球はビタミン C によってホーミングされる', '腸内フローラには制御性 T 細胞と Th17 細胞のバランスを保つ役割がある'],
+                    questionSentence: '粘膜免疫について誤ってるものを 2つ選べ',
+                    choices: ['M細胞は抗原をパイエル板に取り込み樹状細胞に受け渡す', 'リンパ球はビタミンCによってホーミングされる', '腸内フローラには制御性T細胞と Th17細胞のバランスを保つ役割がある'],
                     answerImg: [],
                     answer: '',
                     commentary: '',
@@ -705,7 +705,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '',
                     questionImg: [],
-                    questionSentence: 'PRR が認識する PAMPs と病原体の組み合わせについて、誤っているものを 2 つ選べ。',
+                    questionSentence: 'PRRが認識する PAMPsと病原体の組み合わせについて、誤っているものを 2 つ選べ。',
                     choices: ['TLR2ーペプチドグリカンー肺炎球菌', 'TLR4ーリポポリリサッカライドーインフルエンザウイルス', 'TLR9ーDNAー大腸菌', 'CLRーβグルカンーカンジダ', 'NLRー一本鎖 RNAーインフルエンザ菌', "MincleーTDMー結核菌"],
                     answerImg: [TLR, TLRpattern],
                     answer: '2と5が誤り',
@@ -723,7 +723,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '',
                     questionImg: [],
-                    questionSentence: '胸腺での T 細胞について誤っているものを 2 つ選べ',
+                    questionSentence: '胸腺での T細胞について誤っているものを 2 つ選べ',
                     choices: ['胸腺において未熟なT細胞は、分化の過程で皮質から髄質へと移行する。', 'TCRα鎖遺伝子再構成は、β鎖再構成に先行して起こる。', '正の選択とは、自己抗原と適度に反応するT細胞を残すことである。', '正の選択はCD4+CD8+T細胞の段階で起こる。', '負の選択は胸腺皮質、正の選択は胸腺髄質で行われる'],
                     answerImg: [TcellDifferentiation, TcellEducation],
                     answer: '2と5が誤り',
@@ -954,7 +954,7 @@ export const useQuestionList = () => {
                     answerImg: [],
                     choices: ['CD1d', 'MICA'],
                     answer: 'CD1d',
-                    commentary: 'テスト本番でもMHC Class1c　ではなく、CD1dまたはMICAとして解答してほしい',
+                    commentary: 'テスト本番でもMHC Class1C　ではなく、CD1dまたはMICAとして解答してほしい',
                 },
                 {
                     detailInfo: '5/12 出席確認',
@@ -1068,7 +1068,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '5/19小テスト(T細胞)',
                     questionImg: [],
-                    questionSentence: 'T細胞抗原受容体（TCR）の構成として多いのはどちらか？                    ',
+                    questionSentence: 'T細胞抗原受容体（TCR）の構成として多いのはどちらか？  ',
                     choices: ["αβ鎖", "γδ鎖"],
                     answerImg: [],
                     answer: 'αβ鎖',
@@ -1077,7 +1077,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '5/19小テスト(T細胞)',
                     questionImg: [],
-                    questionSentence: 'アネルギー（Anergy）の定義として、正しいのはどちらか？                    ',
+                    questionSentence: 'アネルギー（Anergy）の定義として、正しいのはどちらか？  ',
                     choices: ["抗原が与えられても抗原抗体反応が起こらない状態", "抗原が与えられても抗原抗体反応が過剰に起こる状態"],
                     answerImg: [],
                     answer: '抗原が与えられても抗原抗体反応が起こらない状態',
@@ -1086,7 +1086,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '5/19小テスト(T細胞)',
                     questionImg: [],
-                    questionSentence: 'T細胞の活性化に必須な酵素はどちらか？                    ',
+                    questionSentence: 'T細胞の活性化に必須な酵素はどちらか？   ',
                     choices: ["チロシンキナーゼ", "ヒスチジンキナーゼ"],
                     answerImg: [],
                     answer: 'チロシンキナーゼ',
@@ -1095,7 +1095,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '5/19小テスト(T細胞)',
                     questionImg: [],
-                    questionSentence: 'T細胞の増殖・活性化に働くサイトカインはどちらか？                    ',
+                    questionSentence: 'T細胞の増殖・活性化に働くサイトカインはどちらか？   ',
                     choices: ["IL-1", "IL-2"],
                     answerImg: [],
                     answer: 'IL-2',
@@ -1104,7 +1104,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '5/19小テスト(T細胞)',
                     questionImg: [],
-                    questionSentence: '肉芽腫形成に関わるマクロファージはどちらか？                    ',
+                    questionSentence: '肉芽腫形成に関わるマクロファージはどちらか？   ',
                     choices: ["ランゲルハンス細胞", "類上皮細胞"],
                     answerImg: [],
                     answer: '類上皮細胞',
@@ -1113,7 +1113,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '5/19小テスト(T細胞)',
                     questionImg: [],
-                    questionSentence: '先進国におけるアレルギー増加の原因を説明した仮説はどちらか？                    ',
+                    questionSentence: '先進国におけるアレルギー増加の原因を説明した仮説はどちらか？  ',
                     choices: ["衛生仮説", "抗原仮説"],
                     answerImg: [],
                     answer: '衛生仮説',
@@ -1122,7 +1122,7 @@ export const useQuestionList = () => {
                 {
                     detailInfo: '5/19小テスト(T細胞)',
                     questionImg: [],
-                    questionSentence: '制御性T細胞に特異的な転写因子はどちらか？                    ',
+                    questionSentence: '制御性T細胞に特異的な転写因子はどちらか？ ',
                     choices: ["Foxp3", "T-bet"],
                     answerImg: [],
                     answer: 'Foxp3',
