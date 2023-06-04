@@ -68,6 +68,10 @@ import preBCR from './img/answer/preBCR.png';
 import complementPathway from './img/answer/complementPathway.png';
 import C1INH from './img/answer/C1INH.png';
 import anaphylaxis from './img/answer/anaphylaxis.png';
+import TAM from './img/answer/TAM.png';
+import immunorejection from './img/answer/immunorejection.png';
+import GVHD from './img/answer/GVHD.png';
+
 
 
 
@@ -217,7 +221,7 @@ export const useQuestionList = () => {
                         'Dectin-1 - βグルカン - カンジダ',
                         'Mincle - トレハロースジミコール酸(TDM) - 結核菌',
                     ],
-                    answerImg: [TLR,TLRpattern,PRR],
+                    answerImg: [TLR, TLRpattern, PRR],
                     answer: '1と3が誤り',
                     commentary: 'TLR2はグラム陽性菌、TLR9は細菌DNAを主に認識する。大腸菌はグラム陰性桿菌で、鞭毛（フラジェリン）を持つ。Dection-1やMincleはCLRの一つで、真菌や結核菌を認識する。',
                 },
@@ -233,7 +237,7 @@ export const useQuestionList = () => {
                         '正の選択はダブルポジディブ期に起こる',
                         'AIRE(Autoimmune regulator)は隔絶抗原を発現することで負の選択に関与している。',
                     ],
-                    answerImg: [TcellDifferentiation,AIRE],
+                    answerImg: [TcellDifferentiation, AIRE],
                     answer: '4と6が誤り',
                     commentary: 'MHC class2を認識 → CD4+T細胞、AIREはゲノムにコードされた自己抗原を無差別発現する。T細胞はDNT細胞→DPT細胞→SPT細胞→成熟T細胞の順に成熟し、その間に遺伝子再構成(β鎖→α鎖)・皮質での正の選択・髄質での負の選択が行われる。',
                 },
@@ -251,7 +255,7 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: '移植免疫について、誤っているものを2つ選べ。',
                     choices: ['HLA 一致の兄弟間では拒絶反応は起こらない。', ' 超急性拒絶は主に既存抗原が補体依存性に内皮傷害を生じることで起こる。 ', '急性拒絶は主にT細胞によるものである。 ', '慢性拒絶の病理学的特徴は血管肥厚による閉塞と線維化である。 ', '急性 GVHD の主な対象臓器は皮膚、肝臓、消化器である。 ', '急性 GVHD はレシピエントの T細胞が移植片に対して拒絶反応を示すことで起きる'],
-                    answerImg: [],
+                    answerImg: [immunorejection, GVHD],
                     answer: '1と6が誤り ',
                     commentary: '臓器移植の際には拒絶反応が出る場合がある。超急性拒絶は24時間以内の拒絶反応で、急性拒絶は7日〜100日程度後、慢性拒絶は100日以降に起こる移植後拒絶反応である。超急性拒絶では補体の活性化などによる血管内皮への障害・炎症による血栓が生じる。急性拒絶では移植組織の樹状細胞が移植片をT細胞に直接抗原提示してしまうことによって起こる。一方で慢性拒絶では移植組織のMHC分子を異物として抗原提示する、間接抗原提示が原因で起こると言われている。慢性拒絶では炎症により血管の平滑筋細胞が増大し血管壁が閉塞する特徴がある。繊維化も見られる。→4は正しい。臓器移植前にHLAの一致は必ず確認するが、術後こういった拒絶反応は現在でも珍しくないのはHLA以外の要素（例えばminor HLAなど）が原因で非自己と認識されてしまうからだと言われている。白血病などの際に行われる造血幹細胞の移植では、移植片にも（ドナー由来の）T細胞が含まれるためさらに予後が悪く、移植片に含まれるドナーT細胞が宿主の正常細胞に発現する組織適合抗原を異物と認識して、GVHDという拒絶反応を引き起こすが、このうち急性GVHDは主に皮膚・肝臓・消化管の上皮細胞を標的として、慢性GVHDは多臓器を標的として起こるという特徴がある。',
                 },
@@ -269,7 +273,7 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: '免疫寛容について、誤っているものを2つ選べ。',
                     choices: ['中枢性寛容と末梢性寛容は相互補完的に働くため、一方の破綻だけでは自己免疫疾患を発症しない。 ', '通常、食物抗原に対しては経口寛容が成立しているため、免疫応答は起こらない。 ', '制御性T細胞 (Treg) は CTLA-4 を高発現しており、CD28 と CD80/CD86 の結合を競合的に阻害することで T細胞の活性化を抑制する。 ', 'Treg は IL-2 Rα鎖(CD25) を発現しているため、 ナイーブT細胞よりIL-2に対する反応性が高い。 ', 'Treg は IL-10、TGF-βなど抑制性サイトカインを産生し、T細胞の活性化を抑制する。', 'IPEX 症候群は、Treg の分化に必須の転写因子 T-bet の遺伝子異常により発症する。'],
-                    answerImg: [Treg,TGFBeta],
+                    answerImg: [Treg, TGFBeta],
                     answer: '1と6が誤り',
                     commentary: '中枢・末梢どちらの免疫寛容が破綻しても自己免疫疾患の原因となるIPEX症候群に関わる、Treg の分化に必須の遺伝子はFoxp3。CTLA-4とCD80/86はいずれもナイーブT細胞のCD28のリガンド。Tregは他にT細胞の分化に必須のIL-2を回収したり、TGF-βなどを産生したりすることによって免疫反応を抑制する。',
                 },
@@ -1214,17 +1218,17 @@ export const useQuestionList = () => {
                     detailInfo: '4/14',
                     questionImg: [],
                     questionSentence: '肺の上皮細胞に病原体が侵入してきたと仮定して、病原体を認識してから、リンパ節でT細胞と出会うまでの過程（樹状細胞の動態）を200字以上で述べよ',
-                    answerImg: [homing,MHCClass2],
+                    answerImg: [homing, MHCClass2],
                     answer: '侵入した病原体の刺激に反応して、上皮細胞からCCL20が産生され、CCR6陽性の未熟な樹状細胞がCCL20発現部位に遊走する。DCは抗原を取り込む際にPAMPsを認識して活性化・成熟し、CCR6の発現が低下する一方、CCR7の発現が上昇する。そしてCCR7を発現した成熟DCは、輸入リンパ管を介して、CCL19/CCL21の発現が見られる（所属）リンパ節のT細胞領域に遊走すると同時に、病原体を分解処理し、その結果生じたペプチドをMHC分子の上に提示する。リンパ節に入ると、低い確率だが抗原提示細胞上のMHC+ペプチド複合体と強く相互作用することのできる抗原特異的なT細胞と出会い、抗原提示を行う。',
                     commentary: 'CCL20は肺・肝臓などの組織に特異的で、CCL19/21はリンパ節T細胞領域（のHEV）に部位特異的。CCR6は未熟樹状細胞やTh17に発現していて、CCR7は成熟樹状細胞・ナイーブT細胞に特異的であるため、このような複雑な機構が成り立つ。',
                 },
-                           {
-                  detailInfo: '',
-                  questionImg: [],
-                  questionSentence: 'Th1細胞の分化誘導に必要なサイトカインとその分化した各ヘルパーT 細胞が産生するサイトカインを記せ。',
-                  answerImg: [ThDifferentiation],
-                  answer: '【分化に必要なサイトカイン】IL-12　【産生するサイトカイン】IFN-γ',
-                  commentary: 'IFN-γはⅡ型インターフェロンで、結核診断(ツベルクリン検査)に用いられる',
+                {
+                    detailInfo: '',
+                    questionImg: [],
+                    questionSentence: 'Th1細胞の分化誘導に必要なサイトカインとその分化した各ヘルパーT 細胞が産生するサイトカインを記せ。',
+                    answerImg: [ThDifferentiation],
+                    answer: '【分化に必要なサイトカイン】IL-12　【産生するサイトカイン】IFN-γ',
+                    commentary: 'IFN-γはⅡ型インターフェロンで、結核診断(ツベルクリン検査)に用いられる',
                 },
                 {
                     detailInfo: '',
@@ -1233,15 +1237,15 @@ export const useQuestionList = () => {
                     answerImg: [ThDifferentiation],
                     answer: '【分化に必要なサイトカイン】IL-4　【産生するサイトカイン】IL-4/IL-5/IL-13',
                     commentary: '',
-                  },
-                  {
+                },
+                {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: 'Th17細胞の分化誘導に必要なサイトカインとその分化した各ヘルパーT 細胞が産生するサイトカインを記せ。',
-                    answerImg: [ThDifferentiation,TGFBeta],
+                    answerImg: [ThDifferentiation, TGFBeta],
                     answer: '【分化に必要なサイトカイン】IL-6＋TGF-β 【産生に必要なサイトカイン】 IL-17',
                     commentary: 'IL-6は炎症性サイトカインで、TGF-βは抑制性サイトカイン。Th17は過剰な炎症反応を抑制するヘルパーT細胞。',
-                  },
+                },
                 // {
                 //     detailInfo: '',
                 //     questionImg: [],
@@ -1270,7 +1274,7 @@ export const useQuestionList = () => {
                     detailInfo: '5/19',
                     questionImg: [],
                     questionSentence: 'Tregの抑制的制御のメカニズムを述べよ。',
-                    answerImg: [Treg,TGFBeta],
+                    answerImg: [Treg, TGFBeta],
                     answer: 'Treg の発現する CTLA-4 は、抗原提示細胞において CD80/CD86 の発現を低く抑えることにより、他の T細胞の活性化に必要な副刺激を提供できないようにしている。また、Treg は高親和性の IL-2 受容体 (CD25) を高発現し、周囲から IL-2を受け取ることにより、ほかの T細胞から IL-2 を奪い取り、その活性化を妨げる。さらに抑制性サイトカインである IL-10 や TGF-βを産生することで、 T 細胞の活性化を妨げる。',
                     commentary: '1.抗原提示細胞のCD80/CD86の発現を低く抑える。2.高親和性のIL-2受容体によってほかのT細胞からIL-2を奪って活性化を妨げる',
                 },
