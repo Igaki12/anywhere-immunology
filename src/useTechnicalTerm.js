@@ -562,98 +562,98 @@ export const useTechnicalTerm = () => {
       term: ['AID', "シチジン脱アミノ化酵素", "activation-induced cytidine deaminase"],
       explanation: '体細胞突然変異とアイソタイプスイッチの開始に必要な、シチジンを脱アミノ化する酵素。',
     },
-    {
-      term: ["スイッチ領域", "switch region"],
-      explanation: '',
-    },
-    {
-      term: ['CD40L'],
-      explanation: '',
-    },
-    {
-      term: ['生殖細胞系転写産物', "germline transcripts"],
-      explanation: '',
-    },
-    {
-      term: ['Bcl-2', "抗アポトーシス分子"],
-      explanation: '',
-    },
-    {
-      term: ['形質細胞', "長期生存形質細胞", "LP細胞", "多発性骨髄腫"],
-      explanation: '',
-    },
+    // {
+    //   term: ["スイッチ領域", "switch region"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['CD40L'],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['生殖細胞系転写産物', "germline transcripts"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['Bcl-2', "抗アポトーシス分子"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['形質細胞', "長期生存形質細胞", "LP細胞", "多発性骨髄腫"],
+    //   explanation: '',
+    // },
     {
       term: ['CXCR4', "CXCL12"],
       explanation: 'CXCR4は骨髄へ移行する際に利用されるケモカインレセプター。形質細胞などが発現。骨髄には対応するケモカインであるCXCL12が分泌されrている。',
     },
-    {
-      term: ['メモリーB細胞', "記憶B細胞", "Bm cell"],
-      explanation: '',
-    },
-    {
-      term: ["FCγRⅡB", "抑制性Fcγ受容体", '抗体フィードバック', "全身性エリテマトーデス", "SLE"],
-      explanation: '',
-    },
-    {
-      term: ['二次応答', "二次免疫応答"],
-      explanation: '',
-    },
+    // {
+    //   term: ['メモリーB細胞', "記憶B細胞", "Bm cell"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ["FCγRⅡB", "抑制性Fcγ受容体", '抗体フィードバック', "全身性エリテマトーデス", "SLE"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['二次応答', "二次免疫応答"],
+    //   explanation: '',
+    // },
     {
       term: ['TI抗原', "T cell-independent antigen", "T細胞非依存性抗原", "TI-1", "TI-2"],
       explanation: 'タンパク抗原（TD抗原）はヘルパーT細胞の補助を受けられるが、タンパクではない抗原：TI細胞は、ヘルパーT細胞の補助は受けることなく抗体産生を誘導する。TI抗原は抗体のクラススイッチ・親和性成熟・記憶B細胞は誘導されにくい。TI抗原はTI-1抗原（直接B細胞を活性化させる、LPSや細菌DNAなど）とTI-2抗原（反復性の高い構造を有しBCRを強力に架橋することで活性化を引き起こし、B1細胞やMZB細胞が主に反応する、肺炎連鎖球菌の莢膜多頭など）に分類される',
     },
-    {
-      term: ['辺縁帯B細胞', "MZB", "Marginal zone B cell"],
-      explanation: '',
-    },
-    {
-      term: ['B1細胞', "B1B細胞"],
-      explanation: '',
-    },
+    // {
+    //   term: ['辺縁帯B細胞', "MZB", "Marginal zone B cell"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['B1細胞', "B1B細胞"],
+    //   explanation: '',
+    // },
     {
       term: ["B2細胞", "B2B細胞"],
       explanation: '通常のB細胞のことで、胎児期に肝臓造血幹細胞から発生する未熟なB1細胞に対してB2細胞と呼ばれる。B1細胞と比較してよりシステマティックな構造・機能を持つ。二次リンパ組織では濾胞に存在している。',
     },
-    {
-      term: ['Ⅱ型アレルギー'],
-      explanation: '',
-    },
-    {
-      term: ['Ⅲ型アレルギー'],
-      explanation: '',
-    },
-    {
-      term: ['モノクローナル', "モノクローナル抗体", "mAb"],
-      explanation: '',
-    },
+    // {
+    //   term: ['Ⅱ型アレルギー'],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['Ⅲ型アレルギー'],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['モノクローナル', "モノクローナル抗体", "mAb"],
+    //   explanation: '',
+    // },
     {
       term: ['ポリクローナル', "ポリクローナル抗体"],
       explanation: '血中に一般的に存在する抗体で、複数のクローンから構成される。',
     },
-    {
-      term: ['ELISA'],
-      explanation: '',
-    },
-    {
-      term: ['モノクローナル抗体のヒト化', "ヒト化", "完全ヒト抗体"],
-      explanation: '',
-    },
-    {
-      term: ['トシリズマブ', "Tocilizumab", "抗IL-6受容体抗体", "キャッスルマン病"],
-      explanation: '',
-    },
+    // {
+    //   term: ['ELISA'],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['モノクローナル抗体のヒト化', "ヒト化", "完全ヒト抗体"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['トシリズマブ', "Tocilizumab", "抗IL-6受容体抗体", "キャッスルマン病"],
+    //   explanation: '',
+    // },
     {
       term: ['ポテリジェント抗体'],
       explanation: '抗体の、Fc受容体との会合を阻害するフコースを除去することによりADCC活性が増強される。このような抗体をポテリジェント抗体と言い、ATL（成人T細胞白血病リンパ腫）の治療に活用されている。',
     },
-    {
-      term: ['ハイブリドーマ'],
-      explanation: '',
-    },
-    {
-      term: ['経口寛容', "食物アレルギー"],
-      explanation: '',
-    },
+    // {
+    //   term: ['ハイブリドーマ'],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['経口寛容', "食物アレルギー"],
+    //   explanation: '',
+    // },
     {
       term: ['粘膜関連リンパ組織', "Muclsa-Associated Lymphoid TIssue", "MALT", "GALT", "BALT", "NALT"],
       explanation: '上皮直下の実行組織の近傍の二次リンパ組織の総称。',
@@ -666,60 +666,60 @@ export const useTechnicalTerm = () => {
       term: ['舌下減感作療法'],
       explanation: '花粉症などの治療（免疫寛容獲得）などに利用される。',
     },
-    {
-      term: ['CMIS', "共通粘膜免疫機構", "common muclsal immune system"],
-      explanation: '',
-    },
-    {
-      term: ['パイエル板'],
-      explanation: '',
-    },
-    {
-      term: ['"M細胞","microfoid cell","GP2タンパク"'],
-      explanation: '',
-    },
-    {
-      term: ['IgA', "Immunoglobrin A", "多量体Ig受容体"],
-      explanation: '',
-    },
-    {
-      term: ['レチノイン酸', "ビタミンA"],
-      explanation: '',
-    },
-    {
-      term: ['粘膜固有層選択的ホーミング', "CCR9", "CCL25", "α4β7", "MadCAM"],
-      explanation: '',
-    },
-    {
-      term: ['IEL', "腸管上皮間リンパ球", "intraepithelial lymphocyte"],
-      explanation: '',
-    },
-    {
-      term: ['軟膜固有層リンパ球', "lamina propria lymphocyte"],
-      explanation: '',
-    },
+    // {
+    //   term: ['CMIS', "共通粘膜免疫機構", "common muclsal immune system"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['パイエル板'],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['"M細胞","microfoid cell","GP2タンパク"'],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['IgA', "Immunoglobrin A", "多量体Ig受容体"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['レチノイン酸', "ビタミンA"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['粘膜固有層選択的ホーミング', "CCR9", "CCL25", "α4β7", "MadCAM"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['IEL', "腸管上皮間リンパ球", "intraepithelial lymphocyte"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['軟膜固有層リンパ球', "lamina propria lymphocyte"],
+    //   explanation: '',
+    // },
     {
       term: ['Th17'],
-      explanation: '信金に対する免疫応答に重要な役割を果たしている他、腸管上皮で',
+      explanation: '真菌に対する免疫応答に重要な役割を果たしている他、腸管上皮で',
     },
     {
       term: ["ILC", '自然リンパ球', "innate lymphoid cell"],
       explanation: '腸管粘膜固有層には3型のILCが存在していて、　　　T細胞のような役割をするものの抗原特異性は全くない。',
     },
-    {
-      term: ['Disbiosis', "腸内細菌叢の異常"],
-      explanation: '',
-    },
-    {
-      term: ['IBD', "炎症性腸疾患", "クローン病", "潰瘍性大腸炎"],
-      explanation: '',
-    },
+    // {
+    //   term: ['Disbiosis', "腸内細菌叢の異常"],
+    //   explanation: '',
+    // },
+    // {
+    //   term: ['IBD', "炎症性腸疾患", "クローン病", "潰瘍性大腸炎"],
+    //   explanation: '',
+    // },
     {
       term: ['粘膜ワクチン', "経口ワクチン", "MucoRice-CTB"],
       explanation: '経口投与などによって抗原を粘膜関連リンパ組織に取り込ませて、粘膜局所ならびに全身性に免疫応答を誘導する形式のワクチン。ポリオ生ワクチンなどで利用されていた。粘膜ワクチンは一般的な注射型ワクチンと比べて、注射の苦痛を伴わない上、粘膜組織での予防効果も期待でき、同じように全身組織の免疫応答も損なわないという利点がある。これを利用して、コレラ毒素（CTB）をワクチン抗原としたコメ型ワクチン：MucoRice-CTBが商品化されている。',
     },
     {
-      term: ['二重抗原暴露仮説', "dual allergen exposure hypothes[is"],
+      term: ['二重抗原暴露仮説', "dual allergen exposure hypothesis"],
       explanation: '特定の食物摂取を制限すると食物アレルギーが増えるとする仮説。アレルゲンの経皮的接触が感作を惹起し、経口摂取によりアレルギーを引き起こす。食物に対する経口免疫寛容は食物アレルギーにも有効であるという臨床結果も出ている。',
     },
     {
