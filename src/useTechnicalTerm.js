@@ -522,283 +522,283 @@ export const useTechnicalTerm = () => {
       term: ['個別化mRNAワクチン'],
       explanation: 'がんに対するワクチン。主要特異的な遺伝子に対するmRNAを患者に注射することで、腫瘍に対する免疫応答を期待する方法。',
     },
-        {
-      term:['可変領域',"variable region","V領域"],
-      explanation:'抗体のアミノ末端側。抗原認識に関与していて、抗体分子によってそれぞれ異なっている。',
+    {
+      term: ['可変領域', "variable region", "V領域"],
+      explanation: '抗体のアミノ末端側。抗原認識に関与していて、抗体分子によってそれぞれ異なっている。',
     },
     {
-      term:['可変領域',"consistant region","C領域"],
-      explanation:'抗体のC末端側。抗体のエフェクター機能に関与し、各クラスで共通している。',
+      term: ['可変領域', "consistant region", "C領域"],
+      explanation: '抗体のC末端側。抗体のエフェクター機能に関与し、各クラスで共通している。',
     },
     {
-      term:['クローン'],
-      explanation:'同一のBCR（TCR）を発現するB細胞・T細胞はクローンと呼ばれる。クローンは同一の抗原に対して結合し、クローン拡大を起こして液性免疫に寄与する。',
+      term: ['クローン'],
+      explanation: '同一のBCR（TCR）を発現するB細胞・T細胞はクローンと呼ばれる。クローンは同一の抗原に対して結合し、クローン拡大を起こして液性免疫に寄与する。',
     },
     {
-      term:["SHM",'体細胞突然変異',"somatic hyper mutation"],
-      explanation:'胚中心B細胞は、二次リンパ組織の暗領域での増殖中に体細胞突然変異を起こす。変異後は明領域にてIg親和性の高いクローンが選択的にFDCやTfh細胞からの生存シグナル（抗アポトーシス分子）を受けることで、体細胞突然変異はアフィニティ成熟に関与する',
+      term: ["SHM", '体細胞突然変異', "somatic hyper mutation"],
+      explanation: '胚中心B細胞は、二次リンパ組織の暗領域での増殖中に体細胞突然変異を起こす。変異後は明領域にてIg親和性の高いクローンが選択的にFDCやTfh細胞からの生存シグナル（抗アポトーシス分子）を受けることで、体細胞突然変異はアフィニティ成熟に関与する',
     },
     {
-      term:['濾胞B細胞',"Follicular B cell","FoB","再循環B細胞"],
-      explanation:'二次リンパ組織であるリンパ節や脾臓の中で、B細胞が分布する領域を濾胞といい、濾胞にあるB細胞は濾胞B細胞と呼ばれる。B細胞はHEVから二次リンパ組織へ移動（ホーミング）するためには、CCL19/21やLセレクチンリガンド（これらはT細胞と共通）だけでなく、濾胞樹状細胞のCXCL13の発現が必要である。B細胞はこの時CCR7やLセレクチン、CXCL5を発現する。一つのリンパ組織から別のリンパ組織へ移動することから、再循環B細胞とも呼ばれ、抗原に対する高親和性抗体の産生に重要である',
+      term: ['濾胞B細胞', "Follicular B cell", "FoB", "再循環B細胞"],
+      explanation: '二次リンパ組織であるリンパ節や脾臓の中で、B細胞が分布する領域を濾胞といい、濾胞にあるB細胞は濾胞B細胞と呼ばれる。B細胞はHEVから二次リンパ組織へ移動（ホーミング）するためには、CCL19/21やLセレクチンリガンド（これらはT細胞と共通）だけでなく、濾胞樹状細胞のCXCL13の発現が必要である。B細胞はこの時CCR7やLセレクチン、CXCL5を発現する。一つのリンパ組織から別のリンパ組織へ移動することから、再循環B細胞とも呼ばれ、抗原に対する高親和性抗体の産生に重要である',
     },
     {
-      term:['Igα',"Igβ"],
-      explanation:'幕型Igは細胞室内に活性化モチーフ(ITAM)を持つ刺激補助因子Igα・Igβと会合しBCRを形成していて、この活性化モチーフがリン酸化を受けることでリン酸化カスケードが開始し、さまざまな転写因子の活性化を起こすことで、B細胞が活性化される。',
+      term: ['Igα', "Igβ"],
+      explanation: '幕型Igは細胞室内に活性化モチーフ(ITAM)を持つ刺激補助因子Igα・Igβと会合しBCRを形成していて、この活性化モチーフがリン酸化を受けることでリン酸化カスケードが開始し、さまざまな転写因子の活性化を起こすことで、B細胞が活性化される。',
     },
     {
-      term:['TD抗原',"T細胞依存性抗原"],
-      explanation:'B細胞はT細胞とは異なり二次リンパ組織で光源を直接BCRで認識して活性化するが、タンパク抗原はB細胞の活性化が弱く、強力な抗体を産生するにはヘルパーT細胞による付加的活性化が必要。B細胞は抗原を取り込み濾胞ヘルパーT細胞に抗原提示することで活性化され、TD抗原に対する抗体産生を行うことができる。二次応答の際に免疫応答が増強されるのはこのようなタンパク抗原のみ。',
+      term: ['TD抗原', "T細胞依存性抗原"],
+      explanation: 'B細胞はT細胞とは異なり二次リンパ組織で光源を直接BCRで認識して活性化するが、タンパク抗原はB細胞の活性化が弱く、強力な抗体を産生するにはヘルパーT細胞による付加的活性化が必要。B細胞は抗原を取り込み濾胞ヘルパーT細胞に抗原提示することで活性化され、TD抗原に対する抗体産生を行うことができる。二次応答の際に免疫応答が増強されるのはこのようなタンパク抗原のみ。',
     },
     {
-      term:['X-SCID',"X連鎖重症複合免疫不全症","severe combined immunodeficiency"],
-      explanation:'一部のサイトカイン受容体はサブユニットを共有していて、この共通γ鎖ファミリーの異常によりX-SCIDを引き起こす。',
+      term: ['X-SCID', "X連鎖重症複合免疫不全症", "severe combined immunodeficiency"],
+      explanation: '一部のサイトカイン受容体はサブユニットを共有していて、この共通γ鎖ファミリーの異常によりX-SCIDを引き起こす。',
     },
     {
-      term:['クラススイッチ',"アイソタイプスイッチ"],
-      explanation:'成熟B細胞はCD40シグナルとサイトカイン（IFNγ,IL-4,TGF-β）に反応し、H鎖のアイソタイプスイッチ（クラススイッチ）を引き起こす。アイソタイプスイッチはAID（シチジン脱アミノ化酵素）が活性化B細胞特異的に働くことで始まる。クラススイッチ前はIgMやIgDを産生していたB細胞から、IFN-γはIgGへ、IL-4はIgEへ、TGF-βはIgAへのクラススイッチを引き起こす。',
+      term: ['クラススイッチ', "アイソタイプスイッチ"],
+      explanation: '成熟B細胞はCD40シグナルとサイトカイン（IFNγ,IL-4,TGF-β）に反応し、H鎖のアイソタイプスイッチ（クラススイッチ）を引き起こす。アイソタイプスイッチはAID（シチジン脱アミノ化酵素）が活性化B細胞特異的に働くことで始まる。クラススイッチ前はIgMやIgDを産生していたB細胞から、IFN-γはIgGへ、IL-4はIgEへ、TGF-βはIgAへのクラススイッチを引き起こす。',
     },
     {
-      term:['AID',"シチジン脱アミノ化酵素","activation-induced cytidine deaminase"],
-      explanation:'体細胞突然変異とアイソタイプスイッチの開始に必要な、シチジンを脱アミノ化する酵素。',
+      term: ['AID', "シチジン脱アミノ化酵素", "activation-induced cytidine deaminase"],
+      explanation: '体細胞突然変異とアイソタイプスイッチの開始に必要な、シチジンを脱アミノ化する酵素。',
     },
     {
-      term:["スイッチ領域","switch region"],
-      explanation:'',
+      term: ["スイッチ領域", "switch region"],
+      explanation: '',
     },
     {
-      term:['CD40L'],
-      explanation:'',
+      term: ['CD40L'],
+      explanation: '',
     },
     {
-      term:['生殖細胞系転写産物',"germline transcripts"],
-      explanation:'',
+      term: ['生殖細胞系転写産物', "germline transcripts"],
+      explanation: '',
     },
     {
-      term:['Bcl-2',"抗アポトーシス分子"],
-      explanation:'',
+      term: ['Bcl-2', "抗アポトーシス分子"],
+      explanation: '',
     },
     {
-      term:['形質細胞',"長期生存形質細胞","LP細胞","多発性骨髄腫"],
-      explanation:'',
+      term: ['形質細胞', "長期生存形質細胞", "LP細胞", "多発性骨髄腫"],
+      explanation: '',
     },
     {
-      term:['CXCR4',"CXCL12"],
-      explanation:'CXCR4は骨髄へ移行する際に利用されるケモカインレセプター。形質細胞などが発現。骨髄には対応するケモカインであるCXCL12が分泌されrている。',
+      term: ['CXCR4', "CXCL12"],
+      explanation: 'CXCR4は骨髄へ移行する際に利用されるケモカインレセプター。形質細胞などが発現。骨髄には対応するケモカインであるCXCL12が分泌されrている。',
     },
     {
-      term:['メモリーB細胞',"記憶B細胞","Bm cell"],
-      explanation:'',
+      term: ['メモリーB細胞', "記憶B細胞", "Bm cell"],
+      explanation: '',
     },
     {
-      term:["FCγRⅡB","抑制性Fcγ受容体",'抗体フィードバック',"全身性エリテマトーデス","SLE"],
-      explanation:'',
+      term: ["FCγRⅡB", "抑制性Fcγ受容体", '抗体フィードバック', "全身性エリテマトーデス", "SLE"],
+      explanation: '',
     },
     {
-      term:['二次応答',"二次免疫応答"],
-      explanation:'',
+      term: ['二次応答', "二次免疫応答"],
+      explanation: '',
     },
     {
-      term:['TI抗原',"T cell-independent antigen","T細胞非依存性抗原","TI-1","TI-2"],
-      explanation:'タンパク抗原（TD抗原）はヘルパーT細胞の補助を受けられるが、タンパクではない抗原：TI細胞は、ヘルパーT細胞の補助は受けることなく抗体産生を誘導する。TI抗原は抗体のクラススイッチ・親和性成熟・記憶B細胞は誘導されにくい。TI抗原はTI-1抗原（直接B細胞を活性化させる、LPSや細菌DNAなど）とTI-2抗原（反復性の高い構造を有しBCRを強力に架橋することで活性化を引き起こし、B1細胞やMZB細胞が主に反応する、肺炎連鎖球菌の莢膜多頭など）に分類される',
+      term: ['TI抗原', "T cell-independent antigen", "T細胞非依存性抗原", "TI-1", "TI-2"],
+      explanation: 'タンパク抗原（TD抗原）はヘルパーT細胞の補助を受けられるが、タンパクではない抗原：TI細胞は、ヘルパーT細胞の補助は受けることなく抗体産生を誘導する。TI抗原は抗体のクラススイッチ・親和性成熟・記憶B細胞は誘導されにくい。TI抗原はTI-1抗原（直接B細胞を活性化させる、LPSや細菌DNAなど）とTI-2抗原（反復性の高い構造を有しBCRを強力に架橋することで活性化を引き起こし、B1細胞やMZB細胞が主に反応する、肺炎連鎖球菌の莢膜多頭など）に分類される',
     },
     {
-      term:['辺縁帯B細胞',"MZB","Marginal zone B cell"],
-      explanation:'',
+      term: ['辺縁帯B細胞', "MZB", "Marginal zone B cell"],
+      explanation: '',
     },
     {
-      term:['B1細胞',"B1B細胞"],
-      explanation:'',
+      term: ['B1細胞', "B1B細胞"],
+      explanation: '',
     },
     {
-      term:["B2細胞","B2B細胞"],
-      explanation:'通常のB細胞のことで、胎児期に肝臓造血幹細胞から発生する未熟なB1細胞に対してB2細胞と呼ばれる。B1細胞と比較してよりシステマティックな構造・機能を持つ。二次リンパ組織では濾胞に存在している。',
+      term: ["B2細胞", "B2B細胞"],
+      explanation: '通常のB細胞のことで、胎児期に肝臓造血幹細胞から発生する未熟なB1細胞に対してB2細胞と呼ばれる。B1細胞と比較してよりシステマティックな構造・機能を持つ。二次リンパ組織では濾胞に存在している。',
     },
     {
-      term:['Ⅱ型アレルギー'],
-      explanation:'',
+      term: ['Ⅱ型アレルギー'],
+      explanation: '',
     },
     {
-      term:['Ⅲ型アレルギー'],
-      explanation:'',
+      term: ['Ⅲ型アレルギー'],
+      explanation: '',
     },
     {
-      term:['モノクローナル',"モノクローナル抗体","mAb"],
-      explanation:'',
+      term: ['モノクローナル', "モノクローナル抗体", "mAb"],
+      explanation: '',
     },
     {
-      term:['ポリクローナル',"ポリクローナル抗体"],
-      explanation:'血中に一般的に存在する抗体で、複数のクローンから構成される。',
+      term: ['ポリクローナル', "ポリクローナル抗体"],
+      explanation: '血中に一般的に存在する抗体で、複数のクローンから構成される。',
     },
     {
-      term:['ELISA'],
-      explanation:'',
+      term: ['ELISA'],
+      explanation: '',
     },
     {
-      term:['モノクローナル抗体のヒト化',"ヒト化","完全ヒト抗体"],
-      explanation:'',
+      term: ['モノクローナル抗体のヒト化', "ヒト化", "完全ヒト抗体"],
+      explanation: '',
     },
     {
-      term:['トシリズマブ',"Tocilizumab","抗IL-6受容体抗体","キャッスルマン病"],
-      explanation:'',
+      term: ['トシリズマブ', "Tocilizumab", "抗IL-6受容体抗体", "キャッスルマン病"],
+      explanation: '',
     },
     {
-      term:['ポテリジェント抗体'],
-      explanation:'抗体の、Fc受容体との会合を阻害するフコースを除去することによりADCC活性が増強される。このような抗体をポテリジェント抗体と言い、ATL（成人T細胞白血病リンパ腫）の治療に活用されている。',
+      term: ['ポテリジェント抗体'],
+      explanation: '抗体の、Fc受容体との会合を阻害するフコースを除去することによりADCC活性が増強される。このような抗体をポテリジェント抗体と言い、ATL（成人T細胞白血病リンパ腫）の治療に活用されている。',
     },
     {
-      term:['ハイブリドーマ'],
-      explanation:'',
+      term: ['ハイブリドーマ'],
+      explanation: '',
     },
     {
-      term:['経口寛容',"食物アレルギー"],
-      explanation:'',
+      term: ['経口寛容', "食物アレルギー"],
+      explanation: '',
     },
     {
-      term:['粘膜関連リンパ組織',"Muclsa-Associated Lymphoid TIssue","MALT","GALT","BALT","NALT"],
-      explanation:'上皮直下の実行組織の近傍の二次リンパ組織の総称。',
+      term: ['粘膜関連リンパ組織', "Muclsa-Associated Lymphoid TIssue", "MALT", "GALT", "BALT", "NALT"],
+      explanation: '上皮直下の実行組織の近傍の二次リンパ組織の総称。',
     },
     {
-      term:['拘禁ペプチド',"ディフェンシン","defensin","RegⅢ"],
-      explanation:'クリプトのパネート細胞（小腸）や吸収上皮細胞（大腸）は抗菌ペプチド（ディフェンシン・Reg3）を分泌している。',
+      term: ['拘禁ペプチド', "ディフェンシン", "defensin", "RegⅢ"],
+      explanation: 'クリプトのパネート細胞（小腸）や吸収上皮細胞（大腸）は抗菌ペプチド（ディフェンシン・Reg3）を分泌している。',
     },
     {
-      term:['舌下減感作療法'],
-      explanation:'花粉症などの治療（免疫寛容獲得）などに利用される。',
+      term: ['舌下減感作療法'],
+      explanation: '花粉症などの治療（免疫寛容獲得）などに利用される。',
     },
     {
-      term:['CMIS',"共通粘膜免疫機構","common muclsal immune system"],
-      explanation:'',
+      term: ['CMIS', "共通粘膜免疫機構", "common muclsal immune system"],
+      explanation: '',
     },
     {
-      term:['パイエル板'],
-      explanation:'',
+      term: ['パイエル板'],
+      explanation: '',
     },
     {
-      term:['"M細胞","microfoid cell","GP2タンパク"'],
-      explanation:'',
+      term: ['"M細胞","microfoid cell","GP2タンパク"'],
+      explanation: '',
     },
     {
-      term:['IgA',"Immunoglobrin A","多量体Ig受容体"],
-      explanation:'',
+      term: ['IgA', "Immunoglobrin A", "多量体Ig受容体"],
+      explanation: '',
     },
-        {
-      term:['レチノイン酸',"ビタミンA"],
-      explanation:'',
+    {
+      term: ['レチノイン酸', "ビタミンA"],
+      explanation: '',
     },
-        {
-      term:['粘膜固有層選択的ホーミング',"CCR9","CCL25","α4β7","MadCAM"],
-      explanation:'',
+    {
+      term: ['粘膜固有層選択的ホーミング', "CCR9", "CCL25", "α4β7", "MadCAM"],
+      explanation: '',
     },
-        {
-      term:['IEL',"腸管上皮間リンパ球","intraepithelial lymphocyte"],
-      explanation:'',
+    {
+      term: ['IEL', "腸管上皮間リンパ球", "intraepithelial lymphocyte"],
+      explanation: '',
     },
-        {
-      term:['軟膜固有層リンパ球',"lamina propria lymphocyte"],
-      explanation:'',
+    {
+      term: ['軟膜固有層リンパ球', "lamina propria lymphocyte"],
+      explanation: '',
     },
-        {
-      term:['Th17'],
-      explanation:'信金に対する免疫応答に重要な役割を果たしている他、腸管上皮で',
+    {
+      term: ['Th17'],
+      explanation: '信金に対する免疫応答に重要な役割を果たしている他、腸管上皮で',
     },
-        {
-      term:["ILC",'自然リンパ球',"innate lymphoid cell"],
-      explanation:'腸管粘膜固有層には3型のILCが存在していて、　　　T細胞のような役割をするものの抗原特異性は全くない。',
+    {
+      term: ["ILC", '自然リンパ球', "innate lymphoid cell"],
+      explanation: '腸管粘膜固有層には3型のILCが存在していて、　　　T細胞のような役割をするものの抗原特異性は全くない。',
     },
-        {
-      term:['Disbiosis',"腸内細菌叢の異常"],
-      explanation:'',
+    {
+      term: ['Disbiosis', "腸内細菌叢の異常"],
+      explanation: '',
     },
-        {
-      term:['IBD',"炎症性腸疾患","クローン病","潰瘍性大腸炎"],
-      explanation:'',
+    {
+      term: ['IBD', "炎症性腸疾患", "クローン病", "潰瘍性大腸炎"],
+      explanation: '',
     },
-        {
-      term:['粘膜ワクチン',"経口ワクチン","MucoRice-CTB"],
-      explanation:'',
+    {
+      term: ['粘膜ワクチン', "経口ワクチン", "MucoRice-CTB"],
+      explanation: '',
     },
-        {
-      term:['二重抗原暴露仮説',"dual allergen exposure hypothesis"],
-      explanation:'',
+    {
+      term: ['二重抗原暴露仮説', "dual allergen exposure hypothesis"],
+      explanation: '',
     },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },
-        // {
+    // {
     //   term:[''],
     //   explanation:'',
     // },

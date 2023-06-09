@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-immunology/static/css/main.6180b9dc.css",
-    "main.js": "/anywhere-immunology/static/js/main.68846f58.js",
+    "main.js": "/anywhere-immunology/static/js/main.e837da7d.js",
     "static/media/titleImg.jpg": "/anywhere-immunology/static/media/titleImg.92d6260f5934242117c7.jpg",
     "static/media/homing.png": "/anywhere-immunology/static/media/homing.49d33792b9faeda93b59.png",
     "static/media/asthma.png": "/anywhere-immunology/static/media/asthma.ffffe2812fb1f622d625.png",
@@ -75,10 +75,10 @@
     "static/media/allergyIgE.png": "/anywhere-immunology/static/media/allergyIgE.f6b15dcdda11315d64b5.png",
     "index.html": "/anywhere-immunology/index.html",
     "main.6180b9dc.css.map": "/anywhere-immunology/static/css/main.6180b9dc.css.map",
-    "main.68846f58.js.map": "/anywhere-immunology/static/js/main.68846f58.js.map"
+    "main.e837da7d.js.map": "/anywhere-immunology/static/js/main.e837da7d.js.map"
   },
   "entrypoints": [
     "static/css/main.6180b9dc.css",
-    "static/js/main.68846f58.js"
+    "static/js/main.e837da7d.js"
   ]
 }
