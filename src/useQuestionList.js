@@ -1168,7 +1168,47 @@ export const useQuestionList = () => {
                     answer: 'HLA-A',
                     commentary: '発現して「いない」。HLA-CやHLA-Gは胎盤トロホブラストで発現して、胎児の免疫学的拒絶の抑制作用に寄与している。胎盤では免疫学的寛容のため、比較的多様性の少ないHLA分子（HLA-E,F,G）を発現していて、胎盤脱落膜に多いNK細胞による攻撃を防いでいる。',
                 },
-                // {
+                {
+                  detailInfo: '6/09 出席確認',
+                  questionImg: [],
+                  questionSentence:
+                    '胎盤通過能をもつアイソタイプは？',
+                 choices:["IgA","IgD","IgE","IgG","IgM"],
+                  answerImg: [],
+                  answer: 'IgG',
+                  commentary: 'FcRnによってトランスサイトーシスされ、胎児血中に母体由来IgGが分布する。母体由来IgGは生後6ヶ月程度で消える→この時期の感染には気を付ける',
+                },
+                {
+                    detailInfo: '6/09 出席確認',
+                    questionImg: [],
+                    questionSentence:
+                      '補体活性化能が最も高いアイソタイプは？',
+                   choices:["IgA","IgD","IgE","IgG","IgM"],
+                    answerImg: [],
+                    answer: 'IgM',
+                    commentary: 'IgGもサブクラスによっては補体活性化能力があるが、IgMが最も高い。',
+                  },
+                  {
+                    detailInfo: '6/09 出席確認２',
+                    questionImg: [],
+                    questionSentence:
+                      '免疫学的に1と2のどちらのワクチンが効果が高いと考えられるか？',
+                   choices:["成人用23価の莢膜多糖を配合したワクチン(PPV23)","胎児用7価の莢膜多糖+ジフテリアタンパクを配合したワクチン(PCV7)"],
+                    answerImg: [],
+                    answer: '2',
+                    commentary: '2は莢膜多糖にタンパク質(アジュバンド/TD抗原)を含んでいるため、高い親和性を持つ抗原を産生し免疫記憶が持続しやすい。1は莢膜多糖のみなのでTI抗原。',
+                  },
+                                  //   {
+                //     detailInfo: '6/09 出席確認',
+                //     questionImg: [],
+                //     questionSentence:
+                //       '胎盤通過能をもつアイソタイプは？',
+                //    choices:["IgA","","","",""],
+                //     answerImg: [],
+                //     answer: 'IgG',
+                //     commentary: '',
+                //   },
+                   // {
                 //   detailInfo: '',
                 //   questionImg: [],
                 //   questionSentence:
