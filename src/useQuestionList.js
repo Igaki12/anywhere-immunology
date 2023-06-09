@@ -1190,13 +1190,23 @@ export const useQuestionList = () => {
                     detailInfo: '6/09 出席確認２',
                     questionImg: [],
                     questionSentence: '免疫学的に1と2のどちらのワクチンが効果が高いと考えられるか？',
-                    choices: ["成人用23価の莢膜多糖を配合したワクチン(PPV23)", "胎児用7価の莢膜多糖+ジフテリアタンパクを配合したワクチン(PCV7)"],
+                    choices: ["成人用23価の莢膜多糖を配合したワクチン(PPSV23)", "胎児用7価の莢膜多糖+ジフテリアタンパクを配合したワクチン(PCV7)"],
                     answerImg: [],
                     answer: '2',
-                    commentary: '2は莢膜多糖にタンパク質(アジュバンド/TD抗原)を含んでいるため、高い親和性を持つ抗原を産生し免疫記憶が持続しやすい。1は莢膜多糖のみなのでTI抗原。',
+                    commentary: '2は莢膜多糖にタンパク質(アジュバンド/TD抗原)を含んでいるため、T細胞が関与した免疫を活性化することで高い親和性を持つ抗原を産生し免疫記憶が持続しやすい。1は莢膜多糖のみなのでTI抗原。',
                 },
-                //   {
-                //     detailInfo: '6/09 出席確認',
+                  {
+                    detailInfo: '6/09 出席確認3',
+                    questionImg: [],
+                    questionSentence:
+                      '虫垂炎の際に増加する白血球は主にどれか？',
+                   choices:["Neutrocyte","Lymphocyte","Monocyte"],
+                    answerImg: [],
+                    answer: 'Neutrocyte？',
+                    commentary: '',
+                  },
+                                  //   {
+                //     detailInfo: '6/09 出席確認3',
                 //     questionImg: [],
                 //     questionSentence:
                 //       '胎盤通過能をもつアイソタイプは？',
