@@ -71,6 +71,15 @@ import anaphylaxis from './img/answer/anaphylaxis.png';
 import TAM from './img/answer/TAM.png';
 import immunorejection from './img/answer/immunorejection.png';
 import GVHD from './img/answer/GVHD.png';
+import TGFBetaIntestine from './img/answer/TGFBetaIntestine.png';
+import retinoicAcid from './img/answer/retinoicAcid.png';
+import oralTolerance from './img/answer/oralTolerance.png';
+import opsonin from './img/answer/opsonin.png';
+import NKCellReceptor from './img/answer/NKCellReceptor.png';
+import mucosalImmunity from './img/answer/mucosalImmunity.png';
+import MCell from './img/answer/MCell.png';
+import HIVStructure from './img/answer/HIVStructure.png';
+import dualAllergenExposureHypothesis from './img/answer/dualAllergenExposureHypothesis.png';
 
 
 
@@ -319,7 +328,7 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: '粘膜免疫について、誤っているものを2つ選べ。',
                     choices: ['M細胞は抗原を貪食し、パイエル板を介して T細胞に抗原を提示する。 ', 'リンパ球はレチノイン酸によって粘膜固有層にホーミングされる。', '樹状細胞の産生するTGF-βにより制御性T細胞とTh17細胞が生じる', ' 粘膜で抗原の免疫寛容を誘導すれば、全身性の免疫寛容をもたらす。 ', '経口免疫の方が、経皮免疫より免疫寛容を誘導しやすい。 ', '免疫寛容を獲得した人の血清を別の人に注射した場合、免疫寛容が誘導される。 '],
-                    answerImg: [MCell,retinoicAcid,TGFBetaIntestine,mucosalImmunity,dualAllergenExposureHypothesis,oralTolerance],
+                    answerImg: [MCell, retinoicAcid, TGFBetaIntestine, mucosalImmunity, dualAllergenExposureHypothesis, oralTolerance],
                     answer: '1と6が誤り',
                     commentary: 'M細胞は抗原を直接樹状細胞に流す。その他、上皮細胞がFcRnを介してオプソニン化された抗原を樹状細胞に渡したり、樹状細胞が樹状突起を伸ばして抗原を取り込んだりもする。腸管の樹状細胞はビタミンAをレチノイン酸に変換する酵素を発現し、レチノイン酸に活性化中のT細胞やB細胞が曝露されると、ケモカイン受容体CCR9やインテグリンα4β7を発現させることで、粘膜固有層選択的ホーミングに寄与する。腸管では経口免疫寛容のためTregやTh17細胞が活動している。粘膜を使った免疫獲得・免疫寛容の誘導は粘膜ワクチンなどに利用されている。経口免疫寛容は制御性T細胞の役割であるため、Tregを別の人に注射すれば免疫寛容が誘導されるが、血清には含まれていない。',
                 },
@@ -364,7 +373,7 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: '感染症について、誤っているものを2つ選べ。',
                     choices: ['肺炎球菌やインフルエンザ菌など、莢膜を持つ細菌の貪食にはオプソニン化が重要である。', '結核診断には結核特異的な抗体の抗体価を測定するのが有効である。 ', ' 結核性胸膜炎において、胸水中の ADA活性上昇が認められる。 ', '寄生虫 (蠕虫) 感染では好酸球増加と IgE上昇が起こる。 ', ' HIV感染症で、CD4陽性T細胞数が 200/mm³を下回ると日和見感染症、腫瘍などの AIDS 指標疾患を発症しやすくなる。 ', 'SARS-CoV-2 は気道の上皮細胞に感染し、他の上皮細胞には感染しない。 '],
-                    answerImg: [opsonin,antibodyProduce, tuberculosis, IgE],
+                    answerImg: [opsonin, antibodyProduce, tuberculosis, IgE],
                     answer: '2と6が誤り',
                     commentary: '莢膜は貪食細胞に認識されにくいが、補体や抗体によるオプソニン化を受けると貪食されるようになる。結核診断には抗体価ではなくIFN-γ濃度を調べる→ツベルクリン検査。新型コロナは腸管にも感染する。',
                 },
@@ -593,7 +602,7 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: 'HIVが侵入する際に直接関係しないのは？',
                     choices: ['CD4', 'MHCクラス1', 'CCR5', 'CXCR4', 'エンベロープ'],
-                    answerImg: [HIV,HIVStructure],
+                    answerImg: [HIV, HIVStructure],
                     answer: 'MHCクラス1',
                     commentary: 'HIVはCD4+T細胞に感染するために、CD4を認識する糖蛋白gp120とケモカインレセプター（共刺激因子）CCR5やCXCR4と結合する糖蛋白gp41を発現している。腸管で感染するウイルスとは異なりHIVはエンベロープを持つ。MHCクラス1分子はCD4+T細胞と直接関係しない',
                 },
@@ -666,7 +675,7 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: 'NK細胞の抑制性受容体について正しいものを１つ',
                     choices: ['NK 細胞の抑制性受容体は細胞内尾部に ITAMをもつ。', 'NK 細胞の抑制性受容体のいくつかは HLA-Cに結合する', 'NK細胞の抑制性受容体のいくつかはインテグリンファミリーである。', 'NK細胞の抑制性受容体のいくつかは TLRファミリーである。', 'NK細胞の抑制性受容体のいくつかは、活性化受容体と同時に発現する。'],
-                    answerImg: [NKCell,NKCellReceptor],
+                    answerImg: [NKCell, NKCellReceptor],
                     answer: '2が正しい',
                     commentary: 'ITAM(活性化モチーフ)ではなくITIM。NK細胞にはHLA分子をリガンドとする様々な促進性・抑制性受容体が発現している。',
                 },
@@ -1195,17 +1204,16 @@ export const useQuestionList = () => {
                     answer: '2',
                     commentary: '2は莢膜多糖にタンパク質(アジュバンド/TD抗原)を含んでいるため、T細胞が関与した免疫を活性化することで高い親和性を持つ抗原を産生し免疫記憶が持続しやすい。1は莢膜多糖のみなのでTI抗原。',
                 },
-                  {
+                {
                     detailInfo: '6/09 出席確認3',
                     questionImg: [],
-                    questionSentence:
-                      '虫垂炎の際に増加する白血球は主にどれか？',
-                   choices:["Neutrocyte","Lymphocyte","Monocyte"],
+                    questionSentence: '虫垂炎の際に増加する白血球は主にどれか？',
+                    choices: ["Neutrocyte", "Lymphocyte", "Monocyte"],
                     answerImg: [],
                     answer: 'Neutrocyte？',
                     commentary: '',
-                  },
-                                  //   {
+                },
+                //   {
                 //     detailInfo: '6/09 出席確認3',
                 //     questionImg: [],
                 //     questionSentence:
