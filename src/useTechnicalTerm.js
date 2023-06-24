@@ -814,14 +814,14 @@ export const useTechnicalTerm = () => {
       term:['風疹'],
       explanation:'重症度は高くないが、感染力が強く、先天性風疹症候群(TORCHのひとつ)が問題となる。感染者の1/1000人が死亡する。',
     },
-    // {
-    //   term:[''],
-    //   explanation:'',
-    // },
-        // {
-    //   term:[''],
-    //   explanation:'',
-    // },
+    {
+      term:['IHC',"Immunohistochemistry","免疫組織化学染色"],
+      explanation:'細胞・組織内にある抗原に対して、特異的に反応する抗体を用いて、抗原物質の有無・局在を検討する方法。抗体を何らかの方法で標識し、これを検出・観察する。主な役割として病理診断など。',
+    },
+        {
+      term:[''],
+      explanation:'',
+    },
     // {
     //   term:[''],
     //   explanation:'',
