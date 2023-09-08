@@ -1272,15 +1272,15 @@ export const useQuestionList = () => {
                   answer: '2番',
                   commentary: 'DAB発色と書いてあるので、茶色く染色されているところが陽性。実習で見たと思います。',
                 },
-                                // {
-                //   detailInfo: '9/08 小テスト',
-                //   questionImg: [],
-                //   questionSentence:
-                //     '',
-                //   answerImg: [],
-                //   answer: '',
-                //   commentary: '',
-                // },
+                                {
+                  detailInfo: '9/08 小テスト',
+                  questionImg: [],
+                  questionSentence:
+                    '末梢血単核球をフローサイトメトリーで解析した。CD4陽性T細胞は①～④のどの画分に見られるか？',
+                  answerImg: [],
+                  answer: '',
+                  commentary: 'CD3とCD4のダブルポジティブの部分が該当する。',
+                },
                                 // {
                 //   detailInfo: '9/08 小テスト',
                 //   questionImg: [],
