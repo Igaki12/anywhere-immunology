@@ -80,6 +80,9 @@ import mucosalImmunity from './img/answer/mucosalImmunity.png';
 import MCell from './img/answer/MCell.png';
 import HIVStructure from './img/answer/HIVStructure.png';
 import dualAllergenExposureHypothesis from './img/answer/dualAllergenExposureHypothesis.png';
+import question09082 from './img/question/question09082.png';
+import question09081 from './img/question/question09081.png';
+
 
 
 
@@ -1213,136 +1216,123 @@ export const useQuestionList = () => {
                     answer: 'Neutrocyte？',
                     commentary: '',
                 },
-                  {
+                {
                     detailInfo: '9/08 小テスト',
                     questionImg: [question09081],
-                    questionSentence:
-                      '血清の等電点電気泳動像である。抗体活性があるのはA~Eのどれか',
-                //    choices:["","","","",""],
+                    questionSentence: '血清の等電点電気泳動像である。抗体活性があるのはA~Eのどれか',
+                    //    choices:["","","","",""],
                     answerImg: [],
                     answer: 'E',
                     commentary: 'Eが抗体（γグロブリン）。Aはアルブミン',
-                  },
-                  {
+                },
+                {
                     detailInfo: '9/08 小テスト',
                     questionImg: [],
-                    questionSentence:
-                      '抗体反応の検出に二次抗体を必要とするのは？',
-                   choices:["直接法","間接法"],
+                    questionSentence: '抗体反応の検出に二次抗体を必要とするのは？',
+                    choices: ["直接法", "間接法"],
                     answerImg: [],
                     answer: '間接法',
                     commentary: '直接法は一次抗体に直に蛍光物質が結合している。間接法はノイズが多いが、感度が高く（反応を増幅することができる）、頻用されている。',
-                  },
-                  {
+                },
+                {
                     detailInfo: '9/08 小テスト',
                     questionImg: [],
-                    questionSentence:
-                      '血清中のスギ花粉に対するIgE濃度をELISA法で測定したい。下記の内、必要のない試薬はどれか。',
-                   choices:["抗原（スギ花粉由来）","患者血清","HRP標識抗ヒトIgG抗体","HRP標識抗ヒトIgE交代"],
+                    questionSentence: '血清中のスギ花粉に対するIgE濃度をELISA法で測定したい。下記の内、必要のない試薬はどれか。',
+                    choices: ["抗原（スギ花粉由来）", "患者血清", "HRP標識抗ヒトIgG抗体", "HRP標識抗ヒトIgE交代"],
                     answerImg: [],
                     answer: 'HRP標識抗ヒトIgG抗体',
                     commentary: '',
-                  },
-                  {
+                },
+                {
                     detailInfo: '9/08 小テスト',
                     questionImg: [],
-                    questionSentence:
-                      '血清中のスギ花粉の抗体価を高感度で測定したい。あなたなら、どの測定方法を選択するか。',
-                   choices:["サンドイッチELISA法","化学発光酵素免疫測定法（CLEIA)","放射性免疫測定法　(RIA)"],
+                    questionSentence: '血清中のスギ花粉の抗体価を高感度で測定したい。あなたなら、どの測定方法を選択するか。',
+                    choices: ["サンドイッチELISA法", "化学発光酵素免疫測定法（CLEIA)", "放射性免疫測定法　(RIA)"],
                     answerImg: [],
                     answer: 'どれも正解',
                     commentary: '何としても見たい場合は放射線、程よくみたい場合はCLEIA、比較的手軽に見たい場合はサンドイッチELISA。見たい抗体によって使い分けで、どれも間違いではない。',
-                  },
+                },
                 {
-                  detailInfo: '9/08 小テスト',
-                  questionImg: [],
-                  questionSentence:
-                    'A型赤血球が抗A血清で凝集するのはABO血液型判定の何試験？',
-                    choices:["オモテ試験","ウラ試験"],
-                  answerImg: [],
-                  answer: 'オモテ試験',
-                  commentary: 'A型赤血球を加える試験がオモテ試験、血清を加える試験がウラ試験',
+                    detailInfo: '9/08 小テスト',
+                    questionImg: [],
+                    questionSentence: 'A型赤血球が抗A血清で凝集するのはABO血液型判定の何試験？',
+                    choices: ["オモテ試験", "ウラ試験"],
+                    answerImg: [],
+                    answer: 'オモテ試験',
+                    commentary: 'A型赤血球を加える試験がオモテ試験、血清を加える試験がウラ試験',
                 },
-                                {
-                  detailInfo: '9/08 小テスト',
-                  questionImg: [question09082],
-                  questionSentence:
-                    'PD-L1の腫瘍組織での発現をDAB発色により免疫染色で解析した。PD-L1が発現している場所は？',
-                  answerImg: [],
-                  answer: '2番',
-                  commentary: 'DAB発色と書いてあるので、茶色く染色されているところが陽性。実習で見たと思います。',
+                {
+                    detailInfo: '9/08 小テスト',
+                    questionImg: [question09082],
+                    questionSentence: 'PD-L1の腫瘍組織での発現をDAB発色により免疫染色で解析した。PD-L1が発現している場所は？',
+                    answerImg: [],
+                    answer: '2番',
+                    commentary: 'DAB発色と書いてあるので、茶色く染色されているところが陽性。実習で見たと思います。',
                 },
-                                {
-                  detailInfo: '9/08 小テスト',
-                  questionImg: [],
-                  questionSentence:
-                    '末梢血単核球をフローサイトメトリーで解析した。CD4陽性T細胞は①～④のどの画分に見られるか？',
-                  answerImg: [],
-                  answer: '',
-                  commentary: 'CD3とCD4のダブルポジティブの部分が該当する。',
-                },
-                                {
-                  detailInfo: '9/08 出席テスト',
-                  questionImg: [],
-                  questionSentence:
-                    '免疫不全で多いのはどちらか',
-                    choices:["原発性","続発性"],
-                  answerImg: [],
-                  answer: '続発性',
-                  commentary: '続発性：Secondaryの方が圧倒的に多い(>99%)。原発性：Primaryは少ないが、国家試験に出る。私も自分で原発性を診断したことはない。続発性として、糖尿病・免疫抑制剤・アルコール過剰摂取・HIV感染など。免疫不全状態だと重症化しやすい',
+                {
+                    detailInfo: '9/08 小テスト',
+                    questionImg: [],
+                    questionSentence: '末梢血単核球をフローサイトメトリーで解析した。CD4陽性T細胞は①～④のどの画分に見られるか？',
+                    answerImg: [],
+                    answer: '',
+                    commentary: 'CD3とCD4のダブルポジティブの部分が該当する。',
                 },
                 {
                     detailInfo: '9/08 出席テスト',
                     questionImg: [],
-                    questionSentence:
-                      '国内の新規HIV患者数が多いのはどちらか',
-                      choices:["男性","女性"],
+                    questionSentence: '免疫不全で多いのはどちらか',
+                    choices: ["原発性", "続発性"],
+                    answerImg: [],
+                    answer: '続発性',
+                    commentary: '続発性：Secondaryの方が圧倒的に多い(>99%)。原発性：Primaryは少ないが、国家試験に出る。私も自分で原発性を診断したことはない。続発性として、糖尿病・免疫抑制剤・アルコール過剰摂取・HIV感染など。免疫不全状態だと重症化しやすい',
+                },
+                {
+                    detailInfo: '9/08 出席テスト',
+                    questionImg: [],
+                    questionSentence: '国内の新規HIV患者数が多いのはどちらか',
+                    choices: ["男性", "女性"],
                     answerImg: [],
                     answer: '男性(日本では新規感染の95%が男性)',
                     commentary: 'HIVとAIDSの違いをわかっておくように。世界的に広く感染しているが、日本でも新規報告が確認されている（世界でも稀な右肩上がりの推移で東京・大阪などの都市部に多い）。日本の場合はMEMの男性に非常に多い。AIDSの診断にはHIVの感染確認だけでなく、AIDS指標疾患（23種類）である感染症・腫瘍の確認が必要。ほとんどの感染症は東京が多くなるが、結核だけは大阪が顕著に多いので注意',
-                  },
-                  {
+                },
+                {
                     detailInfo: '9/08 出席テスト',
                     questionImg: [],
-                    questionSentence:
-                      '日和見感染症が併発しやすいヘルパーT細胞の数はいくら未満か',
-                      choices:["200/mm^3","2000/mm^3"],
+                    questionSentence: '日和見感染症が併発しやすいヘルパーT細胞の数はいくら未満か',
+                    choices: ["200/mm^3", "2000/mm^3"],
                     answerImg: [],
                     answer: '200/mm^3',
                     commentary: 'ヘルパーT細胞の数が1マイクロリッターあたり200個を下回ると、普段我々がかかりにくいような疾患にかかりやすくなる。',
-                  },
-                  {
+                },
+                {
                     detailInfo: '9/08 出席テスト',
                     questionImg: [],
-                    questionSentence:
-                      '原発性免疫不全症候群で多いのはどちらか',
-                      choices:["食細胞異常","抗体不全"],
+                    questionSentence: '原発性免疫不全症候群で多いのはどちらか',
+                    choices: ["食細胞異常", "抗体不全"],
                     answerImg: [],
                     answer: '抗体不全',
                     commentary: '原発性免疫不全症候群だけで200種類近くの疾患がある。大きく分けると、複合免疫不全症（）・免疫不全を伴う特徴的な症候群（国家試験に非常に出しやすい）・液性免疫＝抗体免疫不全・免疫調節障害・食細胞機能不全など。日本全国で1300人強患者がおり、その四割が抗体不全症。',
-                  },
-                  {
+                },
+                {
                     detailInfo: '9/08 出席テスト',
                     questionImg: [],
-                    questionSentence:
-                      '好中球に異常を来たす疾患はどちらか',
-                      
-                      choices:["Wiscott-Aldrich症候群","Chediak-Higashi症候群"],
+                    questionSentence: '好中球に異常を来たす疾患はどちらか',
+
+                    choices: ["Wiscott-Aldrich症候群", "Chediak-Higashi症候群"],
                     answerImg: [],
                     answer: 'Chediak-Higashi症候群',
                     commentary: 'Chediak-Higashi症候群はLYST遺伝子の異常により、ファゴソームとリソソームの融合に障害がある→特徴的なペルオキシダーゼ陽性巨大顆粒好中球。85%の患者が病気の経過中に突然病状悪化する「急性転化」も試験に頻出。　Wiskott-Aldrich症候群は３主徴(血小板減少・湿疹・易感染性が特徴的で試験に出しやすい。WASProteinの遺伝子異常が根本的原因。',
-                  },
-                  {
+                },
+                {
                     detailInfo: '9/08 出席テスト',
                     questionImg: [],
-                    questionSentence:
-                      '下記の免疫不全症のうち、より重症なのはどちらか',
-                      choices:["SCID","X連鎖無ガンマグロブリン血症"],
+                    questionSentence: '下記の免疫不全症のうち、より重症なのはどちらか',
+                    choices: ["SCID", "X連鎖無ガンマグロブリン血症"],
                     answerImg: [],
                     answer: 'SCID',
                     commentary: '一番免疫機構でなくなっては困るのがT細胞。あらゆる疾患にかかりやすくなる。免疫不全になると呼吸器・消化器・皮膚・全身性（深部）に感染症が発生しやすくなり、また腫瘍が取り除かれにくくなる。SCID(Severe Combined Immuno Deficiency)は半数以上がIL-2γ遺伝子に異常がある複合的な免疫不全で免疫不全症の中でも最も重症なタイプ、X連鎖無ガンマグロブリン血症ではB細胞の成熟に関わるBTKに異常があるため抗体が産生されない。両方ともX染色体に関係していて、男児だけが発症する。',
-                  },
-                                                // {
+                },
+                // {
                 //   detailInfo: '9/08 出席テスト',
                 //   questionImg: [],
                 //   questionSentence:
