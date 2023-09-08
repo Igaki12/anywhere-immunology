@@ -1330,7 +1330,7 @@ export const useQuestionList = () => {
                       choices:["Wiscott-Aldrich症候群","Chediak-Higashi症候群"],
                     answerImg: [],
                     answer: 'Chediak-Higashi症候群',
-                    commentary: 'Chediak-Higashi症候群はLYST遺伝子の異常により、リソソームの輸送に障害がある→好中球の貪食機能が障害される。Wiskott-Aldrich症候群は３主徴(血小板減少・湿疹・易感染性が特徴的で試験に出しやすい。WASProteinの遺伝子異常が根本的原因。',
+                    commentary: 'Chediak-Higashi症候群はLYST遺伝子の異常により、ファゴソームとリソソームの融合に障害がある→特徴的なペルオキシダーゼ陽性巨大顆粒好中球。85%の患者が病気の経過中に突然病状悪化する「急性転化」も試験に頻出。　Wiskott-Aldrich症候群は３主徴(血小板減少・湿疹・易感染性が特徴的で試験に出しやすい。WASProteinの遺伝子異常が根本的原因。',
                   },
                   {
                     detailInfo: '9/08 出席テスト',
