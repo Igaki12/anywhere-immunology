@@ -1281,8 +1281,69 @@ export const useQuestionList = () => {
                   answer: '',
                   commentary: 'CD3とCD4のダブルポジティブの部分が該当する。',
                 },
-                                // {
-                //   detailInfo: '9/08 小テスト',
+                                {
+                  detailInfo: '9/08 出席テスト',
+                  questionImg: [],
+                  questionSentence:
+                    '免疫不全で多いのはどちらか',
+                    choices:["原発性","続発性"],
+                  answerImg: [],
+                  answer: '続発性',
+                  commentary: '続発性：Secondaryの方が圧倒的に多い(>99%)。原発性：Primaryは少ないが、国家試験に出る。私も自分で原発性を診断したことはない。続発性として、糖尿病・免疫抑制剤・アルコール過剰摂取・HIV感染など。免疫不全状態だと重症化しやすい',
+                },
+                {
+                    detailInfo: '9/08 出席テスト',
+                    questionImg: [],
+                    questionSentence:
+                      '国内の新規HIV患者数が多いのはどちらか',
+                      choices:["男性","女性"],
+                    answerImg: [],
+                    answer: '男性(日本では新規感染の95%が男性)',
+                    commentary: 'HIVとAIDSの違いをわかっておくように。世界的に広く感染しているが、日本でも新規報告が確認されている（世界でも稀な右肩上がりの推移で東京・大阪などの都市部に多い）。日本の場合はMEMの男性に非常に多い。AIDSの診断にはHIVの感染確認だけでなく、AIDS指標疾患（23種類）である感染症・腫瘍の確認が必要。ほとんどの感染症は東京が多くなるが、結核だけは大阪が顕著に多いので注意',
+                  },
+                  {
+                    detailInfo: '9/08 出席テスト',
+                    questionImg: [],
+                    questionSentence:
+                      '日和見感染症が併発しやすいヘルパーT細胞の数はいくら未満か',
+                      choices:["200/mm^3","2000/mm^3"],
+                    answerImg: [],
+                    answer: '200/mm^3',
+                    commentary: 'ヘルパーT細胞の数が1マイクロリッターあたり200個を下回ると、普段我々がかかりにくいような疾患にかかりやすくなる。',
+                  },
+                  {
+                    detailInfo: '9/08 出席テスト',
+                    questionImg: [],
+                    questionSentence:
+                      '原発性免疫不全症候群で多いのはどちらか',
+                      choices:["食細胞異常","抗体不全"],
+                    answerImg: [],
+                    answer: '抗体不全',
+                    commentary: '原発性免疫不全症候群だけで200種類近くの疾患がある。大きく分けると、複合免疫不全症（）・免疫不全を伴う特徴的な症候群（国家試験に非常に出しやすい）・液性免疫＝抗体免疫不全・免疫調節障害・食細胞機能不全など。日本全国で1300人強患者がおり、その四割が抗体不全症。',
+                  },
+                  {
+                    detailInfo: '9/08 出席テスト',
+                    questionImg: [],
+                    questionSentence:
+                      '好中球に異常を来たす疾患はどちらか',
+                      
+                      choices:["Wiscott-Aldrich症候群","Chediak-Higashi症候群"],
+                    answerImg: [],
+                    answer: 'Chediak-Higashi症候群',
+                    commentary: 'Chediak-Higashi症候群はLYST遺伝子の異常により、リソソームの輸送に障害がある→好中球の貪食機能が障害される。Wiskott-Aldrich症候群は３主徴(血小板減少・湿疹・易感染性が特徴的で試験に出しやすい。WASProteinの遺伝子異常が根本的原因。',
+                  },
+                  {
+                    detailInfo: '9/08 出席テスト',
+                    questionImg: [],
+                    questionSentence:
+                      '下記の免疫不全症のうち、より重症なのはどちらか',
+                      choices:["SCID","X連鎖無ガンマグロブリン血症"],
+                    answerImg: [],
+                    answer: 'SCID',
+                    commentary: '一番免疫機構でなくなっては困るのがT細胞。あらゆる疾患にかかりやすくなる。免疫不全になると呼吸器・消化器・皮膚・全身性（深部）に感染症が発生しやすくなり、また腫瘍が取り除かれにくくなる。SCID(Severe Combined Immuno Deficiency)は半数以上がIL-2γ遺伝子に異常がある複合的な免疫不全で免疫不全症の中でも最も重症なタイプ、X連鎖無ガンマグロブリン血症ではB細胞の成熟に関わるBTKに異常があるため抗体が産生されない。両方ともX染色体に関係していて、男児だけが発症する。',
+                  },
+                                                // {
+                //   detailInfo: '9/08 出席テスト',
                 //   questionImg: [],
                 //   questionSentence:
                 //     '',
