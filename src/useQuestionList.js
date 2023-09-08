@@ -1213,18 +1213,76 @@ export const useQuestionList = () => {
                     answer: 'Neutrocyte？',
                     commentary: '',
                 },
-                //   {
-                //     detailInfo: '6/09 出席確認3',
-                //     questionImg: [],
-                //     questionSentence:
-                //       '胎盤通過能をもつアイソタイプは？',
-                //    choices:["IgA","","","",""],
-                //     answerImg: [],
-                //     answer: 'IgG',
-                //     commentary: '',
-                //   },
-                // {
-                //   detailInfo: '',
+                  {
+                    detailInfo: '9/08 小テスト',
+                    questionImg: [question09081],
+                    questionSentence:
+                      '血清の等電点電気泳動像である。抗体活性があるのはA~Eのどれか',
+                //    choices:["","","","",""],
+                    answerImg: [],
+                    answer: 'E',
+                    commentary: 'Eが抗体（γグロブリン）。Aはアルブミン',
+                  },
+                  {
+                    detailInfo: '9/08 小テスト',
+                    questionImg: [],
+                    questionSentence:
+                      '抗体反応の検出に二次抗体を必要とするのは？',
+                   choices:["直接法","間接法"],
+                    answerImg: [],
+                    answer: '間接法',
+                    commentary: '直接法は一次抗体に直に蛍光物質が結合している。間接法はノイズが多いが、感度が高く（反応を増幅することができる）、頻用されている。',
+                  },
+                  {
+                    detailInfo: '9/08 小テスト',
+                    questionImg: [],
+                    questionSentence:
+                      '血清中のスギ花粉に対するIgE濃度をELISA法で測定したい。下記の内、必要のない試薬はどれか。',
+                   choices:["抗原（スギ花粉由来）","患者血清","HRP標識抗ヒトIgG抗体","HRP標識抗ヒトIgE交代"],
+                    answerImg: [],
+                    answer: 'HRP標識抗ヒトIgG抗体',
+                    commentary: '',
+                  },
+                  {
+                    detailInfo: '9/08 小テスト',
+                    questionImg: [],
+                    questionSentence:
+                      '血清中のスギ花粉の抗体価を高感度で測定したい。あなたなら、どの測定方法を選択するか。',
+                   choices:["サンドイッチELISA法","化学発光酵素免疫測定法（CLEIA)","放射性免疫測定法　(RIA)"],
+                    answerImg: [],
+                    answer: 'どれも正解',
+                    commentary: '何としても見たい場合は放射線、程よくみたい場合はCLEIA、比較的手軽に見たい場合はサンドイッチELISA。見たい抗体によって使い分けで、どれも間違いではない。',
+                  },
+                {
+                  detailInfo: '9/08 小テスト',
+                  questionImg: [],
+                  questionSentence:
+                    'A型赤血球が抗A血清で凝集するのはABO血液型判定の何試験？',
+                    choices:["オモテ試験","ウラ試験"],
+                  answerImg: [],
+                  answer: 'オモテ試験',
+                  commentary: 'A型赤血球を加える試験がオモテ試験、血清を加える試験がウラ試験',
+                },
+                                {
+                  detailInfo: '9/08 小テスト',
+                  questionImg: [question09082],
+                  questionSentence:
+                    'PD-L1の腫瘍組織での発現をDAB発色により免疫染色で解析した。PD-L1が発現している場所は？',
+                  answerImg: [],
+                  answer: '2番',
+                  commentary: 'DAB発色と書いてあるので、茶色く染色されているところが陽性。実習で見たと思います。',
+                },
+                                // {
+                //   detailInfo: '9/08 小テスト',
+                //   questionImg: [],
+                //   questionSentence:
+                //     '',
+                //   answerImg: [],
+                //   answer: '',
+                //   commentary: '',
+                // },
+                                // {
+                //   detailInfo: '9/08 小テスト',
                 //   questionImg: [],
                 //   questionSentence:
                 //     '',
