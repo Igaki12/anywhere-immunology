@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anywhere-immunology/static/css/main.6180b9dc.css",
-    "main.js": "/anywhere-immunology/static/js/main.f6788d78.js",
+    "main.js": "/anywhere-immunology/static/js/main.09105320.js",
     "static/media/question09082.png": "/anywhere-immunology/static/media/question09082.fc42edd118370401a3df.png",
     "static/media/TGFBetaIntestine.png": "/anywhere-immunology/static/media/TGFBetaIntestine.545a6f63ebdae4c12017.png",
     "static/media/retinoicAcid.png": "/anywhere-immunology/static/media/retinoicAcid.070b17236ba3871abea6.png",
@@ -49,6 +49,7 @@
     "static/media/MICA.png": "/anywhere-immunology/static/media/MICA.5ae8ebb9a92b746a92c8.png",
     "static/media/immunorejection.png": "/anywhere-immunology/static/media/immunorejection.480546738ef5868fbec5.png",
     "static/media/haplotype.png": "/anywhere-immunology/static/media/haplotype.12c5f389dd44e6e3ef69.png",
+    "static/media/isotypeSwitch1.png": "/anywhere-immunology/static/media/isotypeSwitch1.a0b108ac8977c4dcd22a.png",
     "static/media/diseaseFromHLA1.png": "/anywhere-immunology/static/media/diseaseFromHLA1.b833bf057a6a79088033.png",
     "static/media/Th17.png": "/anywhere-immunology/static/media/Th17.fa8f1b50d1f7353946e8.png",
     "static/media/TGFBeta.png": "/anywhere-immunology/static/media/TGFBeta.0ad88c14a7ea0fce6598.png",
@@ -76,6 +77,7 @@
     "static/media/Treg.png": "/anywhere-immunology/static/media/Treg.6d714a9f32a0f3b60204.png",
     "static/media/diseaseFromHLA2.png": "/anywhere-immunology/static/media/diseaseFromHLA2.ccc6e1d55a0acce13925.png",
     "static/media/LPS.png": "/anywhere-immunology/static/media/LPS.2adfd71a43f900f98031.png",
+    "static/media/isotypeSwitch2.png": "/anywhere-immunology/static/media/isotypeSwitch2.5f705ea4cce195155e3f.png",
     "static/media/IL2.png": "/anywhere-immunology/static/media/IL2.2861dee56aa960a389a3.png",
     "static/media/CTLA4.png": "/anywhere-immunology/static/media/CTLA4.b7c5ff04b9b95a6bffdc.png",
     "static/media/TCR.png": "/anywhere-immunology/static/media/TCR.6d06de2748a9ea717ac6.png",
@@ -86,10 +88,10 @@
     "static/media/allergyIgE.png": "/anywhere-immunology/static/media/allergyIgE.f6b15dcdda11315d64b5.png",
     "index.html": "/anywhere-immunology/index.html",
     "main.6180b9dc.css.map": "/anywhere-immunology/static/css/main.6180b9dc.css.map",
-    "main.f6788d78.js.map": "/anywhere-immunology/static/js/main.f6788d78.js.map"
+    "main.09105320.js.map": "/anywhere-immunology/static/js/main.09105320.js.map"
   },
   "entrypoints": [
     "static/css/main.6180b9dc.css",
-    "static/js/main.f6788d78.js"
+    "static/js/main.09105320.js"
   ]
 }

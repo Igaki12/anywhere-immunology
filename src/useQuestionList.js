@@ -21,6 +21,8 @@ import superantigen from './img/answer/superantigen.png';
 import RLR from './img/answer/RLR.png';
 import PerforinGranzyme from './img/answer/PerforinGranzyme.png';
 import LPS from './img/answer/LPS.png';
+import isotypeSwitch2 from './img/answer/isotypeSwitch2.png';
+import isotypeSwitch1 from './img/answer/isotypeSwitch1.png';
 import invariantChain from './img/answer/invariantChain.png';
 import crossPresentation from './img/answer/crossPresentation.png';
 import centralMemoryT from './img/answer/centralMemoryT.png';
@@ -133,7 +135,7 @@ export const useQuestionList = () => {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: '胸腺におけるT細胞分化について誤っているものを2つ選べ。',
-                    choices: ['・正の選択はCD4-CD8-T細胞で起こる', '正の選択とは自己抗原と適度に反応するT細胞を残すことである', '負の選択は胸腺皮質､正の選択は胸腺髄質でおこる', '核内タンパクAIRE(autoimmuneregulator)は種々の自己抗原を産生し､負の選択に寄与する', '胸腺プロテアソームはHLAクラス-I/Ⅱ分子に低親和性のペプチドを作ることで正の選択に寄与する', '正の選択の際にHLAクラスⅡ分子に提示されたペプチドを認識した細胞はCD4T細胞へと分化する'],
+                    choices: ['・正の選択はCD4-CD8-T細胞で起こる', '正の選択とは自己抗原と適度に反応するT細胞を残すことである', '負の選択は胸腺皮質､正の選択は胸腺髄質でおこる', '核内タンパクAIRE(autoimmuneregulator)は種々の自己抗原を産生し､負の選択に寄与する', '胸腺プロテアソームはHLAクラス-I/Ⅱ分子に低親和性のペプチドを作ることで正の選択に寄与する', '正の選択の際にHLAクラスⅡ分子に提示されたペプチドを認識した細胞はCD4+T細胞へと分化する'],
                     answerImg: [TcellDifferentiation, AIRE, MHCClass1],
                     answer: '1と3が誤り',
                     commentary: 'T細胞はDNT細胞→DPT細胞→SPT細胞の順で成熟し、DP(CD4+CD8+)の段階で皮質で正の選択、SP(Single Positive)の段階で髄質でAIREなどによって負の選択が行われる。ユビキチン-プロテアソーム系で断片化されたペプチドが、CD8+T細胞にはHLAクラスⅠ分子、CD4+T細胞にはHLAクラスⅡ分子によって抗原提示される。T細胞の遺伝子再構成はこれら正の選択/負の選択より前の段階で、VDJセグメントを持つβ鎖から順番に行われる。',
@@ -143,18 +145,18 @@ export const useQuestionList = () => {
                     questionImg: [],
                     questionSentence: 'B細胞の骨髄での分化成熟に関わる分子として誤っているものを2つ選べ。',
                     choices: ['Activation-induced cytidine deaminase(AID)', 'Artemis', 'Bruton’s tyrosine kinase(BTK)', 'CD40', 'Recombination-activating gene-1/2(RAG)', 'Terminal deoxynucleotidyl transferase(TdT)'],
-                    answerImg: [RAG, preBCR],
+                    answerImg: [RAG, preBCR, isotypeSwitch1, isotypeSwitch2],
                     answer: '1と4が誤り',
-                    commentary: 'B細胞はプロB細胞→プレB細胞→未熟B細胞→成熟B細胞の順に成熟し、まずH鎖、次いでL鎖(κ鎖→λ鎖)の順に遺伝子再構成が行われる。また、H鎖の再構成が終わりμH鎖が生成された段階で、μH鎖は代替L鎖・Igα・Igβと複合体：プレB細胞レセプター(pre-BCR)を形成し、プレB細胞となるため、H鎖遺伝子再構成はプロB細胞、L鎖遺伝子再構成はプレB細胞の段階で行われることとなる。　遺伝子再構成はV・D・Jセグメントそれぞれの間に存在するRSSを標的として、RAG1/2が切断した後Artemisによるヘアピン構造の分解、TdTによる変異に富んだ修復を行うことによって成立し、遺伝子再構成が成功した場合はpre-BCRから生存・細胞増殖シグナルが伝達される。ブルトン型チロシンキナーゼBTKはこの下流に存在し、この遺伝子が突然変異するとX連鎖無ガンマグロブリン血症(XLA)を発症する。',
+                    commentary: 'B細胞はプロB細胞→プレB細胞→未熟B細胞→成熟B細胞の順に成熟し、まずH鎖、次いでL鎖(κ鎖→λ鎖)の順に遺伝子再構成が行われる。また、H鎖の再構成が終わりμH鎖が生成された段階で、μH鎖は代替L鎖・Igα・Igβと複合体：プレB細胞レセプター(pre-BCR)を形成し、プレB細胞となるため、H鎖遺伝子再構成はプロB細胞、L鎖遺伝子再構成はプレB細胞の段階で行われることとなる。　遺伝子再構成はV・D・Jセグメントそれぞれの間に存在するRSSを標的として、RAG1/2が切断した後Artemisによるヘアピン構造の分解、TdTによる変異に富んだ修復を行うことによって成立し、遺伝子再構成が成功した場合はpre-BCRから生存・細胞増殖シグナルが伝達される。ブルトン型チロシンキナーゼBTKはこの下流に存在し、この遺伝子が突然変異するとX連鎖無ガンマグロブリン血症(XLA)を発症する。 AID：シチジン脱アミノ化酵素やCD40はT-B相互作用やアイソタイプスイッチにかかわる分子で、成熟後の話。',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
                     questionSentence: 'アレルギー疾患と主要関連因子(抗体ならびにアレルギーの型)の組合せで誤っているものを2つ選べ。',
-                    choices: ['尋麻疹 --- IgE(I型アレルギー）', '重症筋無力症 --- IgG(Ⅱ型アレルギー）', '全身性エリテマトーデス --- IgG(Ⅲ型アレルギー）', 'アレルギー性接触皮層炎 --- IgG(Ⅳ型アレルギー）', 'Basedow病(Graves病) --- IgG(V型アレルギー）', 'アナフィラキシ－--- IgM(Ⅱ型アレルギー）'],
+                    choices: ['尋麻疹 --- IgE(I型アレルギー）', '重症筋無力症 --- IgG(Ⅱ型アレルギー）', '全身性エリテマトーデス --- IgG(Ⅲ型アレルギー）', 'アレルギー性接触皮層炎 --- IgG(Ⅳ型アレルギー）', 'Basedow病(Graves病) --- IgG(V型アレルギー）', 'アナフィラキシー--- IgM(Ⅱ型アレルギー）'],
                     answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answer: 'アレルギー性皮膚接触炎、アナフィラキシー',
+                    commentary: 'アナフィラキシーショックはⅠ型アレルギーが原因でIgEによるもの（蕁麻疹と同じ分類）。アレルギー性接触皮膚炎はⅣ型であるが、Ⅳ型は感作T細胞による過剰反応による遅延型過敏症で、抗体は直接関与しない。',
                 },
                 {
                     detailInfo: '',
@@ -180,17 +182,17 @@ export const useQuestionList = () => {
                     questionSentence: '原発性免疫不全症候群とその特徴の組み合わせで誤っているものを2つ選べ。',
                     choices: ['Chediak-Higashi症候群 - リソソーム障害', 'DiGeroge症候群 - 低カルシウム血症', 'Wiskott-Aldrich症候群 - 血小板減少', 'X連鎖無ガンマグロブリン血症 - IL2RG遺伝子異常', '慢性肉芽腫症 - 活性酸素産生能欠損', '高IgE症候群 - 高頻度悪性腫瘍発生'],
                     answerImg: [preBCR],
-                    answer: '',
-                    commentary: '',
+                    answer: 'X連鎖無ガンマグロブリン血症、高IgE血症',
+                    commentary: 'Chediak-Higashi 症候群はリソソーム輸送調節蛋白LYSTの変異により食胞（ファゴソーム）とリソソームの融合に障害がある、ペルオキシダーゼ陽性巨大顆粒が特徴的。リソソームに障害があるのは慢性肉芽腫症候群。　高頻度悪性腫瘍発生がみられるのはATMタンパクが欠損する毛細血管拡張性運動失調症(A-T)。IL-2Rγに変異がみられることがおおいのは、X-SCID（重症複合型免疫欠損症）。',
                 },
                 {
                     detailInfo: '',
                     questionImg: [],
-                    questionSentence: '免疫組織化学染色(a-c)とフローサイトメトリー(d-f)について誤っているものを2つ選べ。',
+                    questionSentence: '免疫組織化学染色(1-3)とフローサイトメトリー(4-6)について誤っているものを2つ選べ。',
                     choices: ['蛍光抗体法と酵素抗体法での染色結果は､いずれも光学顕微鏡で観察できる', '内因性ぺルオキシダーゼを多く含むものに赤血球と穎粒球がある', '間接法は直接法よりも検出感度が高い', '抗原の発現量と蛍光強度は相関しない', '転写因子などの細胞内タンパクの発現を検出することができる', '前方散乱光と側方散乱光からリンパ球と単球を区別することができる'],
                     answerImg: [],
-                    answer: '',
-                    commentary: '',
+                    answer: '1,4が誤り',
+                    commentary: '蛍光抗体法では蛍光顕微鏡でないと観察できない。抗原の発現量が多いほど、蛍光強度は強くなる→免疫染色を利用すれば定量的に抗原発現量を調べることができる。　その他、FACSでは実習のような表面マーカーだけでなく核DNA量・細胞内抗原・酵素活性などについても、染色手順次第で調べることができる。リンパ球・単球・顆粒球は、FSCとSSCから区別することができる。',
                 },
             ]
         },
